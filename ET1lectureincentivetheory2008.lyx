@@ -1,0 +1,4632 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+In this lecture, we consider situations with asymmetric information.
+ A principal is faced with an agent with whom he has to enter into a contractual
+ relationship.
+ He does not know either the level of ability of the agent (adverse selection,
+ whereby inept agents are mixed with able ones) or he cannot control the
+ level of effort expended by the agent into the delivery of the contracted
+ performance (moral hazard then arises from the part of the agent, who may
+ be tempted to slack).
+ Issues such as those give rise to incentive (or contract) theory, whose
+ aim is to examine how best to organize the principal-agent relationship
+ in contexts of asymmetric information.
+ Domains of application for contract theory are outlined, and some typical
+ agency problems are presented, as well as their solution.
+\end_layout
+
+\begin_layout Standard
+Asymmetric information is different from imperfect information.
+ Instead of all agents on the market holding the same set of (possibly imperfect
+) information on every other agents in the market, some agents know more
+ than others.
+ Information that can be found out at some cost is not asymmetric information.
+ Asymmetric information arises when agents are not motivated to reveal informati
+on they hold, for example because that information provides them with some
+ advantage in a relationship.
+ We will see how a principal can set up contractual relationships such as
+ to motivate the agent to reveal that information, at some cost to the principal.
+\end_layout
+
+\begin_layout Standard
+There are many different types of asymmetric information.
+ Asymmetric information on the type of the agent leads to adverse selection
+ problems.
+ In that setting, for example, the fact you are healthy or not depends on
+ outside factors and not on your habits.
+ Asymmetric information on the effort of the players leads to moral hazard.
+ In that case, for example, the fact you are healthy or not depends on your
+ habits.
+ In the first case, you will want to screen agents, in the second, you will
+ want to monitor their habits or give them incentives to behave 
+\begin_inset Quotes els
+\end_inset
+
+correctly
+\begin_inset Quotes ers
+\end_inset
+
+, i.e.
+ in your own interest.
+\end_layout
+
+\begin_layout Standard
+Some examples of situations with moral hazard or adverse selection follow:
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Example
+\series medium
+ 
+\series bold
+1:
+\series default
+\emph default
+ When buying a car, the buyer does not know whether the quality of the car
+ is good or bad.
+ The seller/owner knows the quality of his car.
+ Absent any way to prove the quality of his car, the seller of a good quality
+ car will suffer a discount due to the presence of bad quality car sellers
+ in the market.
+ This might be an explanation for why cars lose so much value even right
+ after being bought new.
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Example 
+\series bold
+2:
+\series default
+\emph default
+ When selling car insurance, the insurer does not know whether the insured
+ is careful or not in driving.
+ The insured knows it, and those who drive badly will be more motivated
+ to buy insurance than others.
+ In the limit, the insurer should never sell insurance because only if it
+ underestimated the risk of the insured would it sell.
+ The same type of problem arises in borrowing and in health insurance, as
+ well as in many used goods markets.
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Example 
+\series bold
+3:
+\series default
+\emph default
+ In education, is a bad grade due to low effort by the student (moral hazard
+ on the part of the student), to his/her intellectual limitations (type
+ of the student) or to bad teaching (which can be either due to low effort
+ on the part of the teacher or to his/her low ability)?
+\end_layout
+
+\begin_layout Description
+
+\shape italic
+Example
+\series medium
+ 
+\series bold
+4:
+\shape default
+ 
+\series default
+In the current credit crunch, is the poor performance of banks due to bad
+ management of the banks, opportunistic behavior on the part of bankers,
+ bad macroeconomic policies on the part of the governement, or poor regulatory
+ oversight? The following Dilbert character seems to go for the later option:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename moralhazard.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\size normal
+Poor regulatory oversight (c) Scott Adams
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is often difficult in each of those example to agree on who has the most
+ information (e.g.
+ health).
+ There are a variety of contracts that are signed between agents in those
+ settings, which are meant to alleviate asymmetric information.
+ For example, bonus/malus systems for car insurance are used in France:
+ if you have an accident, your insurance price increases, which deters drivers
+ from driving carelessly.
+ US insurance companies impose medical checkups to screen their insurees.
+ Companies offer return guarantees so as to prove their trust in the quality
+ of their goods.
+\end_layout
+
+\begin_layout Section
+Readings
+\end_layout
+
+\begin_layout Subsection
+Textbook Readings.
+ 
+\end_layout
+
+\begin_layout Itemize
+Kreps, Chs.
+ 16-17
+\end_layout
+
+\begin_layout Itemize
+Varian, Ch.
+ 25
+\end_layout
+
+\begin_layout Itemize
+Mas-Colell, Chs.13-14
+\end_layout
+
+\begin_layout Standard
+The following textbooks might also prove useful to you:
+\end_layout
+
+\begin_layout Itemize
+Laffont J-J.
+ and D.
+ Martimort, 2002, The Theory of Incentives; the Principal-Agent Model, Princeton
+ University Press.
+ 
+\end_layout
+
+\begin_layout Itemize
+Salanié B., 2005, The Economics of Contracts, MIT Press.
+\end_layout
+
+\begin_layout Subsection
+Articles
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Some articles in this list were contributed by previous teachers in MSc
+ Economic Theory 1 at the UEA.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Akerlof G.A., 1970, The market for 
+\begin_inset Quotes eld
+\end_inset
+
+lemons
+\begin_inset Quotes erd
+\end_inset
+
+: Quality uncertainty and the market mechanism, The Quarterly Journal of
+ Economics 84(3), 488-500.
+ 
+\end_layout
+
+\begin_layout Itemize
+Grossman S.J.
+ and O.D.
+ Hart, 1983, An analysis of the Principal-Agent problem, Econometrica 51(1),
+ 7-45.
+ 
+\end_layout
+
+\begin_layout Itemize
+Puertz R.
+ and A.
+ Snow, 1994, Evidence on Adverse Selection, Equilibrium Signalling and Cross-Sub
+sidization in the Insurance Market, Journal of Political Economy 102(2),
+ 236-257.
+ 
+\end_layout
+
+\begin_layout Itemize
+Rees R., 1985, The Theory of Principal and Agent, Parts I and II in Hey,
+ J.
+ & Lambert P.
+ eds, Surveys in the Economics of Uncertainty, Blackwell; also in Bulletin
+ of Economic Research.
+\end_layout
+
+\begin_layout Itemize
+Spence A.M., 1973, Job Market Signalling, The Quarterly Journal of Economics
+ 87(3), 355-374.
+\end_layout
+
+\begin_layout Itemize
+Taylor C.R., 1999, Time-on-the-Market as a Signal of Quality, Review of Economic
+ Studies 66, 555-578.
+\end_layout
+
+\begin_layout Standard
+The theory of games with incomplete information and the theory of asymmetric
+ information can be applied to a range of economic problems, as follows:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+a) Regulation 
+\end_layout
+
+\begin_layout Itemize
+Laffont J.
+ J.
+ and J.
+ Tirole, 1993, A Theory Of Incentives In Procurement And Regulation, The
+ MIT Press.
+ (This is a comprehensive book on the theory of regulation.).
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+b) Auctions 
+\end_layout
+
+\begin_layout Itemize
+Klemperer P., 2000, Why Every Economist Should Learn Some Auction Theory,
+ Microeconomics 0004009, Economics Working Paper Archive at WUSTL, available
+ on the web.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+c) Theory of the firm 
+\end_layout
+
+\begin_layout Itemize
+Fama E.F., 1980, Agency problems and the theory of the firm, Journal of Political
+ Economy 88(2), 288-307.
+\end_layout
+
+\begin_layout Itemize
+Holmstrom B.R.
+ and S.N.
+ Kaplan, 2001, Corporate Governance and Merger Activity in the U.S.: Making
+ Sense of the 1980s and 1990s, MIT Dept.
+ of Economics Working Paper No.
+ 01-11.
+ 
+\end_layout
+
+\begin_layout Itemize
+Jensen M.C.
+ and W.H.
+ Meckling, 1976, Theory of the Firm: Managerial Behavior, Agency Costs and
+ Ownership Structure, Journal of Financial Economics 3(4), 305-360.
+ 
+\end_layout
+
+\begin_layout Itemize
+Milgrom P.
+ and J.
+ Roberts, 1992, Economics, Organization and Management, Prentice Hall (This
+ book is well written, accessible and motivating and of great help to future
+ managers).
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+d) Labour Economics 
+\end_layout
+
+\begin_layout Itemize
+Green J.
+ and N.A.
+ Stokey, 1983, Comparison of Tournaments and Contests, Journal of Political
+ Economy 91, 349-364.
+ 
+\end_layout
+
+\begin_layout Itemize
+Hart O.D., 1983, Optimal Labour Contracts under Asymmetric Information: An
+ Introduction, Review of Economic Studies 50(1), 3-35.
+\end_layout
+
+\begin_layout Itemize
+Holmstrom B., 1982, Moral Hazard in Teams, Bell Journal of Economics 13(2),
+ 324-340.
+ 
+\end_layout
+
+\begin_layout Itemize
+Laffont J-J.
+ and M.S.
+ Matoussi, 1995, Moral Hazard, Financial Constraints and Sharecropping in
+ El Oulja, Review of Economic Studies 62, 381-399.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+e) Banking and Insurance 
+\end_layout
+
+\begin_layout Itemize
+Freixas X.
+ and J-C.
+ Rochet, 1997, Microeconomics of Banking, The MIT Press, second print 1998
+ (An excellent review for those interested).
+\end_layout
+
+\begin_layout Itemize
+Rothschild M.
+ and J.E.
+ Stiglitz, 1976, Equilibrium in competitive insurance markets: An essay
+ on the economics of imperfect information, Quarterly Journal of Economics
+ 90(4), 629-649.
+ 
+\end_layout
+
+\begin_layout Itemize
+Stiglitz J.E.
+ and A.
+ Weiss, 1981, Credit Rationing in Markets with imperfect information, American
+ Economic Review 71, 393-410.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+f) Health Economics 
+\end_layout
+
+\begin_layout Itemize
+Arrow K.J., 1963, Uncertainty and the welfare economics of medical care, American
+ Economic Review 53(5), 941-973.
+\end_layout
+
+\begin_layout Itemize
+Zechauser R., 1970, Medical Insurance: A case study of the trade off between
+ risk spreading and appropriate incentives, Journal of Economic Theory 2,
+ 10-12.
+\end_layout
+
+\begin_layout Section
+Agency and adverse selection.
+\end_layout
+
+\begin_layout Standard
+In this part, a typical model of adverse selection will be presented and
+ the timing of the contractual relationship will be outlined.
+ The first best outcome (which arises in contexts of perfect information)
+ will be determined graphically and compared with the second best outcome
+ (with asymmetric information).
+ The role of incentive and participation constraints will be explained and
+ the maximization program of the principal will be determined as well as
+ its graphical solution.
+ That solution will be compared with the first best.
+\end_layout
+
+\begin_layout Subsection
+The model
+\end_layout
+
+\begin_layout Standard
+A principal gets utility 
+\begin_inset Formula $S(q)$
+\end_inset
+
+ from obtaining quantity 
+\begin_inset Formula $q$
+\end_inset
+
+ of a product that is produced by an agent at cost 
+\begin_inset Formula $C(\theta,q)=\theta q$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is the type of the agent, known to the agent and unknown to the principal,
+ who expects 
+\begin_inset Formula $\theta=\theta_{H}$
+\end_inset
+
+ with probability 
+\begin_inset Formula $1-v$
+\end_inset
+
+ and 
+\begin_inset Formula $\theta=\theta_{L}$
+\end_inset
+
+ with probability 
+\begin_inset Formula $v$
+\end_inset
+
+, with 
+\begin_inset Formula $\theta_{H}>\theta_{L}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The contracting variables 
+\begin_inset Formula $C$
+\end_inset
+
+ are 
+\begin_inset Formula $(q,t)$
+\end_inset
+
+, 
+\begin_inset Formula $t$
+\end_inset
+
+ being the (money) transfer from the principal to the agent and 
+\begin_inset Formula $q$
+\end_inset
+
+ the quantity produced by the agent.
+ Contract 
+\begin_inset Formula $C$
+\end_inset
+
+ is enforceable under law, that is, a third party (a Court) can check a
+ contract was signed and can check whether 
+\begin_inset Formula $t$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+ that were determined in the contract were paid and/or produced or not.
+\end_layout
+
+\begin_layout Standard
+Under contract 
+\begin_inset Formula $C,$
+\end_inset
+
+ the principal's utility is then 
+\begin_inset Formula $S(q)-t$
+\end_inset
+
+.
+ Agent of type 
+\begin_inset Formula $\theta$
+\end_inset
+
+ obtains utility is 
+\begin_inset Formula $t-\theta q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The timing of the contractual relationship is as follows: 
+\end_layout
+
+\begin_layout Itemize
+At 
+\begin_inset Formula $t=1,$
+\end_inset
+
+ the agent learns its type 
+\begin_inset Formula $\theta.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+At 
+\begin_inset Formula $t=2$
+\end_inset
+
+ the principal offers a (menu of) contract(s) 
+\begin_inset Formula $C$
+\end_inset
+
+ ( 
+\begin_inset Formula $C_{1},C_{2},C_{3},$
+\end_inset
+
+ ...).
+ 
+\end_layout
+
+\begin_layout Itemize
+At 
+\begin_inset Formula $t=3$
+\end_inset
+
+ the agent chooses a contract or chooses not to enter a contractual relationship
+ 
+\begin_inset Formula $(C=C_{0}=(0,0)$
+\end_inset
+
+ is always an option, as no one can be forced into signing a contract)
+\begin_inset Formula $.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+At 
+\begin_inset Formula $t=4$
+\end_inset
+
+ the contract is executed: the agent produces the quantity as agreed in
+ the contract and the principal pays her the transfer as agreed in the contract.
+ 
+\end_layout
+
+\begin_layout Standard
+The contracting timeline can thus be represented as follows:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size small
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="7">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $t=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $t=2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $t=3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $t=4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Agent learns 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Principal offers 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Agent chooses 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $q$
+\end_inset
+
+ is produced
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+type 
+\begin_inset Formula $\theta$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+contracts 
+\begin_inset Formula $C$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+contract 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $t$
+\end_inset
+
+ is paid
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+The first best (
+\begin_inset Formula $\theta$
+\end_inset
+
+ known)
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+In a `first best' world, the principal knows 
+\begin_inset Formula $\theta$
+\end_inset
+
+; he can therefore ask any quantity from the agent provided the agent accepts.
+ Knowing the type 
+\begin_inset Formula $\theta$
+\end_inset
+
+ of the agent, the program of the principal is:
+\begin_inset Formula 
+\begin{align}
+ & \underset{q,t}{\max}S(q)-t\\
+\text{s.t. }t-\theta q & \geq0\nonumber 
+\end{align}
+
+\end_inset
+
+ The principal thus maximizes the following Lagrangian:
+\begin_inset Formula 
+\begin{equation}
+\underset{q,t}{\max}(S(q)-t)+\lambda(t-\theta q)
+\end{equation}
+
+\end_inset
+
+ which is maximixed for 
+\begin_inset Formula 
+\begin{align}
+S^{\prime}(q)-\lambda\theta & =0\\
+-1+\lambda & =0\nonumber \\
+t-\theta q & =0
+\end{align}
+
+\end_inset
+
+ so that 
+\begin_inset Formula 
+\begin{align}
+\lambda & =1\\
+S^{\prime}(q) & =\theta\nonumber \\
+t & =\theta q
+\end{align}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+Since 
+\begin_inset Formula $\lambda>0,$
+\end_inset
+
+ the rent left to either type is 
+\begin_inset Formula $0$
+\end_inset
+
+ so type 
+\begin_inset Formula $H$
+\end_inset
+
+ will be offered contract 
+\begin_inset Formula $C_{H}$
+\end_inset
+
+ such that 
+\begin_inset Formula $t_{H}-\theta_{H}q_{H}=0$
+\end_inset
+
+ while agent of type 
+\begin_inset Formula $L$
+\end_inset
+
+ will be offered contract 
+\begin_inset Formula $C_{L}$
+\end_inset
+
+ such that 
+\begin_inset Formula $t_{L}-\theta_{L}q_{L}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+Given that 
+\begin_inset Formula $\lambda=1,$
+\end_inset
+
+ the objective of the principal is then:
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+\begin_inset Formula 
+\begin{equation}
+\underset{q}{\max}S(q)-\theta q
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+When faced with an agent of type 
+\begin_inset Formula $H$
+\end_inset
+
+, the principal will set 
+\begin_inset Formula $q_{H}$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula 
+\begin{equation}
+S^{\prime}(q_{H})=\theta_{H}
+\end{equation}
+
+\end_inset
+
+ and when faced with an agent of type 
+\begin_inset Formula $L$
+\end_inset
+
+, he will set 
+\begin_inset Formula $q_{L}$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula 
+\begin{equation}
+S^{\prime}(q_{L})=\theta_{L}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+He will thus offer contract 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+\begin_inset Formula $C_{H}=(q_{H},\theta_{H}q_{H})$
+\end_inset
+
+ to agent of type 
+\begin_inset Formula $H$
+\end_inset
+
+ and contract 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+\begin_inset Formula $C_{L}=(q_{L},\theta_{L}q_{L})$
+\end_inset
+
+ to agent of type 
+\begin_inset Formula $L,$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+with 
+\begin_inset Formula $q_{L}=S^{'-1}(\theta_{L})$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{H}=S^{'-1}(\theta_{H}).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+The outcome of the maximization of the principal's objective function can
+ be represented graphically as follows:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page12.pdf
+	lyxscale 20
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\size normal
+The graphical derivation of the first best outcome
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Interpretation of the graph:
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+The arrows indicate the direction in which utility of the agent and of the
+ principal, respectively, are maximized.
+ Utility P for the principal is represented by the iso-utility convex function
+ such that 
+\begin_inset Formula $S(q)-t=P$
+\end_inset
+
+, which determines all combinations of 
+\begin_inset Formula $q$
+\end_inset
+
+ and 
+\begin_inset Formula $t$
+\end_inset
+
+ such that utility P is achieved.
+ Utility A for the agent is represented by iso-utility curve 
+\begin_inset Formula $t-\theta q=A$
+\end_inset
+
+.
+ In the equilibrium of the first best, A is equal to 0 for both types of
+ agents.
+ Utility for the principal is maximized at the point where the iso-utility
+ convex function of the principal is tangent with the iso-utility function
+ of the agent, i.e.
+ the point such that 
+\begin_inset Formula $t-\theta q=0$
+\end_inset
+
+ and 
+\begin_inset Formula $S(q)-t$
+\end_inset
+
+ is maximized.
+\end_layout
+
+\begin_layout Subsection
+The second best
+\end_layout
+
+\begin_layout Subsubsection
+Incentive compatibility
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+In the previous graph, one can observe that the utility of the good type
+ is higher if she chooses the first best contract of the bad type rather
+ than the contract that was destined for her.
+ Therefore, the first best is not implementable if the type of the agent
+ is not known to the principal.
+ Under the second best, each type of agent must choose willingly the contract
+ that is destined for him/her, so that the following incentive constraints
+ (`IC') must be verified:
+\begin_inset Formula 
+\begin{align}
+t_{H}-\theta_{H}q_{H} & \geq t_{L}-\theta_{H}q_{L}\tag{IC\ensuremath{_{H}}}\label{IC}\\
+t_{L}-\theta_{L}q_{L} & \geq t_{H}-\theta_{L}q_{H}\tag{IC\ensuremath{_{L}}}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+Under those conditions, type 
+\begin_inset Formula $H$
+\end_inset
+
+ chooses contract 
+\begin_inset Formula $C_{H}$
+\end_inset
+
+ and type 
+\begin_inset Formula $L$
+\end_inset
+
+ chooses contract 
+\begin_inset Formula $C_{L}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Participation constraints
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+We must also have
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+\begin_inset Formula 
+\begin{align}
+t_{H}-\theta_{H}q_{H} & \geq0\tag{IR\ensuremath{_{H}}}\\
+t_{L}-\theta_{L}q_{L} & \geq0\tag{IR\ensuremath{_{L}}}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+if we want both types of agents to participate.
+ Those are the individual rationality (`IR') constraints.
+\end_layout
+
+\begin_layout Description
+
+\size normal
+\emph on
+Notations:
+\emph default
+ Denote 
+\begin_inset Formula $U_{H}=t_{H}-\theta_{H}q_{H}$
+\end_inset
+
+ and 
+\begin_inset Formula $U_{L}=t_{L}-\theta_{L}q_{L}$
+\end_inset
+
+ and denote 
+\begin_inset Formula $\Delta=\theta_{H}-\theta_{L}>0.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+The program of the principal
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+The program of the principal is then
+\begin_inset Formula 
+\begin{align}
+\underset{t_{L},q_{L},t_{H},q_{H}}{\max} & v(S(q_{L})-t_{L})+(1-v)(S(q_{H})-t_{H})\\
+ & \text{s.t.}\nonumber \\
+U_{H} & \geq U_{L}-\Delta q_{L}\\
+U_{L} & \geq U_{H}+\Delta q_{H}\\
+U_{H} & \geq0\\
+U_{L} & \geq0
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+How can the program be solved? 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+First, note that adding up the participation constraint for both types,
+ one obtains:
+\begin_inset Formula 
+\begin{equation}
+U_{H}+U_{L}\geq U_{L}+U_{H}+\Delta(q_{H}-q_{L})
+\end{equation}
+
+\end_inset
+
+ which means that 
+\begin_inset Formula 
+\begin{equation}
+q_{H}\leq q_{L}
+\end{equation}
+
+\end_inset
+
+ The high type will produce less than the low type in the second best outcome.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Second, note that if the participation constraint on type 
+\begin_inset Formula $H$
+\end_inset
+
+ is verified and the incentive constraint for type 
+\begin_inset Formula $L$
+\end_inset
+
+ is verified, then the participation constraint for type 
+\begin_inset Formula $L$
+\end_inset
+
+ is verified.
+ The participation constraint for type 
+\begin_inset Formula $L$
+\end_inset
+
+ is thus superfluous.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Third, suppose now the incentive constraint for type 
+\begin_inset Formula $L$
+\end_inset
+
+ is binding.
+ Then 
+\begin_inset Formula $U_{L}=U_{H}+\Delta q_{H},$
+\end_inset
+
+ which, translated into the incentive constraint for type 
+\begin_inset Formula $L,$
+\end_inset
+
+ means I must have 
+\begin_inset Formula $U_{H}\geq U_{H}+\Delta(q_{H}-q_{L}),$
+\end_inset
+
+ which is always the case as 
+\begin_inset Formula $q_{H}\leq q_{L}.$
+\end_inset
+
+ Therefore, the incentive constraint for type 
+\begin_inset Formula $L$
+\end_inset
+
+ is also superfluous.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+From this, I can conclude that the participation constraint for the high
+ type will be binding (
+\begin_inset Formula $U_{H}=0$
+\end_inset
+
+) while the incentive constraint for the low type will be binding (
+\begin_inset Formula $U_{L}=\Delta q_{H}$
+\end_inset
+
+).
+ This ensures all constraints are verified while minimizing the rent given
+ out to each type.
+ Taking the two above inequalities and replacing 
+\begin_inset Formula $t_{H}$
+\end_inset
+
+ and 
+\begin_inset Formula $t_{L}$
+\end_inset
+
+ by their expression in terms of 
+\begin_inset Formula $q_{L}$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{H},$
+\end_inset
+
+ the program of the principal can thus be simplified into:
+\begin_inset Formula 
+\begin{equation}
+\underset{q_{H},q_{L}}{\max}v(S(q_{L})-\theta_{L}q_{L})+(1-v)(S(q_{H})-\theta_{H}q_{H})-v\Delta q_{H}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+Maximizing the above with respect to 
+\begin_inset Formula $q_{L}$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{H}$
+\end_inset
+
+ one obtains
+\begin_inset Formula 
+\begin{equation}
+S^{\prime}(q_{L})=\theta_{L}
+\end{equation}
+
+\end_inset
+
+ and
+\begin_inset Formula 
+\begin{equation}
+S^{\prime}(q_{H})=\theta_{H}+\frac{v}{1-v}\Delta
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+Note how the result is distorted compared to the first best maximization
+ program: There is no distortion for the good type who will produce the
+ same as in the first best, while the bad type will produce less than in
+ the first best.
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+The outcome of the maximization of the principal's objective function can
+ be represented graphically as follows:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page13.pdf
+	lyxscale 20
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\size normal
+The graphical derivation of the second best outcome
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Interpretation of the graph:
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+No rent is left to the bad type, who produces less than the optimal level.
+ The good type earns as much as what she would earn if she chose the contract
+ for the bad type, and she produces the first best (optimal) level.
+ The principal trades off between lowering the rent extracted by the good
+ type and still producing close to the efficient level.
+ By lowering the quantity asked from the bad type, the principal can decrease
+ the rent that the good type must be given.
+ This is how we go from the transfers and quantities that would be necessary
+ to attain the first best, to the transfers and quantities the principal
+ asks for at the second best optimum.
+\end_layout
+
+\begin_layout Section
+Agency and moral hazard
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+In situations with moral hazard, 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+The uncertain outcome is endogenous to the situation at hand (success or
+ failure depend on effort which depends on the contract that is signed).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+The result from the contract is a noisy signal for effort, i.e.
+ it is not possible to know what effort was exerted from the result that
+ was obtained.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+Transfers from the principal to the agent are constrained by the fact the
+ agent may have limited liability for its actions (i.e.
+ there are limits on what punishment you can impose in case of failure).
+ 
+\end_layout
+
+\begin_layout Subsection
+The model
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+Consider an agent and a principal.
+ The agent is asked to execute a task by the principal, and in that task
+ the agent may exert effort 
+\begin_inset Formula $e$
+\end_inset
+
+ either 
+\begin_inset Formula $0$
+\end_inset
+
+ (no effort) or 
+\begin_inset Formula $1$
+\end_inset
+
+ (effort).
+ The cost of effort to the agent is 
+\begin_inset Formula $\psi(0)=0$
+\end_inset
+
+ for no effort and 
+\begin_inset Formula $\psi(1)=\psi>0$
+\end_inset
+
+ for effort.
+ The utility to the agent from getting transfer 
+\begin_inset Formula $t$
+\end_inset
+
+ and exerting effort 
+\begin_inset Formula $e$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\begin{equation}
+U(t,e)=u(t)-\psi(e)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+Production, which is what the principal is interested in, can be either
+ 
+\begin_inset Formula $q_{H}$
+\end_inset
+
+ or 
+\begin_inset Formula $q_{L}$
+\end_inset
+
+, with 
+\begin_inset Formula $q_{H}>q_{L}$
+\end_inset
+
+, and the situation is such that
+\begin_inset Formula 
+\begin{align}
+\Pr(q & =q_{H}|e=0)=p_{0}\\
+\Pr(q & =q_{H}|e=1)=p_{1}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+Success probabilities depends on effort and I will assume 
+\begin_inset Formula $p_{1}>p_{0}$
+\end_inset
+
+ so that a higher effort brings about a higher probability of success --
+ otherwise, why encourage effort?.
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+The principal's utility function is 
+\begin_inset Formula 
+\begin{equation}
+V(q,t)=S(q)-t
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+with 
+\begin_inset Formula $S(q)$
+\end_inset
+
+ convex.
+ The principal offers contracts such that the transfer will be conditioned
+ on the result: 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+\begin_inset Formula $t(q_{H})\equiv t_{H}$
+\end_inset
+
+ will be paid to the agent if 
+\begin_inset Formula $q_{H}$
+\end_inset
+
+ is observed, 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+\begin_inset Formula $t(q_{L})\equiv t_{L}$
+\end_inset
+
+ will be paid if 
+\begin_inset Formula $q_{L}$
+\end_inset
+
+ is observed.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+The timing of the relationship is as follows: 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+At time 
+\begin_inset Formula $t=1,$
+\end_inset
+
+ the principal offers contracts 
+\begin_inset Formula $(t_{H},t_{L}).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+At time 
+\begin_inset Formula $t=2,$
+\end_inset
+
+ the agent accepts or reject the contract(s).
+ If the contract(s) is/are rejected, the game ends.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+At time 
+\begin_inset Formula $t=3,$
+\end_inset
+
+ the agent decides whether to exert effort or not.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+At time 
+\begin_inset Formula $t=4,$
+\end_inset
+
+ the outcome is realized 
+\end_layout
+
+\begin_layout Itemize
+
+\size normal
+At time 
+\begin_inset Formula $t=5$
+\end_inset
+
+ transfers are made according to the contract and the realization of the
+ outcome.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+The contracting timeline can thus be represented as follows:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size small
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="9">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="middle">
+<column alignment="center" valignment="middle">
+<column alignment="center" valignment="middle">
+<column alignment="center" valignment="middle">
+<column alignment="center" valignment="middle">
+<column alignment="center" valignment="middle">
+<column alignment="center" valignment="middle">
+<column alignment="center" valignment="middle">
+<column alignment="center" valignment="middle">
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $t=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $t=2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $t=3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $t=4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $t=5$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Principal offers 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Agents accepts 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Agent exerts 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Outcome is 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Payment
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $t_{H},t_{L}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+or rejects 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+effort or not 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+realized 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+is made
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+The first best outcome (perfect information on effort)
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+Suppose the principal can observe effort and thus condition payment not
+ on the outcome but on whether effeot was exerted or not.
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+His objective function is:
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+\begin_inset Formula 
+\begin{equation}
+\underset{q_{H},t_{H},q_{L},t_{L}}{\max}V=p_{1}(S(q_{H})-t_{H})+(1-p_{1})(S(q_{L})-t_{L})
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+\begin_inset Formula 
+\begin{equation}
+\text{ s.t. }p_{1}u(t_{H})+(1-p_{1})u(t_{L})-\psi\geq0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+if he wants the agent to exert effort (the constraint ensures the agent's
+ ex-post anticipated utility from accepting the contract and exerting effort
+ is positive), and
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+\begin_inset Formula 
+\begin{equation}
+\underset{q_{H},t_{H},q_{L},t_{L}}{\max}V=p_{0}(S(q_{H})-t_{H})+(1-p_{0})(S(q_{L})-t_{L})
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+\begin_inset Formula 
+\begin{eqnarray}
+\text{s.t. }p_{0}u(t_{H})+(1-p_{0})u(t_{L}) & \geq & 0
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+if instead the principal wants the agent to exert no effort (this can happen
+ if compensating for a high effort is too expensive).
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+If effort is desired, and denoting 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ the Lagrange multiplier, the Lagrangian can be written:
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+L=p_{1}(S(q_{H})-t_{H})+(1-p_{1})(S(q_{L})-t_{L})\\
++\lambda[p_{1}u(t_{H})+(1-p_{1})u(t_{L})]
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+Maximizing with respect to 
+\begin_inset Formula $t_{H}$
+\end_inset
+
+ and 
+\begin_inset Formula $t_{L}$
+\end_inset
+
+, one obtains:
+\begin_inset Formula 
+\begin{align}
+-p_{1}+\lambda p_{1}u^{\prime}(t_{H}^{\ast}) & =0\\
+-(1-p_{1})+\lambda(1-p_{1})u^{\prime}(t_{L}^{\ast}) & =0
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+This means that 
+\begin_inset Formula $t_{H}^{\ast}=t_{L}^{\ast}\equiv t_{1}^{\ast}$
+\end_inset
+
+ and 
+\begin_inset Formula $t_{1}^{\ast}$
+\end_inset
+
+ is set such that the agent gets 
+\begin_inset Formula $0$
+\end_inset
+
+ utility so 
+\begin_inset Formula $u(t_{1}^{\ast})=\psi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+The same result is obtained if the principal chooses not to induce effort,
+ but 
+\begin_inset Formula $t_{0}^{*}$
+\end_inset
+
+ is set such that 
+\begin_inset Formula $u(t_{0}^{\ast})=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+The principal will chooses to induce effort only if:
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+\begin_inset Formula 
+\begin{equation}
+p_{1}S(q_{H})+(1-p_{1})S(q_{L})-t_{1}^{\ast}\geq p_{0}S(q_{H})+(1-p_{0})S(q_{L})-t_{0}^{\ast}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+which can be rewritten:
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+\begin_inset Formula 
+\begin{equation}
+(p_{1}-p_{0})(S(q_{H})-S(q_{L}))\geq t_{1}^{\ast}-t_{0}^{\ast}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+The second best outcome
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+Suppose the agent has infinite wealth, so any 
+\begin_inset Formula $t_{L}$
+\end_inset
+
+ (punishment in case of bad outcome) can be asked for.
+ Suppose also the principal cannot observe the agent's effort or equivalently,
+ that he cannot prove effort was low.
+ Then the agent must be induced to choose the desired level of effort, so
+ incentive constraints must be verified as well as participation constraints.
+ Suppose high effort is desired.
+ The agent's incentive constraint is then such that
+\begin_inset Formula 
+\begin{equation}
+p_{1}u(t_{H})+(1-p_{1})u(t_{L})-\psi\geq p_{0}u(t_{H})+(1-p_{0})u(t_{L})
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+and the participation constraint is such that
+\begin_inset Formula 
+\begin{equation}
+p_{1}u(t_{H})+(1-p_{1})u(t_{L})-\psi\geq0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+Suppose for simplicity that 
+\begin_inset Formula $u(t)=t$
+\end_inset
+
+ (the agent is risk neutral).
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+Solving the principal's maximisation program, the two constraints (Incentive
+ and Participation) will be binding.
+ This gives a system of two equalities with two unknown,
+\begin_inset Formula 
+\begin{align}
+p_{1}t_{H}+(1-p_{1})t_{L}-\psi & =p_{0}t_{H}+(1-p_{0})t_{L}\\
+p_{1}t_{H}+(1-p_{1})t_{L}-\psi & =0
+\end{align}
+
+\end_inset
+
+ which has an unique solution:
+\begin_inset Formula 
+\begin{align}
+t_{L}^{\ast} & =-\frac{p_{0}\psi}{p_{1}-p_{0}}\\
+t_{H}^{\ast} & =\frac{(1-p_{0})\psi}{p_{1}-p_{0}}
+\end{align}
+
+\end_inset
+
+ So the expected payment for the principal is 
+\begin_inset Formula 
+\begin{equation}
+p_{1}t_{H}^{\ast}+(1-p_{1})t_{L}^{\ast}=\psi
+\end{equation}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+This is the same as would be paid if effort was observable, i.e.
+ the principal merely compensates the agent for her effort.
+ One would also see that the same expected payment (
+\begin_inset Formula $0$
+\end_inset
+
+) as in observable effort would be made in case no effort was needed.
+ This means that even with asymmetric information on effort, the first best
+ level of effort is implemented.
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+Note however this holds only when the agent is risk neutral and has infinite
+ wealth.
+ Let us now see what happens if there is a liability constraint or if the
+ agent is risk averse.
+\end_layout
+
+\begin_layout Subsubsection
+Liability constraint
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+Suppose the limited liability constraint is 
+\begin_inset Formula $L,$
+\end_inset
+
+ so the agent cannot lose more than 
+\begin_inset Formula $L.$
+\end_inset
+
+ One will then have to impose limited liability constraints such that 
+\begin_inset Formula $t_{H}>-L$
+\end_inset
+
+ and 
+\begin_inset Formula $t_{L}>-L$
+\end_inset
+
+.
+ 
+\begin_inset Formula $L$
+\end_inset
+
+ can be interpreted as the initial wealth of the agent.
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+If 
+\begin_inset Formula $-\frac{p_{0}\psi}{p_{1}-p_{0}}>-L$
+\end_inset
+
+, then the problem is unchanged (the first best outcome can be implemented).
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+If 
+\begin_inset Formula $-\frac{p_{0}\psi}{p_{1}-p_{0}}<-L$
+\end_inset
+
+, then the outcome without liability constraint cannot be achieved, and
+ one obtains that
+\begin_inset Formula 
+\begin{align}
+t_{L}^{\ast} & =-L\\
+t_{H}^{\ast} & =-L+\frac{\psi}{p_{1}-p_{0}}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+As in the previous program, 
+\begin_inset Formula $t_{H}^{\ast}=t_{L}^{\ast}+\frac{\psi}{p_{1}-p_{0}},$
+\end_inset
+
+ but 
+\begin_inset Formula $t_{L}^{\ast}$
+\end_inset
+
+ is now raised to 
+\begin_inset Formula $-L.$
+\end_inset
+
+ The agent will get a limited liability rent, as her expected utility is
+ now
+\begin_inset Formula 
+\begin{align}
+EU & =p_{1}t_{H}^{\ast}+(1-p_{1})t_{L}^{\ast}-\psi\\
+ & =p_{1}\frac{\psi}{p_{1}-p_{0}}-L-\psi\\
+ & =(p_{1}-p_{0})\frac{\psi}{p_{1}-p_{0}}-L-\psi+p_{0}\frac{\psi}{p_{1}-p_{0}}\\
+ & =-L+p_{0}\frac{\psi}{p_{1}-p_{0}}>0
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+The principal's utility is then 
+\begin_inset Formula 
+\begin{align}
+V & =p_{1}(S(q_{H})-t_{H}^{\ast})+(1-p_{1})(S(q_{L})-t_{L}^{\ast})\\
+ & =p_{1}(S(q_{H})-\frac{\psi}{p_{1}-p_{0}})+(1-p_{1})S(q_{L})-L
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+which is less than the first best.
+ Because of limited liability constraints in moral hazards problems, the
+ principal may not want to induce effort even when this would be optimal
+ in the first best with perfect observation of effort.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Risk aversion
+\end_layout
+
+\begin_layout Standard
+We assumed up to now that 
+\begin_inset Formula $u(t)=t$
+\end_inset
+
+, that is, the agent was risk neutral.
+ If the agent is risk averse, then 
+\begin_inset Formula $u(t)$
+\end_inset
+
+ is strictly concave.
+ Then the principal will want to limit the difference between 
+\begin_inset Formula $t_{L}$
+\end_inset
+
+ and 
+\begin_inset Formula $t_{H}$
+\end_inset
+
+ because this then makes the contract less risky, and thus more acceptable
+ to the agent.
+ Risk aversion thus induces a distortion from the first best, that is, there
+ are situations where the principal will not want to induce effort (it is
+ too costly to do so) even though this would be optimal under full information,
+ and would occur under risk neutrality.
+\end_layout
+
+\begin_layout Section
+Extensions
+\end_layout
+
+\begin_layout Standard
+This part examines some hidden assumptions made in the previous parts.
+ In particular, we assumed that:
+\end_layout
+
+\begin_layout Enumerate
+Agents are able to commit to fulfilling the terms of the contract they sign.
+ What happens then if agents cannot commit not to renegotiate a contract
+ once the type of the agent (adverse selection) or the outcome of his effort
+ (moral hazard) is known?
+\end_layout
+
+\begin_layout Enumerate
+A court of law could be called on to enforce the terms of the signed contracts.
+ What happens then if the principal may renege on the contract?
+\end_layout
+
+\begin_layout Standard
+We will therefore look at those issues and see how standard theory applies
+ in those alternative settings when the principal cannot commit.
+ We will also examine other possible extensions, such as what happens if
+ the principal is better informed than the agent, rather than the opposite.
+\end_layout
+
+\begin_layout Subsection
+Repeated adverse selection.
+\end_layout
+
+\begin_layout Standard
+The following model with repeated adverse selection illustrates what happens
+ if the principal cannot commit not to renegotiate after a contract is accepted
+ or after an action is taken by the agent (chapter 9, section 3, Laffont
+ and Martimort, 2002).
+ Consider thus the standard adverse selection model, and assume it is repeated
+ twice with the same agent and the same principal both period.
+\begin_inset Formula 
+\begin{equation}
+V=S(q_{1})-t_{1}+\delta(S(q_{2})-t_{2})
+\end{equation}
+
+\end_inset
+
+ is the total utility of the principal over the two periods (the second
+ period payoffs are discounted by 
+\begin_inset Formula $\delta$
+\end_inset
+
+).
+\begin_inset Formula 
+\begin{equation}
+U=t_{1}-\theta q_{1}+\delta(t_{2}-\theta q_{2})
+\end{equation}
+
+\end_inset
+
+ is the total utility of the agent over the two periods, with the second
+ period payoff discounted by 
+\begin_inset Formula $\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Assume the principal can commit not to renegotiate.
+ Then the optimal contract is to repeat the optimal one-period contract
+ in the two period.
+ However, this then calls for the bad type to produce 
+\begin_inset Formula $q_{H}^{SB}<q_{H}^{\ast}.$
+\end_inset
+
+ The principal would then gain from renegotiating after the first period,
+ once agents revealed their type through their choice of contract, so as
+ to get the bad type, 
+\begin_inset Formula $H,$
+\end_inset
+
+ to produce the first best level 
+\begin_inset Formula $q_{H}^{\ast}$
+\end_inset
+
+.
+ However, if the principal did this, the good type would then have to be
+ compensated for not taking the contract of the bad type.
+ Therefore, if the principal cannot commit not to renogotiate type 
+\begin_inset Formula $H$
+\end_inset
+
+ 's contract, then she must leave a higher surplus to the good type than
+ if it could commit.
+ 
+\end_layout
+
+\begin_layout Standard
+Denote 
+\begin_inset Formula $q_{\tau t}$
+\end_inset
+
+ and 
+\begin_inset Formula $t_{\tau t}$
+\end_inset
+
+ the quantity and transfers asked from and paid to type 
+\begin_inset Formula $\tau=H,L$
+\end_inset
+
+ in period 
+\begin_inset Formula $t=1,2$
+\end_inset
+
+.
+ For good type (L) not to choose the contract designed for the bad type
+ if the bad type's contract is due to be renegotiated in the second period
+ so the bad type would produce 
+\begin_inset Formula $q_{H}^{*}$
+\end_inset
+
+, one must have:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t_{L1}-\theta_{L}q_{L}^{\ast}+\delta(t_{L2}-\theta_{L}q_{L}^{\ast})\geq t_{H}-\theta_{L}q_{H1}+\delta(t_{H}-\theta_{L}q_{H}^{\ast})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which can be rewritten as 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+
+\begin_inset Formula 
+\[
+U_{L}\geq U_{H}+\Delta(q_{H1}+\delta q_{H}^{\ast})
+\]
+
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ with 
+\begin_inset Formula $U_{L}$
+\end_inset
+
+ 
+\begin_inset Formula $(U_{H})$
+\end_inset
+
+ the intertemporal utility of the good (bad) type, the right hand side of
+ the equation the utility of the good type if she chose the contract designed
+ for the bad type, and as usual, 
+\begin_inset Formula $\Delta=\theta_{H}-\theta$
+\end_inset
+
+
+\begin_inset Formula $_{L}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+This is to be compared with the constraint with full commitment (if the
+ principal can commit not to renegotiate) 
+\begin_inset Formula 
+\[
+U_{L}\geq U_{H}+\Delta(q_{H1}+\delta q_{H2})
+\]
+
+\end_inset
+
+ Since 
+\begin_inset Formula $q_{H}^{\ast}>q_{H2}$
+\end_inset
+
+ the first constraint is more stringent than the second, which means the
+ principal loses from his inability to not to renegotiate.
+ There may be a loss of efficiency from that situation if 
+\begin_inset Formula $\delta$
+\end_inset
+
+ is high.
+ Indeed, the principal may then prefer not to know the types of the agents
+ in the first period (and thus offer a pooling contract in the first period,
+ whereby both types choose the same contract), so as not to learn the type
+ of the agent in the first period, and thus not have any basis for a renegotiati
+on in the second period, when the optimal one period contract will be offered.
+\end_layout
+
+\begin_layout Subsection
+The hold up problem
+\end_layout
+
+\begin_layout Standard
+In the following, we explore what happens in the more serious problem where
+ the principal cannot commit not to renege on a contract.
+ This may be for example because there is no court of law that can force
+ him not to do so.
+ In a moral hazard setting, this leads to a hold up problem (chapter 9,
+ section 4, Laffont and Martimort, 2002).
+ Take indeed the standard moral hazard problem.
+ The principal would like to commit to pay more when the result is good.
+ However, after the effort is made and a high result is achieved, the principal'
+s self interest is to renege on the contract and not compensate the agent
+ for his effort.
+ This problem can happen in a wide variety of settings even when an efficient
+ court of law is present.
+ For example, this can happen if no formal contract was signed beforehand
+ or if the result to be achieved was ill-defined.
+ This hold-up problem is particularly prevalent for the State, especially
+ if the judiciary is not independent of the executive.
+ The cost of forcing the State's to abide by its commitments can indeed
+ be prohibitive.
+ It is for example too easy for the State to change its taxation policy
+ to overturn previous pro-business commitments, or to withdraw financial
+ incentives to firms that adopted socially or environmentally-responsible
+ practices once firms have changed their way of doing business.
+ 
+\end_layout
+
+\begin_layout Standard
+In those cases, the result of the principal's inability to commit not to
+ renege on a contract is even worse for the principal than in the case where
+ there was inability to commit not to renegotiate: no contract can be signed
+ with the agent and agents exert only the lowest effort level.
+ The problem may be mitigated if rather than signing contract, the agent
+ and the principal bargain after the state of nature is revealed.
+ It may also be mitigated if the agent knows what is the state of nature
+ before signing the contract and exerting effort.
+ 
+\end_layout
+
+\begin_layout Subsection
+Other extensions
+\end_layout
+
+\begin_layout Subsubsection
+Informed principal
+\end_layout
+
+\begin_layout Standard
+Situations with an informed principal are those in which it is the type
+ of the principal that matters, and this type is not known to either the
+ principal or the agent before contracting (we will see later about the
+ case where the principal knows the type).
+ The situation can be modeled as follows:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $V=S(q,\theta)-t$
+\end_inset
+
+, is the principal's payoff.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $U=u(t-\theta q)$
+\end_inset
+
+, is the payoff of the agent.
+ As can be seen, it depends on the type of the principal.
+\end_layout
+
+\begin_layout Standard
+The contracting timeline can be represented as follows:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size small
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="7">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $t=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $t=2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $t=3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $t=4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Principal offers 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Agent chooses 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Principal learns 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $q$
+\end_inset
+
+ is produced
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+contracts 
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+contract 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+type 
+\begin_inset Formula $\theta$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $t$
+\end_inset
+
+ is paid
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that to the difference of the standard incentive problem, the principal
+ must now have an incentive to reveal his own type truthfully.
+ Once the principal reveals his own type, the agent produces 
+\begin_inset Formula $q$
+\end_inset
+
+ and receive 
+\begin_inset Formula $t$
+\end_inset
+
+ as agreed in the contract for when the principal is of that specific type.
+ The situation is reversed compared to the standard, informed agent setting:
+ if the principal is of a bad type, then the first best level of production
+ will be asked, while if the principal is of a good type, then there will
+ be more production than first best optimal (chapter 9, subsection 1, Laffont
+ and Martimort, 2002).
+ Note however that if the agent is risk neutral, then the first best levels
+ of production can be achieved, while in the standard case, even if the
+ agent was risk neutral, there was still a distortion.
+\end_layout
+
+\begin_layout Standard
+In the above, we focused on a case where, at the time of offering the contract,
+ the principal did not know his own type.
+ Myerson (1983)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Myerson R.B., 1983, Mechanism Design by an Informed Principal, Econometrica
+ 51(6), 1767-1797.
+\end_layout
+
+\end_inset
+
+ examines the more complicated case where the principal knows his own type
+ before offering the contract.
+ This type of situation can happen for example in franchise contracts.
+ A potential MacDonald franchisee may know less about her business than
+ the franchiser (MacDonald), who indeed would know more about local market
+ conditions or the current success of its offering.
+ This type of situation may also apply to a job applicant when negotiating
+ an employment contract with a firm.
+ The agent will then wants to learn the type of the firm (close to bankruptcy
+ or not, for example) from the type of contract the firm offers.
+ Complex issues of signaling, as in the 
+\begin_inset Quotes els
+\end_inset
+
+lemons problem
+\begin_inset Quotes ers
+\end_inset
+
+ for example, arise, as the principal
+\begin_inset Quotes ers
+\end_inset
+
+s choice of contract may reveal his own type to the agent.
+ There are two main cases from the point of view of the theory: ones when
+ the type of the principal only enters the principal's utility function,
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Maskin E.
+ and J.
+ Tirole, 1990, The Principal-Agent Relationship with an Informed Principal:
+ The Case of Private Values, Econometrica 58(2), 379-409.
+\end_layout
+
+\end_inset
+
+ and ones when the type of the principal also enters the agent's utility
+ function.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Maskin E.
+ and J.
+ Tirole, 1992, The Principal-Agent Relationship with an Informed Principal,
+ II: Common Values, Econometrica 60(1), 1-42.
+ 
+\end_layout
+
+\end_inset
+
+ That later case is the one we looked at above.
+\end_layout
+
+\begin_layout Subsubsection
+Mixed models
+\end_layout
+
+\begin_layout Standard
+Seldom does one have pure adverse selection or pure moral hazard.
+ In most situations, there is either adverse selection followed by moral
+ hazard or moral hazard followed by adverse selection (chapter 7, Laffont
+ and Martimort, 2002).
+ Insurance is a typical example: the effort by the agent in avoiding accidents
+ may depends on its type, her tendency for recklessness for example.
+ In this case, adverse selection (type) precedes moral hazard (effort).
+ 
+\end_layout
+
+\begin_layout Standard
+The adverse selection problem will be exarcebated by moral hazard (compounding
+ factor), as the bad, reckless type will do less effort to avoid accidents,
+ thus increasing the discrepancy in terms of probability of a bad outcome
+ between good and bad type.
+ In the opposite case, where moral hazard is 
+\emph on
+followed by
+\emph default
+ adverse selection (for example, when effort to get an education also changes
+ one's type in a way that is favorable), then the moral hazard problem may
+ be weakened by adverse selection, as agents may exert more effort in order
+ to acquire a good type, and not only just to increase the probability of
+ a good outcome.
+\end_layout
+
+\begin_layout Subsubsection
+Limits to contractual complexity
+\end_layout
+
+\begin_layout Standard
+Contracts are generally simpler than what theory would call for.
+ Laffont and Matoussi (1995)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Laffont J-J.
+ and M.S.
+ Matoussi, 1995, Moral Hazard, Financial Constraints and Sharecropping in
+ El Oulja, Review of Economic Studies 62, 381-399.
+\end_layout
+
+\end_inset
+
+ examine real world sharecropping contracts and assess the loss of efficiency
+ due to their relative simplicity.
+ Are simple contracts signed because there is too much of a cost to write
+ complicated contracts? What then does that cost consist in? Tirole (2009)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Tirole J., 2009, Cognition and Incomplete Contracts, American Economic Review
+ 99(1), 265-294.
+\end_layout
+
+\end_inset
+
+ is a recent contribution exploring this topic.
+\end_layout
+
+\begin_layout Subsubsection
+The information structure
+\end_layout
+
+\begin_layout Standard
+It was assumed that the agent knew its own type (adverse selection), or
+ that it was able to choose its own level of effort (moral hazard).
+ What happens now if the participants can choose what information they have
+ access to and at what stage? This calls for a design of the contracts informati
+onal structure as well as of the contracts.
+ It then becomes necessary to motivate information acquisition by the agent
+ and/or the principal.
+\end_layout
+
+\begin_layout Section
+The revelation principle.
+\end_layout
+
+\begin_layout Standard
+In adverse selection problems we assumed up to now that the principal would
+ offer one contract (or less) for each different type of agent.
+ For example, with two types, the principal would offer either:
+\end_layout
+
+\begin_layout Itemize
+Two different contract that would be such that each type would choose a
+ different one (the contracts are 
+\begin_inset Quotes els
+\end_inset
+
+separating
+\begin_inset Quotes ers
+\end_inset
+
+ both types), or it would offer only 
+\end_layout
+
+\begin_layout Itemize
+One contract that both types would choose (the contract is 
+\begin_inset Quotes els
+\end_inset
+
+pooling
+\begin_inset Quotes ers
+\end_inset
+
+ both types).
+ 
+\end_layout
+
+\begin_layout Itemize
+One contract such that only one type would accept a contract (the contract
+ is excluding one type).
+ The other type chose the 
+\begin_inset Quotes els
+\end_inset
+
+no contract
+\begin_inset Quotes ers
+\end_inset
+
+ option 
+\begin_inset Formula $C=(0,0)$
+\end_inset
+
+ that gave it its reservation utility.
+ 
+\end_layout
+
+\begin_layout Standard
+In the case of separating contracts, as each type chose a different contract,
+ the principal gained information on the agents
+\begin_inset Quotes ers
+\end_inset
+
+ types from their choice of contract.
+ 
+\end_layout
+
+\begin_layout Standard
+This section re-examines the very simple setting introduced in the lecture
+ on adverse selection to examine whether it could ever be beneficial for
+ the principal to offer a third or more contracts, offer more options than
+ simply quantity and transfer 
+\begin_inset Formula $(q,t)$
+\end_inset
+
+ contracts or asking the agent for more information than simply their choice
+ of contract.
+\end_layout
+
+\begin_layout Standard
+Stating the above in another way, we restricted ourselves up to now to 
+\emph on
+Truthful Direct Revelation Mechanisms (
+\begin_inset Quotes els
+\end_inset
+
+DRM
+\begin_inset Quotes ers
+\end_inset
+
+)
+\emph default
+ whereby:
+\end_layout
+
+\begin_layout Enumerate
+The principal offered a menu of contract 
+\begin_inset Formula $C(\theta)=(q(\theta),t(\theta))$
+\end_inset
+
+, depending on 
+\begin_inset Formula $\theta$
+\end_inset
+
+, the type announced by the agent.
+ This is the 
+\emph on
+mechanism
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+Agents were only required to 
+\emph on
+directly reveal
+\emph default
+ a type, so agent of type 
+\begin_inset Formula $\theta$
+\end_inset
+
+ who would announce 
+\begin_inset Formula $\theta^{\prime}$
+\end_inset
+
+ would produces 
+\begin_inset Formula $q(\theta^{\prime})$
+\end_inset
+
+ and get 
+\begin_inset Formula $t(\theta^{\prime})$
+\end_inset
+
+ .
+ Her utility was then 
+\begin_inset Formula $U(\theta,\theta^{\prime})=t(\theta^{\prime})-\theta q(\theta^{\prime})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The principal designed her contracts such that agent of type 
+\begin_inset Formula $\theta$
+\end_inset
+
+ would announce her type was 
+\begin_inset Formula $\theta$
+\end_inset
+
+ (
+\emph on
+truthful
+\emph default
+) and got contract 
+\begin_inset Formula $C(\theta)$
+\end_inset
+
+.
+ This was guaranteed by the incentive constraint:
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+U(\theta,\theta)=t(\theta)-\theta q(\theta)\geq U(\theta,\theta^{\prime})=t(\theta^{\prime})-\theta q(\theta^{\prime})
+\end{equation}
+
+\end_inset
+
+ for any 
+\begin_inset Formula $\theta'\neq\theta$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+In the case where there was for example ‘bunching
+\begin_inset Quotes ers
+\end_inset
+
+ or pooling of type 
+\begin_inset Formula $\theta$
+\end_inset
+
+ and 
+\begin_inset Formula $\theta'$
+\end_inset
+
+ , there was no loss for the agent in announcing 
+\begin_inset Formula $\theta$
+\end_inset
+
+, rather than for example 
+\begin_inset Formula $\theta'$
+\end_inset
+
+, as 
+\begin_inset Formula $C(\theta)=C(\theta')$
+\end_inset
+
+.
+ This means there was at least weak incentive to reveal one's type.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+This part will prove that the above type of solution, in terms of 
+\emph on
+truthful DRM
+\emph default
+ is general, that is, it is never beneficial to offer more contracts than
+ there are types (principle of economy), there is no point in asking the
+ agent for more than to just announce a type (or for more than just choosing
+ a contract), and there is no loss in generality in looking only at DRM
+ where agents announce their type truthfully.
+ 
+\end_layout
+
+\begin_layout Standard
+Obviously, if the only communication between the agent and the principal
+ is to tell one's type (or another type), then there can be only so many
+ contracts as there are types.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Unless, to the announcement of a type, the principal offers a contract chosen
+ at random between a number of contracts.
+ But then, among those contracts, there must be one that gives higher utility
+ to the principal than another, given the announced type, so the principal
+ would be better off not choosing randomly.
+\end_layout
+
+\end_inset
+
+ In order to test the principle of economy, let
+\begin_inset Quotes ers
+\end_inset
+
+s thus consider a set of messages 
+\begin_inset Formula $M$
+\end_inset
+
+ that can be transmitted by the agent to the principal.
+ Those messages can be the choice of contract, the type of the agent, or
+ any other information.
+ The mechanism is then of the form 
+\begin_inset Formula $C:\: M\rightarrow A$
+\end_inset
+
+, with 
+\begin_inset Formula $A$
+\end_inset
+
+ the set of allocations 
+\begin_inset Formula $(q,\: t)$
+\end_inset
+
+.
+ This means that to any message 
+\begin_inset Formula $m$
+\end_inset
+
+ in 
+\begin_inset Formula $M$
+\end_inset
+
+, the function 
+\begin_inset Formula $C$
+\end_inset
+
+ associates an allocation (contract) 
+\emph on
+s.t.
+
+\emph default
+ 
+\begin_inset Formula $C(m)=(q(m),\: t(m))$
+\end_inset
+
+.
+ Agent 
+\begin_inset Formula $\theta$
+\end_inset
+
+ will then rationally choose to communicate the message 
+\begin_inset Formula $m^{*}(\theta$
+\end_inset
+
+) that maximizes her surplus, that is 
+\begin_inset Formula 
+\begin{equation}
+m^{\ast}(\theta)=\underset{m^{\prime}}{\arg\max}\{t(m^{\prime})-\theta q(m^{\prime})\}.\label{eq:message}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\emph on
+revelation principle
+\emph default
+, which we introduce below, tells us that there is no need for such complication
+ in the mechanism, so 
+\begin_inset Formula $(1)$
+\end_inset
+
+ each agent can limit her communication to announcing her type (rather than
+ some more general message 
+\begin_inset Formula $m$
+\end_inset
+
+), and 
+\begin_inset Formula $(2)$
+\end_inset
+
+ there is also no need to consider mechanisms whereby an agent would announce
+ a type different from her own.
+ 
+\end_layout
+
+\begin_layout Standard
+Denoting 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+
+\begin_inset Formula $\Theta$
+\end_inset
+
+ the set of types, 
+\begin_inset Formula $(1)$
+\end_inset
+
+ is shown by saying that 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+instead of having a mechanism such that one type send her optimal message
+ and the message maps into an allocation 
+\begin_inset Formula $A$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+\Theta\overset{m^{\ast}(\theta)}{\rightarrow}M\overset{C(m)}{\rightarrow}A
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+one can simply consider 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+
+\begin_inset Formula $C'(\theta)=C\circ m^{\ast}(\theta)$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ whereby the principal replaces 
+\begin_inset Formula $C$
+\end_inset
+
+ by the equivalent menu of contract 
+\begin_inset Formula $C'$
+\end_inset
+
+ that maps types directly into allocations: 
+\begin_inset Formula 
+\begin{equation}
+\Theta\overset{C'(\theta)=C\circ m^{\ast}(\theta)}{\rightarrow}A
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(2)$
+\end_inset
+
+ is shown by saying we can limit ourselves to 
+\emph on
+truthful direct revelation mechanism
+\emph default
+, whereby agent announce their own type.
+ Indeed, replacing 
+\begin_inset Formula $m^{\prime}$
+\end_inset
+
+ by 
+\begin_inset Formula $m^{\ast}(\theta^{\prime})$
+\end_inset
+
+ in equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:message"
+
+\end_inset
+
+ one obtains:
+\begin_inset Formula 
+\begin{align}
+m^{\ast}(\theta) & =\underset{m^{\prime}}{\arg\max}\{t(m^{\prime})-\theta q(m^{\prime})\}\\
+ & =\underset{\theta^{\prime}}{\arg\max}\{t(m^{\ast}(\theta^{\prime}))-\theta q(m^{\ast}(\theta^{\prime}))]
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and since 
+\begin_inset Formula $t(m^{\ast}(\theta))=t'(\theta)$
+\end_inset
+
+ under the menu of contract 
+\begin_inset Formula $C'$
+\end_inset
+
+ introduced above, this means that in the same way as the agent's message
+ truthfully revealed the type of the agent under contract 
+\emph on
+
+\begin_inset Formula $C$
+\end_inset
+
+
+\emph default
+, the type announced under contract 
+\emph on
+
+\begin_inset Formula $C'$
+\end_inset
+
+
+\emph default
+ is truthful.
+ 
+\end_layout
+
+\begin_layout Standard
+Intuitively, suppose the contracts offering were such that an agent of type
+ 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is better off announcing she is of type 
+\begin_inset Formula $\theta'\neq\theta$
+\end_inset
+
+ (all other agents announce truthfully).
+ Then this contract offering is equivalent to another contract offering
+ that gets rid of the contract that is assigned to an agent that announces
+ she is of type 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ Under that new contract offering, agents 
+\begin_inset Formula $\theta$
+\end_inset
+
+ and 
+\begin_inset Formula $\theta'$
+\end_inset
+
+ are pooled into the same contract.
+ This new contract offering is equivalent to a contract offering such that
+ whether you announce your type is 
+\begin_inset Formula $\theta$
+\end_inset
+
+ or 
+\begin_inset Formula $\theta'$
+\end_inset
+
+, you are assigned the same contract.
+ And in this case, agent of type 
+\begin_inset Formula $\theta$
+\end_inset
+
+ may as well announce she is of type 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ Therefore, by extension, any contract offering that is not a truthful DRM
+ has an equivalent that is a truthful DRM.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The following introduces an example (auctions) where the revelation principle
+ can be used to great effect to simplify and solve apparently intractable
+ problems.
+ We also consider limitations to the truthful DRM in voting problems, where
+ there are many agents and agents know not only their own type, but also
+ know others' types.
+\end_layout
+
+\begin_layout Subsection
+Application: Auctions
+\end_layout
+
+\begin_layout Standard
+We saw in the game theory part of this course that offering agents to play
+ second price auctions resulted in a DRM where each agent announced her
+ type (i.e.
+ her valuation for the good).
+ If she won (her valuation was the highest), she paid the second highest
+ announced valuation.
+ First price auction however did not result in a DRM: agents, rather than
+ announcing their own valuation, would announce half their own valuation
+ (indeed, each agent would optimally bid half her valuation for the good).
+ However, first price auctions are implementable through the following DRM:
+ agents announce their own type (valuation for the good), and pay half of
+ that valuation if they win.
+ More generally, the revelation principle is useful in the context of auctions
+ as it shows there is no point in studying such and such specific mechanism
+ (first price, second price, loser pays, etc.), as one can limit oneself
+ to simple, direct revelation mechanism, knowing that they are the equivalent
+ of the more complicated designs.
+\end_layout
+
+\begin_layout Subsection
+Voting mechanisms and limits to truthful DRMs
+\end_layout
+
+\begin_layout Standard
+What we said up to now was that a principal who wished to make a decision
+ when faced with informed agents could limit himself to considering only
+ mechanisms (ways to reach a decision) that are truthful DRMs.
+ However, this does not mean that such mechanisms will have any desirable
+ properties, or even that they will exist.
+ 
+\end_layout
+
+\begin_layout Standard
+In order to illustrate this point, consider the following collective decision
+ problem.
+ There are three agents, 
+\emph on
+a
+\emph default
+, 
+\emph on
+b
+\emph default
+ and 
+\emph on
+c
+\emph default
+ who have to collectively choose between option, 
+\begin_inset Formula $x,$
+\end_inset
+
+ 
+\begin_inset Formula $y$
+\end_inset
+
+, 
+\begin_inset Formula $z$
+\end_inset
+
+ or 
+\emph on
+w
+\emph default
+.
+ Suppose agents rank options according to the following table:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Preferences 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x\succ y\succ z\succ w$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Agents 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+b
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x\succ y\succ z\succ w$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+c
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $z\succ y\succ x\succ w$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this example, agent 
+\emph on
+b
+\emph default
+ ranks option 
+\emph on
+x
+\emph default
+ as best, 
+\emph on
+y
+\emph default
+ as second best, 
+\emph on
+z
+\emph default
+ as second worst and 
+\emph on
+w
+\emph default
+ as worst.
+ 
+\end_layout
+
+\begin_layout Standard
+1) Suppose a principal 
+\emph on
+knows the agents' preferences
+\emph default
+ and wishes to design a mechanism such that the chosen option will maximize
+ collective welfare.
+ In this case, this can be interpreted as minimizing the sum of the rank
+ of the option chosen across all agents.
+ This is the
+\emph on
+ Borda rule
+\emph default
+, named for Jean-Charles de Borda, who devised the system in 1770 for elections
+ to the French Academy of Sciences.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+de Borda J-C., 1781, Mémoires sur les élections au scrutin, Histoire de l’Académi
+e Royale des Sciences, Paris.
+\end_layout
+
+\end_inset
+
+ Choosing 
+\emph on
+x
+\emph default
+ sums up to 5.
+ 
+\emph on
+y
+\emph default
+ sums up to 
+\emph on
+6
+\emph default
+.
+ 
+\emph on
+z
+\emph default
+ sums up to 
+\emph on
+7
+\emph default
+ and 
+\emph on
+w
+\emph default
+ sums up to 
+\emph on
+12
+\emph default
+.
+ The optimal decision would thus be 
+\emph on
+x
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+2) Suppose now however that the principal 
+\emph on
+does not know the ranking of each option
+\emph default
+ by each agent.
+ Suppose however that the agents know their own rankings, and the rankings
+ of others.
+ One could then offer agents to choose according to the Borda rule.
+ Each agent should announce (secretly, that is, only to the principal) a
+ ranking of alternatives.
+ The principal should choose the option that minimizes the sum of the rank
+ of the alternatives across all agents.
+\end_layout
+
+\begin_layout Standard
+Suppose thus that under this mechanism, all agents announce their rankings
+ of options truthfully.
+ Then as seen above, option 
+\emph on
+x
+\emph default
+ would be chosen.
+ However, agent 
+\emph on
+c
+\emph default
+ could change to announcing 
+\begin_inset Formula $y\succ z\succ w\succ x$
+\end_inset
+
+ instead of 
+\begin_inset Formula $z\succ y\succ x\succ w$
+\end_inset
+
+, thus lowering the overall rank of 
+\emph on
+x
+\emph default
+ and increasing the rank of 
+\emph on
+y.
+ 
+\emph default
+The announcements would then be as follows:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Preferences 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x\succ y\succ z\succ w$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Agents 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+b
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x\succ y\succ z\succ w$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+c
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y\succ z\succ w\succ x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+y
+\emph default
+ now scores 
+\emph on
+5
+\emph default
+, while 
+\emph on
+x
+\emph default
+ scores 6, so that by this manipulation, 
+\emph on
+c
+\emph default
+ gets its second preferred choice adopted, rather than its third choice.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+To the credit of Borda, he knew his scheme was subject to manipulation,
+ saying 
+\begin_inset Quotes els
+\end_inset
+
+My scheme is intended only for honest men
+\begin_inset Quotes ers
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ Anticipating this, 
+\emph on
+a
+\emph default
+ or 
+\emph on
+b
+\emph default
+ could change their choice, leading to a cycle of changes away from the
+ truth.
+ 
+\end_layout
+
+\begin_layout Standard
+It is possible to generalize from this, and to say that one cannot implement
+ a truthful DRM in such a voting situation, 
+\emph on
+except for the dictatorial rule
+\emph default
+ (one agent is given the role of a dictator and chooses for others.
+ He then chooses his most preferred option.
+ This is a DRM).
+ Obviously, this dictatorial rule is very inefficient, since it fits the
+ preference of only one person.
+\end_layout
+
+\begin_layout Standard
+This is the subject of the Gibbard-Satterthwaite theorem (Chapter 
+\emph on
+23.C
+\emph default
+ of the Mas-Colell),
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Gibbard A., 1973, Manipulation of Voting Schemes: A General Result, Econometrica
+ 41, 587-601.
+\begin_inset Newline newline
+\end_inset
+
+Satterthwaite M.A., 1975, Strategy-Proofness and Arrow’s Conditions: Existence
+ and Correspondence Theorems for Voting Procedures and Social Welfare Functions,
+ Journal of Economic Theory 10, 187-217.
+\end_layout
+
+\end_inset
+
+ which is similar (if not identical)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Reny P.J., 2000, Arrow’s Theorem and the Gibbard-Satterthwaite Theorem: A
+ Unified Approach, University of Chicago Working Paper.
+\end_layout
+
+\end_inset
+
+ to the very interesting Arrow's impossibility theorem (Chapter 
+\emph on
+21.C
+\emph default
+ of the Mas-Colell).
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Arrow K.J., 1950, A Difficulty in the Concept of Social Welfare, Journal of
+ Political Economy 58(4), 328-346.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+This means that there is no hope for a rule that would lead the principal
+ to choose the best option for all possible rankings of the options by all
+ agents.
+ This is because any rule could be subject to manipulation under some circumstan
+ces; some agents would prefer to lie about their type (ranking of alternatives).
+ 
+\end_layout
+
+\begin_layout Standard
+While this is true if agents know each other's type (ranking), there are
+ truthful DRM in Bayesian strategies if agents know their own type (ranking),
+ but do not know the type (ranking) of the other agents (Chapter 
+\emph on
+23.D
+\emph default
+ of the Mas-Colell).
+ In that case there are mechanisms such that the agents announce their type
+ truthfully given their 
+\emph on
+expectation
+\emph default
+ (the average) of what the other agents
+\begin_inset Quotes ers
+\end_inset
+
+ types will be.
+ Note that to the different of truthful DRM that we looked at up to now,
+ where the agent would play the same whathever his belief about other agents'
+ types (truthful DRMs in dominant strategies), truthful DRM in Bayesian
+ strategies lead the agent to play differently depending on his belief about
+ other agents' type.
+ Truthful DRM in Bayesian strategies are thus less robust than truthful
+ DRMs in dominant strategies, as their outcome will depend on agents' beliefs,
+ which may be arbitrary and out of step with reality.
+\end_layout
+
+\end_body
+\end_document

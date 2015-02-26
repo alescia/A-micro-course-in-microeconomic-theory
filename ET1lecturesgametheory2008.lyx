@@ -1,0 +1,7945 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+This section aims to present essential tools for predicting players' actions
+ in a range of strategic situations.
+ By order of complexity, we will study strategic form games, where players
+ choose actions at the same time so there is no conditioning of actions
+ based on the action of others, extensive form games where players choose
+ actions in succession but know what action was taken by others previously
+ so there is no uncertainty, and finally Bayesian games where players choose
+ action in succession but are not certain what the other played previously.
+ We will also cover repeated games under full information, where players
+ condition their action on their observation of what was played in a previous
+ stage of the game.
+\end_layout
+
+\begin_layout Standard
+The lecture builds on the analysis of one single game, a coordination game,
+ which is made progressively more complex so as to introduce new concepts.
+ Those include the concept of dominant strategy, Nash equilibrium, mixed
+ strategy Nash equilibrium, backward induction, subgame perfect Nash equilibrium
+, Bayesian Nash equilibrium and forward induction.
+ A few other games are introduced, includings games of auctions (to illustrate
+ the use of Bayesian Nash equilibrium concepts) and the Prisoners' dilemma
+ (in relation to infinitely repeated games).
+\end_layout
+
+\begin_layout Standard
+This lecture does not introduce many applications of game theory, as it
+ is expected the student will encounter applications relevant to his or
+ her area of specialization further on in the course of his or her MSc.
+ Rather, the lecture aims to give good mastery of notations and techniques
+ for solving a wide range of games.
+\end_layout
+
+\begin_layout Section
+Readings: 
+\end_layout
+
+\begin_layout Subsection
+Textbook reading:
+\end_layout
+
+\begin_layout Itemize
+Kreps, Chs.
+ 11-14 
+\end_layout
+
+\begin_layout Itemize
+Varian, Ch.
+ 15 
+\end_layout
+
+\begin_layout Itemize
+Mas-Colell, Chs.
+ 7-9
+\end_layout
+
+\begin_layout Standard
+Among the many specialist text books which are currently available, by degree
+ of difficulty, one finds:
+\end_layout
+
+\begin_layout Itemize
+Carmichael F., 2005, A Guide to Game Theory, FT Prentice Hall (less advanced)
+ 
+\end_layout
+
+\begin_layout Itemize
+Gibbons R., 1992, A Primer in Game Theory, FT Prentice Hall (more advanced)
+ 
+\end_layout
+
+\begin_layout Itemize
+Fudenberg D.
+ and J.
+ Tirole, 1991, Game Theory, MIT Press (very advanced)
+\end_layout
+
+\begin_layout Subsection
+Articles
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Some articles in this list were contributed by previous teachers in MSc
+ Economic Theory 1 at the UEA.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Cho I.-K.
+ and D.
+ Kreps, 1987, Signalling Games and Stable Equilibria, Quarterly Journal
+ of Economics 102, 179-222.
+ 
+\end_layout
+
+\begin_layout Itemize
+Cho I.-K.
+ and J.
+ Sobel, 1990, Strategic Stability and Uniqueness in Signalling Games, Journal
+ of Economic Theory 50, 381-413.
+ 
+\end_layout
+
+\begin_layout Itemize
+Geanakoplos J., 1992, Common Knowledge, The Journal of Economic Perspectives
+ 6, 53-82.
+ 
+\end_layout
+
+\begin_layout Itemize
+Goeree J.K.
+ and C.A.
+ Holt, 2001, Ten Little Treasures of Game Theory and Ten Intuitive Contradiction
+s, American Economic Review 91(5), 1402-1422.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+This is an article that is entertaining and easy to read about how what
+ people play may detract from Nash equilibria, though in predictable ways.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Mailath G.J., L.
+ Samuelson and M.
+ Swinkels, 1993, Extensive form reasoning in normal form games, Econometrica
+ 61, 273-302.
+ 
+\end_layout
+
+\begin_layout Itemize
+Palacios-Huerta I., 2003, Professionals play minimax, Review Of Economic
+ Studies 70(2), 395-415.
+ 
+\end_layout
+
+\begin_layout Itemize
+Rubinstein A., 1991, Comments on the Interpretation of Game Theory, Econometrica
+ 59, 909-924.
+ 
+\end_layout
+
+\begin_layout Itemize
+Shaked A., 1982, Existence and Computation of Mixed Strategy Nash Equilibrium
+ for 3-Firms Location Problem, Journal of Industrial Economics 31, 93-96.
+ 
+\end_layout
+
+\begin_layout Itemize
+Van Damme E., 1989, Stable equilibria and forward induction, Journal of Economic
+ Theory 48(2), 476-496.
+\end_layout
+
+\begin_layout Section
+Strategic form games
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Definition:
+\emph default
+ A strategic form game is defined by:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Players: The set 
+\begin_inset Formula $N={1,...,i,...,n}$
+\end_inset
+
+ of agents who play the game, for example: Adelina and Rocco.
+\end_layout
+
+\begin_layout Enumerate
+Strategies: For each 
+\begin_inset Formula $i\in N$
+\end_inset
+
+, I define the set of strategies 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ with typical element 
+\begin_inset Formula $s_{i}$
+\end_inset
+
+ available to agent 
+\begin_inset Formula $i$
+\end_inset
+
+, for example, {Cooperate, Defect}.
+\end_layout
+
+\begin_layout Enumerate
+Payoffs: Denote 
+\begin_inset Formula $S=(S{}_{1},...,S_{i},...,S_{n})$
+\end_inset
+
+ the set of all strategies available to all the players, for example ({Cooperate
+, Defect},{Cooperate, Defect}).
+\end_layout
+
+\begin_layout Standard
+To each strategy profile 
+\begin_inset Formula $s=({s_{1},...,s_{i},...,s_{n})}$
+\end_inset
+
+ in 
+\begin_inset Formula $S$
+\end_inset
+
+, for example (Cooperate, Defect), one associates payoff 
+\begin_inset Formula $u{}_{i}(s)$
+\end_inset
+
+ corresponding to that combination of strategies.
+ 
+\begin_inset Formula $u=({u_{1},...,u_{i},...,u_{n})}$
+\end_inset
+
+ is the set of payoffs of the game, defined for all 
+\begin_inset Formula $s$
+\end_inset
+
+ in 
+\begin_inset Formula $S.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features>
+<column alignment="left" valignment="top" width="0">
+<row topspace="default" bottomspace="default">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $G={N,S,u}$
+\end_inset
+
+ defines a strategic form game.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+
+\emph on
+Notation:
+\emph default
+ One will denote 
+\begin_inset Formula $s_{-i}=\{{s_{1},...,s_{i-1},s_{i+1},...,s_{n}}\}$
+\end_inset
+
+ the set of actions taken by agents other than 
+\begin_inset Formula $i$
+\end_inset
+
+ in the strategy profile 
+\begin_inset Formula $s$
+\end_inset
+
+ and 
+\begin_inset Formula $S_{-i}=\{{S_{1},...,S_{i-1},S_{i+1},...,S_{n}}\}$
+\end_inset
+
+ the set of strategies available to players other than 
+\begin_inset Formula $i.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Example:
+\emph default
+ The Prisoners' Dilemma
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Players 
+\begin_inset Formula $N=1{,2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Strategies 
+\begin_inset Formula $S_{i}={C,D}$
+\end_inset
+
+, 
+\begin_inset Formula $i=1,2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Payoffs 
+\begin_inset Formula $u_{1}(C,D)=u_{2}(D,C)=-6$
+\end_inset
+
+, 
+\begin_inset Formula $u_{1}(C,C)=u_{1}(C,C)=-1$
+\end_inset
+
+, 
+\begin_inset Formula $u_{1}(D,C)=u_{2}(C,D)=0$
+\end_inset
+
+ and 
+\begin_inset Formula $u_{1}(D,D)=u_{2}(D,D)=-4$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The game can be represented in normal form as follows:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1,-1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-6,0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,-6 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-4,-4 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Dominance
+\end_layout
+
+\begin_layout Standard
+The following definitions introduce the concept of a strictly dominant strategy
+ equilibrium.
+ In a strictly dominant strategy equilibrium, players play their strategy
+ irrespective of the action of others.
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Definition:
+\emph default
+ Strategy 
+\begin_inset Formula $s_{i}\in S_{i}$
+\end_inset
+
+ strictly dominates strategy 
+\begin_inset Formula $s_{i}^{\prime}\neq s_{i}$
+\end_inset
+
+ in 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ for player 
+\begin_inset Formula $i$
+\end_inset
+
+ if 
+\begin_inset Formula $u_{i}(s_{i},s_{-i})>u_{i}(s_{i}^{\prime},s_{-i})$
+\end_inset
+
+ for all 
+\begin_inset Formula $s_{-i}$
+\end_inset
+
+ in 
+\begin_inset Formula $S_{-i}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $s_{i}$
+\end_inset
+
+ strictly dominates another strategies 
+\begin_inset Formula $s'_{i}$
+\end_inset
+
+, then that strategy is strictly dominated and can be eliminated from considerat
+ion by 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Definition:
+\emph default
+ Strategy 
+\begin_inset Formula $s_{i}^{\prime}$
+\end_inset
+
+ is strictly dominated if there is an 
+\begin_inset Formula $s_{i}\in S_{i}$
+\end_inset
+
+ that strictly dominates it.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $s_{i}$
+\end_inset
+
+ strictly dominates all other strategies, then it is strictly dominant.
+ Note that 
+\begin_inset Formula $s_{i}$
+\end_inset
+
+ is by definition unique.
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Definition:
+\emph default
+ 
+\begin_inset Formula $s_{i}\in S_{i}$
+\end_inset
+
+ is strictly dominant for 
+\begin_inset Formula $i$
+\end_inset
+
+ if it strictly dominates all 
+\begin_inset Formula $s_{i}^{\prime}\neq s_{i}$
+\end_inset
+
+ in 
+\begin_inset Formula $S_{i}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+An equilibrium in strictly dominant strategies exists if all players have
+ a strictly dominant strategy.
+ Note that from the above, a strictly dominant strategy is necessarily unique.
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Definition:
+\emph default
+ 
+\begin_inset Formula $s^{\ast}\in S$
+\end_inset
+
+ is a strictly dominant strategy equilibrium if 
+\begin_inset Formula $u_{i}(s_{i}^{\ast},s_{-i})>u_{i}(s_{i},s_{-i})$
+\end_inset
+
+ for all players 
+\begin_inset Formula $i\in N$
+\end_inset
+
+ and for all strategy profiles 
+\begin_inset Formula $s_{-i}\in S_{-i},$
+\end_inset
+
+ that is, if all elements of 
+\begin_inset Formula $s^{\ast}$
+\end_inset
+
+ are strictly dominant strategies.
+ 
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Example:
+\emph default
+ The strictly dominant strategy equilibrium in the Prisoners' Dilemma is
+ {D,D}.
+ Indeed, D is a strictly dominant strategy for player 1 as 
+\begin_inset Formula $u_{1}(D,C)>u_{1}(C,C)$
+\end_inset
+
+ and 
+\begin_inset Formula $u_{1}(D,D)>u_{1}(C,D)$
+\end_inset
+
+.
+ The same holds for player 
+\begin_inset Formula $2.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Remark:
+\emph default
+ One can also define weak dominance as follows: Strategy 
+\begin_inset Formula $s_{i}\in S_{i}$
+\end_inset
+
+ weakly dominates (or simply 
+\begin_inset Quotes grd
+\end_inset
+
+dominates
+\begin_inset Quotes erd
+\end_inset
+
+) strategy 
+\begin_inset Formula $s_{i}^{\prime}\neq s_{i}$
+\end_inset
+
+ in 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ for player 
+\begin_inset Formula $i$
+\end_inset
+
+ if 
+\begin_inset Formula $u_{i}(s_{i},s_{-i})\geq u_{i}(s_{i}^{\prime},s_{-i})$
+\end_inset
+
+ for all 
+\begin_inset Formula $s_{-i}$
+\end_inset
+
+ in 
+\begin_inset Formula $S_{-i}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Iterated delection of strictly dominated strategies
+\end_layout
+
+\begin_layout Standard
+A strategy 
+\begin_inset Formula $s_{i}^{\prime}$
+\end_inset
+
+ that is strictly dominated will not be part of any equilibrium of the game.
+ One can therefore exclude strictly dominated strategies from the set of
+ available strategies.
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Example:
+\emph default
+ Consider the following example:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+U 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,3 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1,6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5,3 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,-5 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7,4 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+M is strictly dominated by L.
+ L is strictly dominated by R.
+ Both L and M can thus be eliminated.
+ U is only weakly dominated by D, as it obtains the same payoff as D when
+ 2 plays M.
+ It cannot thus be eliminated from the set of available strategies.
+\end_layout
+
+\begin_layout Standard
+One obtains the following remaining game:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+U 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1,6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7,4 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In that remaining game, U is strictly dominated by D.
+ The dominant strategy equilibrium of the game, obtained by iterated deletion
+ of strictly dominated strategies, is thus (
+\begin_inset Formula $D,R$
+\end_inset
+
+)
+\begin_inset Formula $.$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Games with a strictly dominant strategy equilibrium are of limited interest.
+ Indeed, in so far as players' actions are not dependent on others' action,
+ those games cannot properly be called strategic.
+ We introduce in the following part a concept, that of Nash equilibrium,
+ which is of interest in proper strategic games.
+\end_layout
+
+\begin_layout Subsection
+Nash equilibrium
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Definition:
+\emph default
+ A Nash equilibrium (
+\begin_inset Quotes els
+\end_inset
+
+NE
+\begin_inset Quotes ers
+\end_inset
+
+) is a strategy profile 
+\begin_inset Formula $s^{\ast}$
+\end_inset
+
+ such that for every player 
+\begin_inset Formula $i$
+\end_inset
+
+, 
+\begin_inset Formula $u_{i}(s_{i}^{\ast},s_{-i}^{\ast})\geq u_{i}(s_{i},s_{-i}^{\ast})$
+\end_inset
+
+ for all 
+\begin_inset Formula $s_{i}\in S_{i}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Note how different the NE concept is from the dominant strategy concept:
+ the NE concept does not require that 
+\begin_inset Formula $s_{i}^{\ast}$
+\end_inset
+
+ be dominant for all 
+\begin_inset Formula $s_{-i}$
+\end_inset
+
+ in 
+\begin_inset Formula $S_{-i},$
+\end_inset
+
+ but only for 
+\begin_inset Formula $s_{-i}^{\ast}$
+\end_inset
+
+.
+ That is, 
+\emph on
+taking 
+\begin_inset Formula $s_{-i}^{\ast}$
+\end_inset
+
+ as given
+\emph default
+, agent 
+\begin_inset Formula $i$
+\end_inset
+
+ must not strictly prefer to deviate to an action other than 
+\begin_inset Formula $s_{i}^{\ast}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Example:
+\emph default
+ Nash Equilibrium in a Coordination Game
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Players 
+\begin_inset Formula $N=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+French (F), British (B)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Strategies 
+\begin_inset Formula $S_{i}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Coffee (C), Pub (P)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Formula $i=$
+\end_inset
+
+F,B
+\end_layout
+
+\begin_layout Enumerate
+Payoffs 
+\begin_inset Formula $u_{F}(C,P)=u_{B}(C,P)=1$
+\end_inset
+
+, 
+\begin_inset Formula $u_{F}(C,C)=u_{B}(P,P)=4$
+\end_inset
+
+, 
+\begin_inset Formula $u_{F}(P,C)=u_{B}(P,C)=0$
+\end_inset
+
+ and 
+\begin_inset Formula $u_{F}(P,P)=u_{2}(C,C)=3$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The game can be represented in normal form as follows:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="|c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,3 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,0 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,4 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neither strategies is strictly (or weakly) dominated for either players.
+ However, suppose that F plays C.
+ Then B is better off playing C.
+ Suppose that F plays P.
+ Then B is better off playing P.
+ Formally, 
+\begin_inset Formula $u_{F}(C,C)\geq u_{F}(P,C)$
+\end_inset
+
+ and 
+\begin_inset Formula $u_{B}(C,C)\geq u_{B}(C,P).$
+\end_inset
+
+ Similarly, 
+\begin_inset Formula $u_{F}(P,P)\geq u_{F}(C,P)$
+\end_inset
+
+ and 
+\begin_inset Formula $u_{B}(P,P)\geq u_{B}(P,C).$
+\end_inset
+
+ This means that both 
+\begin_inset Formula $\left\{ C,C\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ P,P\right\} $
+\end_inset
+
+ are Nash equilibria of the game.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Note how we found two Nash equilibria of the game above.
+ This generalizes to saying that Nash equilibria are not necessarily unique,
+ unlike dominant strategy equilibria.
+ However, from the definition, one can check that any dominant strategy
+ equilibrium is also a Nash equilibrium.
+ There is no way in the game above to choose which of the Nash equilibria
+ is more likely to be chosen.
+ However, the Nash equilibrium concept allows one to say that players will
+ play either one or the other Nash equilibria.
+ The Nash equilibria we found are such that players choose actions in a
+ deterministic way, that is, if for example the Nash equilibrium is {C,C},
+ then both players play C.
+ Those are called 
+\emph on
+pure strategy Nash equilibria
+\emph default
+ (
+\begin_inset Quotes els
+\end_inset
+
+PSNE
+\begin_inset Quotes ers
+\end_inset
+
+).
+ We will see below there exists a third Nash equilibrium of this game, where
+ players choose actions at random according to pre-defined probability.
+ Those are called 
+\emph on
+mixed stategy Nash equilibria
+\emph default
+ (
+\begin_inset Quotes els
+\end_inset
+
+MSNE
+\begin_inset Quotes ers
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+A common way to find Nash equilibria is to use the concept of Best Response
+ Function, which is particularly useful when players' action set is continuous
+ (such as quantity or price in a game of competition).
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Definition:
+\emph default
+ The best-response function (
+\begin_inset Quotes els
+\end_inset
+
+BRF
+\begin_inset Quotes ers
+\end_inset
+
+) for player 
+\begin_inset Formula $i$
+\end_inset
+
+ is a function 
+\begin_inset Formula $B_{i}$
+\end_inset
+
+ such that 
+\begin_inset Formula $B_{i}(s_{-i})=\left\{ s_{i}|u_{i}(s_{i},s_{-i})\geq u_{i}(s_{i}^{\prime},s_{-i})\text{ for all }s_{i}^{\prime}\right\} .$
+\end_inset
+
+ The BRF states what is the best action for 
+\begin_inset Formula $i$
+\end_inset
+
+ the whole range of possible profile of actions of other agents.
+ 
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Definition:
+\emph default
+ 
+\begin_inset Formula $s^{\ast}$
+\end_inset
+
+ is a Nash equilibrium if and only if 
+\begin_inset Formula $s_{i}^{\ast}\in B_{i}(s_{-i}^{\ast})$
+\end_inset
+
+ for all 
+\begin_inset Formula $i.$
+\end_inset
+
+ This means that elements of 
+\begin_inset Formula $s^{\ast}$
+\end_inset
+
+ must be best responses to each other.
+ 
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Example:
+\emph default
+ In the example above, 
+\begin_inset Formula $B_{F}(C)=C$
+\end_inset
+
+ and 
+\begin_inset Formula $B_{F}(P)=P.$
+\end_inset
+
+ Similarly, 
+\begin_inset Formula $B_{B}(C)=C$
+\end_inset
+
+ and 
+\begin_inset Formula $B_{B}(P)=P.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Nash equilibrium in mixed strategies
+\end_layout
+
+\begin_layout Standard
+In the following, we consider the possibility for players to choose actions
+ at random according to pre-defined probabilities.
+ For the sake of easy modeling, we assume agents have access to a randomizing
+ device (such as a coin for example), which allows them to randomize over
+ their actions.
+ For example, an agent who decides to play C with probability 1/8 in the
+ game above can do so by saying he will play C whenever three throws of
+ the coin all give out 
+\begin_inset Quotes els
+\end_inset
+
+tail
+\begin_inset Quotes ers
+\end_inset
+
+.
+ We will see later whether agents can randomize in an accurate and rational
+ way without access to such a randomizing device.
+\end_layout
+
+\begin_layout Description
+Example: Mixed strategy Nash equilibria (
+\begin_inset Quotes els
+\end_inset
+
+MSNE
+\begin_inset Quotes ers
+\end_inset
+
+) in the Coordination Game: We did not consider above the case of mixed
+ strategies.
+ Consider thus strategies 
+\begin_inset Formula $s_{i}$
+\end_inset
+
+ of the form: 
+\begin_inset Formula $i$
+\end_inset
+
+ plays 
+\begin_inset Formula $C$
+\end_inset
+
+ with probability 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ and play 
+\begin_inset Formula $P$
+\end_inset
+
+ with probability 
+\begin_inset Formula $1-p_{i}.$
+\end_inset
+
+ Strategy 
+\begin_inset Formula $s_{i}$
+\end_inset
+
+ can be denoted in short as 
+\begin_inset Formula $p_{i}.$
+\end_inset
+
+ Suppose players 
+\begin_inset Formula $F$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ play strategies 
+\begin_inset Formula $p_{F}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{B}$
+\end_inset
+
+ respectively.
+ The payoff to 
+\begin_inset Formula $F$
+\end_inset
+
+ of playing 
+\begin_inset Formula $C$
+\end_inset
+
+ is then 
+\begin_inset Formula $u_{F}(C,p_{B})=4p_{B}+1(1-p_{B})=3p_{B}+1.$
+\end_inset
+
+ Similarly, 
+\begin_inset Formula $u_{F}(P,p_{B})=3-3p_{B}$
+\end_inset
+
+.
+ I also obtain that 
+\begin_inset Formula $u_{B}(p_{F},C)=3p_{F}$
+\end_inset
+
+ and 
+\begin_inset Formula $u_{B}(p_{F},P)=p_{F}+4(1-p_{F})=4-3p_{F}.$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Therefore, 
+\begin_inset Formula $F$
+\end_inset
+
+ will play 
+\begin_inset Formula $C$
+\end_inset
+
+ whenever 
+\begin_inset Formula $3p_{B}+1>3-3p_{B},$
+\end_inset
+
+ that is, whenever 
+\begin_inset Formula $p_{B}>\frac{1}{3}$
+\end_inset
+
+.
+ She will play 
+\begin_inset Formula $P$
+\end_inset
+
+ whenever 
+\begin_inset Formula $p_{B}<\frac{1}{3}$
+\end_inset
+
+ and will be indifferent between the two actions whenever 
+\begin_inset Formula $p_{B}=\frac{1}{3}.$
+\end_inset
+
+ Similarly, 
+\begin_inset Formula $B$
+\end_inset
+
+ will play 
+\begin_inset Formula $C$
+\end_inset
+
+ whenever 
+\begin_inset Formula $3p_{F}>4-3p_{F},$
+\end_inset
+
+ that is if 
+\begin_inset Formula $p_{F}>\frac{2}{3}$
+\end_inset
+
+.
+ He will play 
+\begin_inset Formula $P$
+\end_inset
+
+ whenever 
+\begin_inset Formula $p_{F}<\frac{2}{3},$
+\end_inset
+
+ and will be indifferent between the two actions whenever 
+\begin_inset Formula $p_{F}=\frac{2}{3}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+One thus has three Nash equilibria: 
+\begin_inset Formula $\left\{ p_{F}=0,p_{B}=0\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ p_{F}=1,p_{B}=1\right\} $
+\end_inset
+
+ as before, and a mixed strategy Nash Equilibrium 
+\begin_inset Formula $\left\{ \frac{2}{3},\frac{1}{3}\right\} $
+\end_inset
+
+ whereby each player plays its own favorite option with probability 
+\begin_inset Formula $\frac{2}{3},$
+\end_inset
+
+ and the other option with probability 
+\begin_inset Formula $\frac{1}{3}.$
+\end_inset
+
+ Under that MSNE, the payoff for 
+\begin_inset Formula $F$
+\end_inset
+
+ is 
+\begin_inset Formula $2$
+\end_inset
+
+ and the payoff for 
+\begin_inset Formula $B$
+\end_inset
+
+ is 
+\begin_inset Formula $2$
+\end_inset
+
+ as well.
+\end_layout
+
+\begin_layout Standard
+Graphically, one can represent the best response functions of both players
+ as follows: 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page8.pdf
+	lyxscale 20
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\align center
+Best response functions in the Coordination Game 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The graph can be read as follows: for any 
+\begin_inset Formula $p_{F}$
+\end_inset
+
+ 
+\begin_inset Formula $<\frac{2}{3},$
+\end_inset
+
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ prefers to play 
+\begin_inset Formula $P,$
+\end_inset
+
+ so 
+\begin_inset Formula $p_{B}=0.$
+\end_inset
+
+ For 
+\begin_inset Formula $p_{F}=\frac{1}{3},$
+\end_inset
+
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ is indifferent between 
+\begin_inset Formula $P$
+\end_inset
+
+ and 
+\begin_inset Formula $C,$
+\end_inset
+
+ so 
+\begin_inset Formula $p_{B}$
+\end_inset
+
+ can be anywhere between 
+\begin_inset Formula $0$
+\end_inset
+
+ and 
+\begin_inset Formula $1.$
+\end_inset
+
+ For 
+\begin_inset Formula $p_{F}>\frac{2}{3},$
+\end_inset
+
+ then 
+\begin_inset Formula $B$
+\end_inset
+
+ prefers to play 
+\begin_inset Formula $C,$
+\end_inset
+
+ so 
+\begin_inset Formula $p_{B}=1.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+You can check that all Nash equilibria are at crossing points of the best
+ response functions, as implied by the definition of Nash equilibria in
+ terms of BRF.
+\end_layout
+
+\begin_layout Standard
+Palacios-Huerta (2003)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Palacios-Huerta I., 2003, Professionals play minimax, Review Of Economic
+ Studies 70(2), 395-415.
+ 
+\end_layout
+
+\end_inset
+
+ is a good introduction to the debate over whether agents are actually able
+ to play mixed strategies.
+ This is particularly important when the only NE is in mixed strategies,
+ as in the game under study in the article (penalty strikes).
+ Most of the evidence in experimental settings is not encouraging (agents
+ find it difficult to choose actions randomly).
+ However, Palacios-Huerta (2003) shows that professional footballers, who
+ have sufficient experience and incentives, appear to be able to use mixed
+ strategies in their choice of which side of the goal to strike a ball.
+\end_layout
+
+\begin_layout Section
+Extensive form games with perfect information
+\end_layout
+
+\begin_layout Standard
+We consider in the following settings in which agents choose actions in
+ succesion and observe what the other players played before choosing their
+ own action.
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Definition:
+\emph default
+ An extensive form game with perfect information consists of:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Players: A set of players 
+\begin_inset Formula $N=1,...,i,n$
+\end_inset
+
+ with typical member 
+\begin_inset Formula $i.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Histories: A set of histories 
+\begin_inset Formula $H=(H_{1},$
+\end_inset
+
+ ..., 
+\begin_inset Formula $H_{n})$
+\end_inset
+
+ with typical member 
+\begin_inset Formula $h=(h_{1},...,h_{n}).$
+\end_inset
+
+ 
+\begin_inset Formula $h$
+\end_inset
+
+ is a sequence of actions by individual players, with typical member 
+\begin_inset Formula $h_{i}$
+\end_inset
+
+ which denotes all actions taken by 
+\begin_inset Formula $i$
+\end_inset
+
+ in the past.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The start of the game is denoted as 
+\begin_inset Formula $\emptyset\in H$
+\end_inset
+
+ is .
+ If 
+\begin_inset Formula $h\in H,$
+\end_inset
+
+ but there is no 
+\begin_inset Formula $(h,a)\in H$
+\end_inset
+
+ where 
+\begin_inset Formula $a$
+\end_inset
+
+ is an action for some player, then 
+\begin_inset Formula $h$
+\end_inset
+
+ is a terminal history.
+ That means there is no further action to be taken by any of the players;
+ the game is finished.
+ The set of terminal histories is denoted as 
+\begin_inset Formula $Z\subset H.$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Player function: A function 
+\begin_inset Formula $P:H\backslash Z\rightarrow N,$
+\end_inset
+
+ assigning a player to each non-terminal history.
+ This player function indicates when is the turn of each player to play.
+\end_layout
+
+\begin_layout Enumerate
+Payoffs: vNM payoffs for each 
+\begin_inset Formula $i\in N$
+\end_inset
+
+ are defined over terminal histories, 
+\begin_inset Formula $u_{i}:Z\rightarrow\mathbb{R}.$
+\end_inset
+
+ This assigns a payoff to each terminal histories of the game.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features>
+<column alignment="left" valignment="top" width="0">
+<row topspace="default" bottomspace="default">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+An extensive form game 
+\begin_inset Formula $G$
+\end_inset
+
+ is thus defined by 
+\begin_inset Formula $N,H,P$
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ u_{i}\right\} _{i\in\mathbb{N}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\emph on
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To illustrate the above, suppose one plays a prisoners' dilemma game twice.
+ 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+ at stage 1 may be 
+\begin_inset Formula $(C)$
+\end_inset
+
+, that is, player 1 played C in the first stage.
+ 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+ at stage 2 may be (C,C), that is, player 1 played C in stage 1 and in stage
+ 2.
+ The set of terminal histories, over which payoffs will be defined, is:
+\end_layout
+
+\begin_layout Standard
+{(C,C),(C,C)},{(C,C),(C,D)},{(C,C),(D,D)},{(C,C),(D,C)},
+\end_layout
+
+\begin_layout Standard
+{(C,D),(C,C)},{(C,D),(C,D)},{(C,D),(D,D)},{(C,D),(D,C)},
+\end_layout
+
+\begin_layout Standard
+{(D,C),(C,C)},{(D,C),(C,D)},{(D,C),(D,D)},{(D,C),(D,C)},
+\end_layout
+
+\begin_layout Standard
+{(D,D),(C,C)},{(D,D),(C,D)},{(D,D),(D,D)},{(D,D),(D,C)}.
+ For example, in the last history, player 1 played D in both stages, while
+ player 2 played D in the first stage and C in the second.
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Example:
+\emph default
+ Game of entry deterrence
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Players: 
+\begin_inset Formula $N=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Entrant (E), Incumbent (I)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Histories: 
+\begin_inset Formula $H:\left\{ \text{(}\emptyset\text{), (Stay out), (Enter), (Enter, Fight), (Enter, Accomodate)}\right\} .$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The set of terminal histories is 
+\begin_inset Formula $Z:\left\{ \text{(Stay out), (Enter, Fight), (Enter, Accomodate)}\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Player function: 
+\begin_inset Formula $P(\emptyset)=E$
+\end_inset
+
+ and 
+\begin_inset Formula $P(Enter)=I.$
+\end_inset
+
+ This means 
+\begin_inset Formula $E$
+\end_inset
+
+ plays first, and 
+\begin_inset Formula $I$
+\end_inset
+
+ may play only if 
+\begin_inset Formula $E$
+\end_inset
+
+ enters, otherwise, 
+\begin_inset Formula $I$
+\end_inset
+
+ does not have anything to do.
+\end_layout
+
+\begin_layout Enumerate
+Payoffs 
+\begin_inset Formula $u_{I}($
+\end_inset
+
+Stay out
+\begin_inset Formula $)=2,u_{E}($
+\end_inset
+
+Stay out
+\begin_inset Formula $)=0$
+\end_inset
+
+, 
+\begin_inset Formula $u_{I}(Enter,Fight)=u_{E}(Enter,Fight)=-1$
+\end_inset
+
+, 
+\begin_inset Formula $u_{I}($
+\end_inset
+
+Enter, Accomodate
+\begin_inset Formula $)=u_{E}($
+\end_inset
+
+Enter, Accomodate
+\begin_inset Formula $)=1$
+\end_inset
+
+.
+ Note how payoffs are defined over all possible histories/ 
+\end_layout
+
+\begin_layout Standard
+The game can be represented in extensive form as follows:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page9.pdf
+	lyxscale 20
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\align center
+Extensive form representation of the game of entry deterrence.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The game can be represented in strategic / normal form as well, by getting
+ rid of the information about histories and player functions.
+\end_layout
+
+\begin_layout Standard
+Strategies 
+\begin_inset Formula $S:(S_{E},S_{I})$
+\end_inset
+
+ are 
+\begin_inset Formula $S_{I}:\left\{ \text{Fight, Accomodate}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $S_{E}:\left\{ \text{Stay out, Enter}\right\} .$
+\end_inset
+
+ Payoffs are defined over the terminal histories that result from a specific
+ set of strategies, so I have to define equivalence, such that 
+\begin_inset Formula $u($
+\end_inset
+
+Stay out, Fight)=
+\begin_inset Formula $u$
+\end_inset
+
+(Stay out), 
+\begin_inset Formula $u($
+\end_inset
+
+Stay out, Accomodate)=
+\begin_inset Formula $u$
+\end_inset
+
+(Stay out), 
+\begin_inset Formula $u$
+\end_inset
+
+(Enter, Fight)=
+\begin_inset Formula $u$
+\end_inset
+
+(Enter, Fight), 
+\begin_inset Formula $u($
+\end_inset
+
+Enter, Accomodate)=
+\begin_inset Formula $u$
+\end_inset
+
+(Enter, Accomodate).
+\end_layout
+
+\begin_layout Standard
+One thus obtains the following strategic form representation of the game:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fight 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Accomodate
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Stay out 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Enter 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1,-1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,1 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Once the game has been put into its strategic form, it is easy to find its
+ pure strategy Nash Equilibria: 
+\begin_inset Formula $\left\{ \text{Stay out, Fight}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ \text{Enter, Accomodate}\right\} $
+\end_inset
+
+.
+ In order to find its mixed Nash equilibria, denote 
+\begin_inset Formula $p_{E}$
+\end_inset
+
+ the probability for the entrant to stay out, and 
+\begin_inset Formula $p_{I}$
+\end_inset
+
+ the probability for the incumbent to fight.
+ Then
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $u_{E}($
+\end_inset
+
+Stay out,
+\begin_inset Formula $p_{I})=0,$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $u_{E}($
+\end_inset
+
+Enter,
+\begin_inset Formula $p_{I})=-p_{I}+(1-p_{I})=1-2p_{I}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $u_{I}(p_{E},$
+\end_inset
+
+Fight
+\begin_inset Formula $)=2p_{E}-(1-p_{E})=3p_{E}-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $u_{I}(p_{E},$
+\end_inset
+
+Accomodate
+\begin_inset Formula $)=2p_{E}+(1-p_{E})=p_{E}+1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From those payoffs, the entrant enters whenever 
+\begin_inset Formula $p_{I}<\frac{1}{2},$
+\end_inset
+
+ stays out whenever 
+\begin_inset Formula $p_{I}>\frac{1}{2}$
+\end_inset
+
+ and is indifferent between entering or not when 
+\begin_inset Formula $p_{I}=\frac{1}{2}.$
+\end_inset
+
+ The incumbent fights whenever 
+\begin_inset Formula $3p_{E}-1>p_{E}+1,$
+\end_inset
+
+ which never happens, is indifferent between fighting or not when 
+\begin_inset Formula $p_{E}=1,$
+\end_inset
+
+ and accomodates for any 
+\begin_inset Formula $p_{E}<1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are therefore an infinity of Nash equilibria of the entry game, of
+ which one PSNE, 
+\begin_inset Formula $\left\{ \text{Enter, }p_{I}=0\right\} $
+\end_inset
+
+ and an infinite range of mixed strategy Nash equilibria denoted 
+\begin_inset Formula $\left\{ \text{Stay out,}p_{I}\geq\frac{1}{2}\right\} .$
+\end_inset
+
+ Note that the PSNE 
+\begin_inset Formula $\left\{ \text{Stay out, }p_{I}=1\right\} $
+\end_inset
+
+ is simply an extreme form of a MSNE where the incumbent fights with probability
+ 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+As in the above, the usual way to find equilibria of an extensive form game
+ is to reduce it to a normal form game and find the NE of that normal form
+ game.
+ The equilibria of the extensive form game will be a subset of the NE of
+ the normal form game, as the normal form game neglects important information
+ about the succesion of actions in the game.
+ We see below how the set of Nash equilibria can be parsed down through
+ a process of 
+\emph on
+backward induction
+\emph default
+.
+\end_layout
+
+\begin_layout Subsection
+Backward induction
+\end_layout
+
+\begin_layout Standard
+From the above, the entrant stays out because she expects the incumbent
+ to fight upon entry with probability at least half.
+ However, since the entrant stays out, this is a completely arbitrary belief
+ as there is no way for the entrant to verify that prediction.
+ Is that arbitrary belief reasonable? When the entrant enters, then the
+ incumbent will always find it best to accomodate.
+ Therefore, the only credible belief for the entrant is that when the entrant
+ enters, then the incumbent would accomodate.
+ Therefore, it is not reasonable for the incumbent to believe that the incumbent
+ would fight with any positive probability if she were to enter, because
+ it is not credible for the incumbent to actually fight upon entry.
+ One can thus state that the only credible equilibria of the game are those
+ that survive a process of backward induction where, beginning from the
+ last stage, actions that players will not choose in that stage are eliminated
+ from consideration.
+\end_layout
+
+\begin_layout Standard
+For example, in the game of entry deterrence, the incumbent will not fight
+ when called upon to choose its action.
+ Eliminating 
+\begin_inset Quotes els
+\end_inset
+
+fight upon entry
+\begin_inset Quotes ers
+\end_inset
+
+ from consideration, the game that remains is thus a choice for the entrant
+ between staying out, which gives payoff 
+\begin_inset Formula $0,$
+\end_inset
+
+ and entering, which, by backward induction, will give a payoff of 
+\begin_inset Formula $1.$
+\end_inset
+
+ The entrant thus chooses to enter.
+ The only equilibrium that survives this process of backward induction is
+ 
+\begin_inset Formula $\left\{ \text{Enter, Accomodate}\right\} .$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Definition:
+\emph default
+ 
+\emph on
+Backward Induction:
+\emph default
+ A NE of a game survives a process of 
+\emph on
+backward induction
+\emph default
+ if it does not involve any non-credible threat, that is, if all strategies
+ played at each stage (histories) in the game are best-response to each
+ other.
+\end_layout
+
+\begin_layout Standard
+For example, `fight' is not best response to `enter', so that any equilibrium
+ that involves `fight' in response to `entry' does not survive backward
+ induction.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Exercise:
+\emph default
+ Consider the following
+\emph on
+ centipede game
+\emph default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page10.pdf
+	lyxscale 20
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Centipede game 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+a) What NE of this game survive backward induction?
+\end_layout
+
+\begin_layout Standard
+b) How would you play the game if you were not sure the other player follows
+ a process of backward induction? 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Extensive form games with imperfect information
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Definition:
+\emph default
+ An extensive form game with imperfect information consists of:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Players: As before
+\end_layout
+
+\begin_layout Enumerate
+Histories: As before
+\end_layout
+
+\begin_layout Enumerate
+Player function: As before
+\end_layout
+
+\begin_layout Enumerate
+Payoffs: As before
+\end_layout
+
+\begin_layout Enumerate
+Information: A player's information set defines what the player knows about
+ the previous history of the game when he is called upon to play.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Description
+
+\emph on
+Definition:
+\emph default
+ A singleton information set is such that a player knows the history of
+ the game that led to the stage he/she is at.
+ A subgame is a game that follows a singleton information set.
+ A game can have many subgames, and a subgame can have subgames as well.
+ 
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Example:
+\emph default
+ In the Prisoners' Dilemma, no one of the players knows what the other player
+ played so there is no subgame over than the whole game which follows from
+ history 
+\begin_inset Formula $H=\emptyset$
+\end_inset
+
+.
+ In the entry deterrence game, the incumbent, once it is its turn to play,
+ knows the entrant entered.
+ Therefore, the game after entry where the incumbent has to choose whether
+ to enter or not is a subgame.
+ The entry deterrence game has two subgames: the one that follows from history
+ 
+\begin_inset Formula $\left\{ \emptyset\right\} $
+\end_inset
+
+ and the one that follows from history 
+\begin_inset Formula $\left\{ \text{Enter}\right\} $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Definition:
+\emph default
+ A Nash equilibrium is subgame-perfect (
+\begin_inset Quotes els
+\end_inset
+
+SPNE
+\begin_inset Quotes ers
+\end_inset
+
+) if the players' strategies constitute a Nash equilibrium in every subgame.
+ 
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Example:
+\emph default
+ The subgame perfect Nash equilibrium (
+\begin_inset Quotes els
+\end_inset
+
+SPNE
+\begin_inset Quotes ers
+\end_inset
+
+) in the prisoners' dilemma is also its NE.
+ The subgame perfect Nash equilibrium in the entry deterrence game is 
+\begin_inset Formula $\left\{ \text{Enter, Accomodate}\right\} $
+\end_inset
+
+.
+ The outcome of the SPNE in the centipede game is 
+\begin_inset Formula $\left\{ \text{Stop,Stop}\right\} $
+\end_inset
+
+ (based on the SPNE 
+\begin_inset Formula $\left\{ (\text{Stop,Stop,Stop),(Stop, Stop)}\right\} $
+\end_inset
+
+)
+\begin_inset Formula $.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+In all those cases, the SPNE coincides with the NE obtained by backward
+ induction, either because the game is one-stage only (Prisoners' Dilemma),
+ or because there is perfect information, i.e.
+ each decision node is a singleton information set, that is, players know
+ with certainty the history that led to the current stage in the game when
+ it is their turn to play.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+From the above examples, one can say that the set of NE that survive backward
+ induction and the set of 
+\emph on
+subgame perfect NE 
+\emph default
+coincide in 
+\emph on
+extensive form games with perfect information
+\emph default
+.
+\end_layout
+
+\begin_layout Subsection
+Forward induction
+\end_layout
+
+\begin_layout Standard
+The following example will allow us to introduce the process of forward
+ induction, which is a process of elimination of candidate SPNE to further
+ restrict the set of reasonable NE beyond the capabilities of the process
+ of backward induction.
+ A SPNE that is robust to the process of backward induction may not be robust
+ to the process of forward induction.
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Example:
+\emph default
+ The following example introduces imperfect information in the Coordination
+ game.
+ The French player has the option to stay home, where she gets payoff 3.5
+ from eating a madeleine while reading a novel.
+ The English player gets payoff 0 in that case.
+ If the French player goes out, then the British player knows this (for
+ example he calls her home and does not get an answer).
+ However, he does not know if she went to the pub or to the café.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page11.pdf
+	lyxscale 20
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Coordination game with an outside option
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that the payoff for 
+\begin_inset Formula $F$
+\end_inset
+
+ of staying at home makes her willing to go out only if her preferred PSNE
+ obtains, but not anytime else (when the other PSNE is played, or when the
+ MSNE is played).
+ Intuitively, this means she will go out only if she believes the British
+ player will go to the café, in which case she goes to the café, so the
+ British player should go to the café if he realizes she went out.
+ We are going to see if this intuition is borne out in the following process
+ of finding out reasonable equilibria of the game:
+\end_layout
+
+\begin_layout Standard
+This game that has three subgames, the one starting at 
+\begin_inset Formula $\left\{ \emptyset\right\} $
+\end_inset
+
+ (the whole game), the one starting at 
+\begin_inset Formula $\left\{ \text{Home}\right\} $
+\end_inset
+
+ and the one starting at 
+\begin_inset Formula $\left\{ \text{Out}\right\} $
+\end_inset
+
+.
+ As seen before, there are two PSNE of the subgame starting at 
+\begin_inset Formula $\left\{ \text{Out}\right\} $
+\end_inset
+
+ as well as one MSNE.
+ Consider thus all possible SPNE candidates once only NE of the subgame
+ starting at 
+\begin_inset Formula $\left\{ \text{Out}\right\} $
+\end_inset
+
+ are retained.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ (Home,Caf\acute{e}),Caf\acute{e}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ (Home,Pub),Pub\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ (Home,\frac{2}{3}),\frac{1}{3}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ (Out,Pub),Pub\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ (Out,Caf\acute{e}),Caf\acute{e}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ (Out,\frac{2}{3}),\frac{1}{3}\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Note that, for example in the first case, while F stays home, we still express
+ what would happen if she did not.
+ Backward induction eliminates the first potential equilibrium: if 
+\begin_inset Formula $F$
+\end_inset
+
+ expects 
+\begin_inset Formula $\left\{ Caf\acute{e},Caf\acute{e}\right\} $
+\end_inset
+
+ to be played in the subgame starting at 
+\begin_inset Formula $\left\{ Out\right\} ,$
+\end_inset
+
+ then she would go out.
+ In the same way, the fourth and the sixth equilibrium can be eliminated
+ as well: if she expects {Pub,Pub} to be played in the subgame starting
+ at Out, then she is better off staying in.
+ 2, 3 and 5 are thus the only SPNE of the game.
+\end_layout
+
+\begin_layout Standard
+In order to select among those, one will have to refine the concept of a
+ SPNE by using a process of 
+\emph on
+forward induction
+\emph default
+: the second equilibrium would require 
+\begin_inset Formula $B$
+\end_inset
+
+ to think that when 
+\begin_inset Formula $F$
+\end_inset
+
+ goes out, she goes to the pub, which would not be rational of 
+\begin_inset Formula $F$
+\end_inset
+
+ since she would have done better staying home in that case.
+ Similarly, the third equilibrium requires 
+\begin_inset Formula $B$
+\end_inset
+
+ to think 
+\begin_inset Formula $F$
+\end_inset
+
+ plays a mixed strategy that obtains payoff of 
+\begin_inset Formula $2$
+\end_inset
+
+, even though in that case she would have done better staying at home.
+ The only equilibrium that thus survives forward induction is 
+\begin_inset Formula $\left\{ (Out,Caf\acute{e}),Caf\acute{e}\right\} $
+\end_inset
+
+.
+ In that equilibrium, F does not wish she could change any of her action
+ at any stage of the game (
+\emph on
+i.e.
+
+\emph default
+ once at the café, she is happy to have gone out).
+ This confirms our intuition as stated at the beginning of the analysis
+ of this game.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+At this stage, we can define the process of forward induction:
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Definition:
+\emph default
+ 
+\emph on
+Forward induction:
+\emph default
+ To the difference of backward induction that starts from the end of the
+ game and assumes that behavior at any stage of the game will be rational,
+ forward induction starts from the beginning of the game and assumes that
+ present behavior is optimal given what is expected to happen later.
+ An equilibrium will survive the process of backward induction when it is
+ such that the behavior of a player proves to have been optimal given the
+ succeding strategies played in the game.
+ 
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Remark:
+\emph default
+ The `Intuitive Criterion' of Cho and Kreps (1987)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Cho I-K.
+ and D.M.
+ Kreps, 1987, Signaling games and stable equilibria, Quarterly Journal of
+ Economics 102(2), 179-221
+\end_layout
+
+\end_inset
+
+ uses forward induction to restrict the set of NE by eliminating those that
+ are based on unreasonable out-of-equilibrium beliefs, i.e.
+ those out-of-equilibrium beliefs that imply a player would play against
+ his or her own interest if players deviated from the equilibrium.
+ The problem with this approach is that, since actions that are out of equilibri
+um are not played, there is in principle nothing that could restrict the
+ beliefs of someone once they are played.
+ In fact, it may be rational to believe that a player that plays out of
+ equilibrium is actually irrational, and thus hold out any beliefs about
+ how he might play or what are his beliefs!
+\end_layout
+
+\begin_layout Section
+Bayesian Games
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+A Bayesian game differs from a game with imperfect information in that,
+ while in games with imperfect information the players may not know what
+ was played before, in Bayesian games players may not know who they are
+ playing against.
+ In practice, this means they will not know what the other player will play
+ in advance of the game, which is quite different from not being perfectly
+ informed of what is played during the game.
+ Before going on to define further what is a Bayesian game, let us study
+ a specific Bayesian game, extended from our usual Coordination Game:
+\end_layout
+
+\begin_layout Description
+Example: The British person likes the French person with probability 
+\begin_inset Formula $\frac{1}{2},$
+\end_inset
+
+ and dislikes her with probability 
+\begin_inset Formula $\frac{1}{2}.$
+\end_inset
+
+ The British person knows his own type, 
+\begin_inset Formula $B_{l}$
+\end_inset
+
+ (likes) or 
+\begin_inset Formula $B_{h}$
+\end_inset
+
+ (hates).
+ The British person is very private and does not display his feelings openly,
+ so the French person does not know the type of the British person and assigns
+ probability 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ to the British person liking her.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+If 
+\begin_inset Formula $B$
+\end_inset
+
+ likes 
+\begin_inset Formula $F,$
+\end_inset
+
+ then payoffs are as follows:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="|c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4,3$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1,1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3,4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $B$
+\end_inset
+
+ does not like 
+\begin_inset Formula $F,$
+\end_inset
+
+ then payoffs are as follows:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $_{{}}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="|c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4,0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1,4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,3$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3,1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The game can be put in strategic form version as follows:
+\end_layout
+
+\begin_layout Itemize
+Players: 
+\begin_inset Formula $i\in N=\left\{ F,B_{l},B_{h}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+For each 
+\begin_inset Formula $i,$
+\end_inset
+
+ 
+\begin_inset Formula $s_{i}\in\left\{ C,P\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Payoffs can be shown as follows, with the first payoff the payoff of the
+ French person, the second the payoff of the British person of type 
+\begin_inset Formula $l$
+\end_inset
+
+ and the third payoff the payoff of the British person of type 
+\begin_inset Formula $h.$
+\end_inset
+
+ Columns show all possible combinations of actions that 
+\begin_inset Formula $B$
+\end_inset
+
+ of type 
+\begin_inset Formula $l$
+\end_inset
+
+ or 
+\begin_inset Formula $h$
+\end_inset
+
+ might take.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="6">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{l},C_{h}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{l},P_{h}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P_{l},C_{h}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P_{l},P_{h}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4,3,0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{5}{2},3,4$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{5}{2},1,0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1,1,4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,0,3$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{3}{2},0,1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{3}{2},4,3$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3,4,1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This table is thus interpreted as follows: 
+\begin_inset Formula $F$
+\end_inset
+
+ can choose between 
+\begin_inset Formula $C$
+\end_inset
+
+ and 
+\begin_inset Formula $P,$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ can choose either 
+\begin_inset Formula $C$
+\end_inset
+
+ whether it is of type 
+\begin_inset Formula $l$
+\end_inset
+
+ or 
+\begin_inset Formula $h,$
+\end_inset
+
+ or 
+\begin_inset Formula $C$
+\end_inset
+
+ if it is of type 
+\begin_inset Formula $l$
+\end_inset
+
+ and 
+\begin_inset Formula $P$
+\end_inset
+
+ if it is of type 
+\begin_inset Formula $h,$
+\end_inset
+
+ or 
+\begin_inset Formula $P$
+\end_inset
+
+ if it is of type 
+\begin_inset Formula $l$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+ if it is of type 
+\begin_inset Formula $h,$
+\end_inset
+
+ or 
+\begin_inset Formula $P$
+\end_inset
+
+ if it is of type 
+\begin_inset Formula $l$
+\end_inset
+
+ and 
+\begin_inset Formula $P$
+\end_inset
+
+ if it is of type 
+\begin_inset Formula $h.$
+\end_inset
+
+ In each combination of strategies, the expected payoff of 
+\begin_inset Formula $F$
+\end_inset
+
+ is first, then the payoff for 
+\begin_inset Formula $B_{l}$
+\end_inset
+
+ is second and the payoff for 
+\begin_inset Formula $B_{h}$
+\end_inset
+
+ is third.
+\end_layout
+
+\begin_layout Standard
+By underlining best responses, one finds one pure strategy Nash Equilibrium,
+ 
+\begin_inset Formula $\left\{ C,C_{l},P_{h}\right\} .$
+\end_inset
+
+ There also are Mixed Strategy Nash Equilibria: Suppose 
+\begin_inset Formula $F$
+\end_inset
+
+ mixes between 
+\begin_inset Formula $C$
+\end_inset
+
+ and 
+\begin_inset Formula $P$
+\end_inset
+
+ with probability 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $1-p$
+\end_inset
+
+ respectively, while 
+\begin_inset Formula $B_{l}$
+\end_inset
+
+ mixes between 
+\begin_inset Formula $C$
+\end_inset
+
+ and 
+\begin_inset Formula $P$
+\end_inset
+
+ with probability 
+\begin_inset Formula $p_{l}$
+\end_inset
+
+ and 
+\begin_inset Formula $1-p_{l}$
+\end_inset
+
+ respectively, and 
+\begin_inset Formula $B_{h}$
+\end_inset
+
+ mixes between 
+\begin_inset Formula $C$
+\end_inset
+
+ and 
+\begin_inset Formula $P$
+\end_inset
+
+ with probability 
+\begin_inset Formula $p_{h}$
+\end_inset
+
+ and 
+\begin_inset Formula $1-p_{h}$
+\end_inset
+
+ respectively.
+ Under those conditions, 
+\end_layout
+
+\begin_layout Itemize
+the expected payoff for 
+\begin_inset Formula $F$
+\end_inset
+
+ in playing 
+\begin_inset Formula $C$
+\end_inset
+
+ is 
+\begin_inset Formula $4p_{l}p_{h}+\frac{5}{2}p_{l}(1-p_{h})+\frac{5}{2}(1-p_{l})p_{h}+1(1-p_{l})(1-p_{h})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+the expected payoff for 
+\begin_inset Formula $F$
+\end_inset
+
+ in playing 
+\begin_inset Formula $P$
+\end_inset
+
+ is 
+\begin_inset Formula $0p_{l}p_{h}+\frac{3}{2}p_{l}(1-p_{h})+\frac{3}{2}(1-p_{l})p_{h}+3(1-p_{l})(1-p_{h})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+the expected payoff for 
+\begin_inset Formula $B_{l}$
+\end_inset
+
+ in playing 
+\begin_inset Formula $C$
+\end_inset
+
+ is 
+\begin_inset Formula $3p+0(1-p)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+the expected payoff for 
+\begin_inset Formula $B_{l}$
+\end_inset
+
+ in playing 
+\begin_inset Formula $P$
+\end_inset
+
+ is 
+\begin_inset Formula $1p+4(1-p)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+the expected payoff for 
+\begin_inset Formula $B_{h}$
+\end_inset
+
+ in playing 
+\begin_inset Formula $C$
+\end_inset
+
+ is 
+\begin_inset Formula $0p+3(1-p)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+the expected payoff for 
+\begin_inset Formula $B_{h}$
+\end_inset
+
+ in playing 
+\begin_inset Formula $P$
+\end_inset
+
+ is 
+\begin_inset Formula $4p+1(1-p)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B_{l}$
+\end_inset
+
+ thus plays 
+\begin_inset Formula $C$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $p>\frac{2}{3},$
+\end_inset
+
+ 
+\begin_inset Formula $B_{h}$
+\end_inset
+
+ plays 
+\begin_inset Formula $C$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $p<\frac{1}{3}.$
+\end_inset
+
+ There are thus five situations: 
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $p<\frac{1}{3},$
+\end_inset
+
+ then 
+\begin_inset Formula $B_{h}$
+\end_inset
+
+ plays 
+\begin_inset Formula $C$
+\end_inset
+
+ and 
+\begin_inset Formula $B_{l}$
+\end_inset
+
+ plays 
+\begin_inset Formula $P,$
+\end_inset
+
+ but then 
+\begin_inset Formula $F$
+\end_inset
+
+ is better off playing 
+\begin_inset Formula $C:$
+\end_inset
+
+ this is not a Nash equilibrium.
+ 
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $p=\frac{1}{3},$
+\end_inset
+
+ then 
+\begin_inset Formula $B_{h}$
+\end_inset
+
+ is indifferent between playing 
+\begin_inset Formula $C$
+\end_inset
+
+ or 
+\begin_inset Formula $P$
+\end_inset
+
+ while 
+\begin_inset Formula $B_{l}$
+\end_inset
+
+ will play 
+\begin_inset Formula $P.$
+\end_inset
+
+ This is an equilibrium only if 
+\begin_inset Formula $B_{h}$
+\end_inset
+
+ 's strategy makes 
+\begin_inset Formula $F$
+\end_inset
+
+ indifferent between playing 
+\begin_inset Formula $C$
+\end_inset
+
+ or 
+\begin_inset Formula $P,$
+\end_inset
+
+ so I must have 
+\begin_inset Formula $p_{h}=\frac{2}{3}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $\frac{1}{3}<p<\frac{2}{3},$
+\end_inset
+
+ then 
+\begin_inset Formula $B_{h}$
+\end_inset
+
+ plays 
+\begin_inset Formula $P$
+\end_inset
+
+ and 
+\begin_inset Formula $B_{l}$
+\end_inset
+
+ plays 
+\begin_inset Formula $P.$
+\end_inset
+
+ Then 
+\begin_inset Formula $F$
+\end_inset
+
+ would play 
+\begin_inset Formula $P,$
+\end_inset
+
+ but then 
+\begin_inset Formula $B_{h}$
+\end_inset
+
+ would play 
+\begin_inset Formula $C.$
+\end_inset
+
+ This is not a Nash equilibrium.
+ 
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $p=\frac{2}{3},$
+\end_inset
+
+ then 
+\begin_inset Formula $B_{h}$
+\end_inset
+
+ plays 
+\begin_inset Formula $P$
+\end_inset
+
+ and 
+\begin_inset Formula $B_{l}$
+\end_inset
+
+ is indifferent between 
+\begin_inset Formula $C$
+\end_inset
+
+ and 
+\begin_inset Formula $P.$
+\end_inset
+
+ This is an equilibrium only if 
+\begin_inset Formula $B_{l}$
+\end_inset
+
+ 's strategy makes 
+\begin_inset Formula $F$
+\end_inset
+
+ indifferent between playing 
+\begin_inset Formula $C$
+\end_inset
+
+ or 
+\begin_inset Formula $P,$
+\end_inset
+
+ so I must have 
+\begin_inset Formula $p_{l}=\frac{2}{3}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $p>\frac{2}{3},$
+\end_inset
+
+ then 
+\begin_inset Formula $B_{h}$
+\end_inset
+
+ plays 
+\begin_inset Formula $P$
+\end_inset
+
+ and 
+\begin_inset Formula $B_{l}$
+\end_inset
+
+ plays 
+\begin_inset Formula $C.$
+\end_inset
+
+ Then 
+\begin_inset Formula $F$
+\end_inset
+
+ plays 
+\begin_inset Formula $C,$
+\end_inset
+
+ which is a Nash equilibrium.
+ 
+\end_layout
+
+\begin_layout Standard
+There are thus two MSNEs, 
+\begin_inset Formula $\left\{ \frac{1}{3},P,\frac{2}{3}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ \frac{2}{3},\frac{2}{3},P\right\} $
+\end_inset
+
+ in addition to the PSNE 
+\begin_inset Formula $\left\{ C,C_{l},P_{h}\right\} .$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Definition
+\end_layout
+
+\begin_layout Standard
+In the following, we provide a formal definition of a Bayesian game.
+\end_layout
+
+\begin_layout Description
+Definition: A Bayesian game of incomplete information consists of 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Players, labelled 
+\begin_inset Formula $i\in N=\left\{ 1,...,n\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Types, for each player 
+\begin_inset Formula $i,$
+\end_inset
+
+ there is a set 
+\begin_inset Formula $T_{i}$
+\end_inset
+
+ of possibles types, labeled 
+\begin_inset Formula $t_{i}.$
+\end_inset
+
+ Player 
+\begin_inset Formula $i$
+\end_inset
+
+ might be of different types that have different payoffs, but all possible
+ types of player 
+\begin_inset Formula $i$
+\end_inset
+
+ play the same role in the game.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Actions, for each player 
+\begin_inset Formula $i,$
+\end_inset
+
+ there is a set 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ of possible actions, labeled 
+\begin_inset Formula $a_{i}.$
+\end_inset
+
+ This means that whatever 
+\begin_inset Formula $i$
+\end_inset
+
+'s type, he has access to the same range of action.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Beliefs, for each pair 
+\begin_inset Formula $(i,t_{i}),$
+\end_inset
+
+ a probability distribution over 
+\begin_inset Formula $T_{-i},$
+\end_inset
+
+ written 
+\begin_inset Formula $p_{i}(t_{-i}|t_{i}).$
+\end_inset
+
+This denotes what player 
+\begin_inset Formula $i$
+\end_inset
+
+of type 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+ believes the type of other player are.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Payoffs, for each player 
+\begin_inset Formula $i,$
+\end_inset
+
+ a vNM utility function 
+\begin_inset Formula $u_{i}:A\times T\rightarrow\mathbb{R}.$
+\end_inset
+
+ As said above, payoffs depend not only on the identity of the player, but
+ on his type.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features>
+<column alignment="center" valignment="top" width="0">
+<row topspace="default" bottomspace="default">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A Bayesian game can thus be written 
+\begin_inset Formula $\Gamma:\{N,\left\{ T_{i}\right\} _{i},\left\{ A_{i}\right\} _{i},\left\{ p_{i}\right\} _{i},\left\{ u_{i}\right\} _{i}\}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Remark:
+\emph default
+ Beliefs are the beliefs of each player of each different type over the
+ possible types of each other player.
+ In the previous game, for example, 
+\begin_inset Formula $F$
+\end_inset
+
+ believed 
+\begin_inset Formula $B$
+\end_inset
+
+ could be of two types, 
+\begin_inset Formula $l$
+\end_inset
+
+ or 
+\begin_inset Formula $h,$
+\end_inset
+
+ with equal probability.
+ Since there was only one type of 
+\begin_inset Formula $F,$
+\end_inset
+
+ one did not need to specify different beliefs for different types of 
+\begin_inset Formula $F.$
+\end_inset
+
+ Also, both 
+\begin_inset Formula $B_{l}$
+\end_inset
+
+ and 
+\begin_inset Formula $B_{h}$
+\end_inset
+
+ had the same belief about the type of 
+\begin_inset Formula $F$
+\end_inset
+
+, since 
+\begin_inset Formula $F$
+\end_inset
+
+ could be of only one type.
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Exercise:
+\emph default
+ Formulate the Bayesian Coordination Game studied above as a Bayesian game
+ of incomplete information according to the notations exposed above.
+\end_layout
+
+\begin_layout Subsection
+Examples
+\end_layout
+
+\begin_layout Standard
+In the following, we consider two Bayesian games and find their Nash Equilibria.
+ The first example is designed to show that if players differ in their types,
+ then even though each type of players play pure strategies, what is observed
+ by an external observer are mixed strategies.
+ The second example considers auction mechanisms, where we show that auctions
+ can be used as a tool to get players to reveal their own type.
+\end_layout
+
+\begin_layout Subsubsection
+Harsanyian Purification
+\end_layout
+
+\begin_layout Standard
+In this part, we consider how MSNEs may arise when there is some uncertainty
+ over the type of the agents playing the game.
+ Consider the following Noisy Coordination Game which is a modification
+ of the Coordination Game: The French person is not sure how much the British
+ person likes going to the pub, and the British person is not sure how much
+ the French person likes going to the café.
+ Payoffs are as follows:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="|c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4+f,3$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1+f,1+b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3,4+b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F$
+\end_inset
+
+ is not sure about 
+\begin_inset Formula $b$
+\end_inset
+
+, and believes it is distributed according to the uniform probability distributi
+on over 
+\begin_inset Formula $(0,a):U[0,a].$
+\end_inset
+
+ Similarly, 
+\begin_inset Formula $B$
+\end_inset
+
+ is not sure about 
+\begin_inset Formula $c,$
+\end_inset
+
+ and believes it is distributed according to the uniform probability distributio
+n over 
+\begin_inset Formula $(0,a):U[0,a].$
+\end_inset
+
+ Both 
+\begin_inset Formula $F$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ know their own type, 
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ respectively.
+\end_layout
+
+\begin_layout Standard
+Consider the following Bayesian strategy, such that 
+\begin_inset Formula $B$
+\end_inset
+
+ plays 
+\begin_inset Formula $P$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $b>b^{\ast},$
+\end_inset
+
+ and 
+\begin_inset Formula $F$
+\end_inset
+
+ plays 
+\begin_inset Formula $C$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $f>f^{\ast}.$
+\end_inset
+
+ This is a very simple kind of threshold strategy whereby depending on their
+ type, players will decide either to play 
+\begin_inset Formula $C$
+\end_inset
+
+ or 
+\begin_inset Formula $B.$
+\end_inset
+
+ Note that this is a considerable simplification from for example assuming
+ that 
+\begin_inset Formula $B$
+\end_inset
+
+ would vary the probability with which he would play 
+\begin_inset Formula $C$
+\end_inset
+
+ or 
+\begin_inset Formula $B$
+\end_inset
+
+ depending on his type.
+ Here, he plays pure strategies, either 
+\begin_inset Formula $P$
+\end_inset
+
+ or 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ However, from the perspective of 
+\begin_inset Formula $B,$
+\end_inset
+
+ the probability that 
+\begin_inset Formula $F$
+\end_inset
+
+ plays 
+\begin_inset Formula $C$
+\end_inset
+
+ is then 
+\begin_inset Formula $\frac{a-f^{\ast}}{a}$
+\end_inset
+
+ while from the perspective of 
+\begin_inset Formula $F$
+\end_inset
+
+, the probability that 
+\begin_inset Formula $B$
+\end_inset
+
+ plays 
+\begin_inset Formula $P$
+\end_inset
+
+ is then 
+\begin_inset Formula $\frac{a-b^{\ast}}{a}.$
+\end_inset
+
+ Therefore, while players play pure strategies depending on their type,
+ this is observationaly equivalent to mixed strategies from the point of
+ view of the other player.
+\end_layout
+
+\begin_layout Itemize
+The best strategy for 
+\begin_inset Formula $F$
+\end_inset
+
+ of type 
+\begin_inset Formula $f$
+\end_inset
+
+ is to play 
+\begin_inset Formula $C$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $\frac{b^{\ast}}{a}(4+f)+(1-\frac{b^{\ast}}{a})(1+f)>(1-\frac{b^{\ast}}{a})3,$
+\end_inset
+
+ so 
+\begin_inset Formula $F$
+\end_inset
+
+ plays 
+\begin_inset Formula $C$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $f>2-6\frac{b^{\ast}}{a}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Similarly, the best strategy for 
+\begin_inset Formula $B$
+\end_inset
+
+ of type 
+\begin_inset Formula $b$
+\end_inset
+
+ is to play 
+\begin_inset Formula $C$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $(1-\frac{f^{\ast}}{a})3>(1-\frac{f^{\ast}}{a})(1+b)+\frac{f^{\ast}}{a}(4+b),$
+\end_inset
+
+ so 
+\begin_inset Formula $B$
+\end_inset
+
+ plays 
+\begin_inset Formula $C$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $b<2-6\frac{f^{\ast}}{a}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Both players are indifferent between playing 
+\begin_inset Formula $C$
+\end_inset
+
+ or 
+\begin_inset Formula $P$
+\end_inset
+
+ when 
+\begin_inset Formula $f=f^{\ast}$
+\end_inset
+
+ and 
+\begin_inset Formula $b=b^{\ast},$
+\end_inset
+
+ which leads to the following system of equations:
+\begin_inset Formula \begin{align*}
+f^{\ast} & =2-6\frac{b^{\ast}}{a}\\
+b^{\ast} & =2-6\frac{f^{\ast}}{a}\end{align*}
+
+\end_inset
+
+ which is solved for 
+\begin_inset Formula $f^{\ast}=b^{\ast}=\frac{2a}{6+a}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+From the point of view of 
+\begin_inset Formula $F,$
+\end_inset
+
+ the probability that 
+\begin_inset Formula $B$
+\end_inset
+
+ goes to the pub is then 
+\begin_inset Formula \[
+\Pr(b\geq\frac{2a}{6+a})=1-\frac{2}{6+a}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+From the point of view of 
+\begin_inset Formula $B,$
+\end_inset
+
+ the probability that 
+\begin_inset Formula $F$
+\end_inset
+
+ goes to the café is 
+\begin_inset Formula \[
+\Pr(f\geq\frac{2a}{6+a})=1-\frac{2}{6+a}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+One will notice that as 
+\begin_inset Formula $a\rightarrow0$
+\end_inset
+
+ (uncertainty disappears), then each player can expect the other player
+ to play her preferred choice with probability 
+\begin_inset Formula $\frac{2}{3}$
+\end_inset
+
+, which corresponds to the MSNE of the game.
+ This means that `purification' of the pure-strategy Bayesian equilibrium
+ of this game resembles the MSNE of the unperturbed game.
+ Note however that the PSNE of the unperturbed game are also Bayesian equilibria
+ of the perturbed game.
+ This means that purification of pure-strategy Nash equilibria does not
+ exclude any NE of the original game with no uncertainty.
+\end_layout
+
+\begin_layout Subsubsection
+Auctions
+\end_layout
+
+\begin_layout Standard
+Auctions are a specific example of Bayesian games, whereby one or many buyers
+ and one or many sellers must reach an agreement over the exchange of one
+ or many goods.
+ This agreement may be about exchange price, quantity exchanged, and the
+ identity and allocation to sellers and buyers.
+\end_layout
+
+\begin_layout Standard
+We will examine two very simple mechanisms: 
+\end_layout
+
+\begin_layout Enumerate
+One is such that a seller must decide to which of two buyers to sell one
+ indivisible good in its possession, and at what price.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The other is such that one buyer is faced with one seller with one indivisible
+ good, and must reach an agreement over the price at which that one indivisible
+ good will be exchanged.
+ 
+\end_layout
+
+\begin_layout Standard
+There are a variety of auction mechanisms which could be applied to either
+ of the two situations, and there are also a variety of other situations
+ where auction mechanisms could be applied.
+ We will examine only the first price sealed bid auction as applied to the
+ first situation, and the double auction as applied to the second situation.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+
+\emph on
+1) First Price Sealed Bid Auction
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Two buyers, 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $j,$
+\end_inset
+
+ submit sealed bids to a seller.
+ The highest bidder wins the object, and pays his/her bid to the seller.
+ The object is worth 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ to buyer 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ to buyer 
+\begin_inset Formula $j.$
+\end_inset
+
+ 
+\begin_inset Formula $i$
+\end_inset
+
+ knows 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ but not 
+\begin_inset Formula $v_{j},$
+\end_inset
+
+ and 
+\begin_inset Formula $j$
+\end_inset
+
+ knows 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ but not 
+\begin_inset Formula $v_{i}.$
+\end_inset
+
+ 
+\begin_inset Formula $i$
+\end_inset
+
+ believes 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ is distributed uniformly over 
+\begin_inset Formula $[0,1],$
+\end_inset
+
+ 
+\begin_inset Formula $j$
+\end_inset
+
+ believes 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ is distributed uniformly over 
+\begin_inset Formula $[0,1].$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Strategies are of the form 
+\begin_inset Formula $b_{i}:[0,1]\rightarrow\mathbb{R},$
+\end_inset
+
+ which for any 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ assigns a bid 
+\begin_inset Formula $b_{i}(v_{i}).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Payoffs can be represented as follows:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $u_{i}(b_{i};v_{i})=\begin{cases}
+\begin{tabular}{c}
+ $0\text{ if }b_{i}<b_{j}$\\
+$\frac{v_{i}-b_{i}}{2}\text{ if }b_{i}=b_{j}$\\
+$v_{i}-b_{i}\text{ if }b_{i}>b_{j}$\end{tabular}\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We are going to looks for a linear bidding strategy, s.t.
+ 
+\begin_inset Formula $b_{i}(v_{i})=\alpha+\beta v_{i}.$
+\end_inset
+
+ Neglecting the case where 
+\begin_inset Formula $b_{i}=b_{j}$
+\end_inset
+
+ (an event of probability measure 
+\begin_inset Formula $0$
+\end_inset
+
+), and assuming 
+\begin_inset Formula $b_{j}\in\lbrack\alpha,\alpha+\beta],$
+\end_inset
+
+ the expected payoff to player 
+\begin_inset Formula $j$
+\end_inset
+
+ who is bidding 
+\begin_inset Formula $b_{j}$
+\end_inset
+
+ is then 
+\begin_inset Formula \begin{align*}
+E(u_{j}(b_{j};v_{j})) & =\Pr(b_{j}\geq\alpha+\beta v_{i})(v_{j}-b_{j})\\
+ & =\Pr(\frac{b_{j}-\alpha}{\beta}\geq v_{i})(v_{j}-b_{j})\\
+ & =\frac{b_{j}-\alpha}{\beta}(v_{j}-b_{j})\end{align*}
+
+\end_inset
+
+ This is a concave function which attains a maximum for 
+\begin_inset Formula $b_{j}=\frac{v_{j}+\alpha}{2}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $j$
+\end_inset
+
+ indeed chooses 
+\begin_inset Formula $b_{j}=\frac{v_{j}+\alpha}{2}.$
+\end_inset
+
+ Then 
+\begin_inset Formula \begin{align*}
+E(u_{i}(b_{i};v_{i})) & =\Pr(b_{i}\geq\frac{v_{j}+\alpha}{2})(v_{i}-b_{i})\\
+ & =\Pr(2b_{i}-\alpha\geq v_{j})(v_{i}-b_{i})\\
+ & =(2b_{i}-\alpha)(v_{i}-b_{i})\end{align*}
+
+\end_inset
+
+ This is a concave function that attains its maximum for 
+\begin_inset Formula $b_{i}=\frac{\alpha+2v_{i}}{4}.$
+\end_inset
+
+ Combining the two equations for 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $b_{\text{j}}$
+\end_inset
+
+, one obtains 
+\begin_inset Formula $\alpha=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta=\frac{1}{2}.$
+\end_inset
+
+ Each bidder thus bids half his/her own valuation for the good.
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Remark:
+\emph default
+ This linear bidding strategy is the unique symmetric Bayesian equilibrium
+ if valuations are uniformly distributed.
+ There may be other, non-symmetric Bayesian strategies, and if valuations
+ are not uniformly distributed, then the linear bidding strategy is not
+ necessarily optimal.
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Exercise:
+\emph default
+ Consider the three following alternative bidding rules, and solve for the
+ optimal bidding strategy: 
+\end_layout
+
+\begin_layout Itemize
+The second price auction, whereby the highest bidder wins the good and pays
+ the bid of the second highest bidder.
+ 
+\end_layout
+
+\begin_layout Itemize
+The `all pay' auction, whereby the highest bidder wins the good and both
+ bidders pay their own bid.
+ 
+\end_layout
+
+\begin_layout Itemize
+The `loser pays' auction, whereby the highest bidder wins the good and the
+ second highest bidder pays the bid of the highest bidder.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+
+\emph on
+2) Double Auction
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A buyer with valuation 
+\begin_inset Formula $v_{b}\sim U[0,1]$
+\end_inset
+
+ for a good is faced with a seller with valuation 
+\begin_inset Formula $v_{s}\sim U[0,1]$
+\end_inset
+
+ for a good.
+ Both have to submit their bids (offered price for the buyer, asked price
+ for the seller), simultaneously.
+ If 
+\begin_inset Formula $p_{b}<p_{s}$
+\end_inset
+
+ then there is no trade.
+ If 
+\begin_inset Formula $p_{b}\geq p_{s},$
+\end_inset
+
+ then they split the difference, so the trade price is 
+\begin_inset Formula $p=\frac{p_{s}+p_{b}}{2}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Payoffs are thus as follows:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $u_{b}(p_{b};v_{b})=\begin{cases}
+\begin{tabular}{c}
+ $0\text{ if }p_{b}<p_{s}$\\
+$v_{b}-\frac{p_{s}+p_{b}}{2}\text{ if }p_{b}\geq p_{s}$\end{tabular}\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $u_{s}(p_{s};v_{s})=\begin{cases}
+\begin{tabular}{c}
+ $0\text{ if }p_{b}<p_{s}$\\
+$\frac{p_{s}+p_{b}}{2}-v_{s}\text{ if }p_{b}\geq p_{s}$\end{tabular}\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As before, one will consider linear bidding strategies s.t.
+ 
+\begin_inset Formula $p_{b}(v_{b})=\alpha+\beta v_{b}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{s}(v_{s})=\gamma+\delta v_{s}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider the strategy of the buyer.
+ The expected payoff to the buyer who is offering 
+\begin_inset Formula $p_{b}$
+\end_inset
+
+ is 
+\begin_inset Formula \[
+E(u_{b}(p_{b};v_{b}))=\Pr(p_{b}\geq p_{s})(v_{b}-\frac{E(p_{s}\mid p_{b}\geq p_{s})+p_{b}}{2})\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with
+\begin_inset Formula \begin{align*}
+E(p_{s}\text{ }|\text{ }p_{b} & \geq p_{s})=E(\gamma+\delta v_{s}\mid p_{b}\geq\gamma+\delta v_{s})\\
+ & =\gamma+\delta E(v_{s}\mid\frac{p_{b}-\gamma}{\delta}\geq v_{s})\\
+ & =\gamma+\delta\frac{p_{b}-\gamma}{2\delta}\\
+ & =\frac{1}{2}\gamma+\frac{1}{2}p_{b}\end{align*}
+
+\end_inset
+
+ so
+\begin_inset Formula \begin{align*}
+E(u_{b}(p_{b};v_{b})) & =\Pr(\frac{p_{s}-\gamma}{\delta}\geq v_{s})(v_{b}-\frac{\frac{1}{2}\gamma+\frac{1}{2}p_{b}+p_{b}}{2})\\
+ & =\frac{p_{b}-\gamma}{\delta}(v_{b}-\frac{\gamma+3p_{b}}{4})\end{align*}
+
+\end_inset
+
+ This is a concave function that is maximized for 
+\begin_inset Formula $p_{b}=\frac{\gamma+2v_{b}}{3}.$
+\end_inset
+
+ Similarly, the optimal bidding strategy for the seller is to ask 
+\begin_inset Formula $p_{s}=\frac{\alpha+\beta+2v_{s}}{3}.$
+\end_inset
+
+ Combining the two equations for 
+\begin_inset Formula $p_{b}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{s}$
+\end_inset
+
+ with the assumed expression of their value, one obtains 
+\begin_inset Formula $\beta=\delta=\frac{2}{3}.$
+\end_inset
+
+ while 
+\begin_inset Formula $\alpha=\frac{\gamma}{3}$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma=\frac{\alpha+\beta}{3}.$
+\end_inset
+
+ This is solved for 
+\begin_inset Formula $\gamma=\frac{1}{4}$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha=\frac{1}{12}.$
+\end_inset
+
+ This means that both buyer and seller will 
+\begin_inset Quotes eld
+\end_inset
+
+shade
+\begin_inset Quotes erd
+\end_inset
+
+ their valuation by a factor of 2/3 and there is a range of values of 
+\begin_inset Formula $v_{s}$
+\end_inset
+
+ and 
+\begin_inset Formula $v_{b}$
+\end_inset
+
+ for which no trade ever takes place.
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Further 
+\series bold
+work:
+\series default
+\emph default
+ When does trade take place? When is it optimal for trade to take place?
+ Is the above mechanism efficient? Can you think of a more efficient mechanism
+ for bilateral trade?
+\end_layout
+
+\begin_layout Section
+Repeated games
+\end_layout
+
+\begin_layout Standard
+In this part, we will consider contexts in which the same game is played
+ a repeated number of times, and we will show that repeating a game over
+ several time periods allows players to sustain equilibria that would not
+ be equilibria of the one-stage game and may improve per-period outcomes
+ for both of them.
+\end_layout
+
+\begin_layout Subsection
+Finitely repeated games
+\end_layout
+
+\begin_layout Standard
+In this part, we consider settings in which all players know when the game
+ will end.
+\end_layout
+
+\begin_layout Subsubsection
+Example
+\end_layout
+
+\begin_layout Standard
+Consider the following game:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $L$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $T$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3,1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $5,0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $M$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2,1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1,2$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3,1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $B$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1,2$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4,4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+a) Suppose the game is played only once.
+ Find all its Nash Equilibria.
+ 
+\end_layout
+
+\begin_layout Description
+Answer: This game has two PSNEs, 
+\begin_inset Formula $(T,L)$
+\end_inset
+
+ and 
+\begin_inset Formula $(M,C)$
+\end_inset
+
+.
+ It also has mixed strategy equilibria as follows:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Suppose player 
+\begin_inset Formula $2$
+\end_inset
+
+ mixes between 
+\begin_inset Formula $L$
+\end_inset
+
+, 
+\begin_inset Formula $C$
+\end_inset
+
+ and 
+\begin_inset Formula $R$
+\end_inset
+
+ with probabilities 
+\begin_inset Formula $l,$
+\end_inset
+
+ 
+\begin_inset Formula $c$
+\end_inset
+
+ and 
+\begin_inset Formula $1-c-l$
+\end_inset
+
+ respectively.
+ Then expected payoffs for 
+\begin_inset Formula $1$
+\end_inset
+
+ can written as follows:
+\begin_inset Formula \begin{align*}
+u_{1}(T) & =3l+5(1-c-l)\\
+u_{1}(M) & =2l+c+3(1-c-l)\\
+u_{1}(B) & =l+4(1-c-l)\end{align*}
+
+\end_inset
+
+ and one can see that 
+\begin_inset Formula $u_{1}(T)>u_{1}(B)$
+\end_inset
+
+ so player 
+\begin_inset Formula $1$
+\end_inset
+
+ never plays 
+\begin_inset Formula $B$
+\end_inset
+
+ if player 2 plays a mixed strategy.
+\end_layout
+
+\begin_layout Standard
+Consider now player 
+\begin_inset Formula $1$
+\end_inset
+
+ who mixes between 
+\begin_inset Formula $T$
+\end_inset
+
+ and 
+\begin_inset Formula $M$
+\end_inset
+
+ with probabilities 
+\begin_inset Formula $t$
+\end_inset
+
+ and 
+\begin_inset Formula $m$
+\end_inset
+
+ respectively.
+ Then expected payoffs for 
+\begin_inset Formula $2$
+\end_inset
+
+ can be written as follows:
+\begin_inset Formula \begin{align*}
+u_{2}(L) & =t+m\\
+u_{1}(C) & =2m\\
+u_{1}(R) & =m\end{align*}
+
+\end_inset
+
+ If 
+\begin_inset Formula $m=0$
+\end_inset
+
+ then 
+\begin_inset Formula $2$
+\end_inset
+
+ would play 
+\begin_inset Formula $L,$
+\end_inset
+
+ while if 
+\begin_inset Formula $m>0,$
+\end_inset
+
+ then 
+\begin_inset Formula $u_{1}(C)>u_{1}(R),$
+\end_inset
+
+ so 
+\begin_inset Formula $R$
+\end_inset
+
+ is never played in a mixed strategy equilibrium.
+ One is thus left with the following game to examine in order to find MSNEs
+ of this game:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3,1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2,1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1,2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A MSNE of this game must be such that 
+\begin_inset Formula \begin{align*}
+3l & =2l+(1-l)\\
+1 & =2(1-t)\end{align*}
+
+\end_inset
+
+ so the unique MSNE of this game is such that 
+\begin_inset Formula $l=\frac{1}{2},$
+\end_inset
+
+ 
+\begin_inset Formula $c=\frac{1}{2},$
+\end_inset
+
+ 
+\begin_inset Formula $t=\frac{1}{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $m=\frac{1}{2}.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+b) Suppose now the game is repeated twice, that the players can observe
+ the outcome of the first stage before the second stage begins and the per-perio
+d discount factor is 
+\begin_inset Formula $\delta$
+\end_inset
+
+.
+ Show that the payoff 
+\begin_inset Formula $(4,4)$
+\end_inset
+
+ can be achieved in the first stage in a pure-strategy subgame-perfect Nash
+ equilibrium, and describe the conditional strategies which achieve this.
+\end_layout
+
+\begin_layout Description
+Answer: Consider 
+\begin_inset Formula $2$
+\end_inset
+
+'s conditional strategy such that if 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $B$
+\end_inset
+
+ in the first stage, 
+\begin_inset Formula $2$
+\end_inset
+
+ plays 
+\begin_inset Formula $L$
+\end_inset
+
+ in the second stage, and if 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $T$
+\end_inset
+
+ in the first stage, 
+\begin_inset Formula $2$
+\end_inset
+
+ plays 
+\begin_inset Formula $C$
+\end_inset
+
+ in the second stage.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+This strategy can be explained as such: 
+\begin_inset Formula $2$
+\end_inset
+
+ plays 
+\begin_inset Formula $R$
+\end_inset
+
+ in the first stage, hoping that 
+\begin_inset Formula $1$
+\end_inset
+
+ will play 
+\begin_inset Formula $B.$
+\end_inset
+
+ If 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $B$
+\end_inset
+
+ indeed, then he is rewarded by 
+\begin_inset Formula $2$
+\end_inset
+
+ playing 
+\begin_inset Formula $L$
+\end_inset
+
+ in the second stage, when 
+\begin_inset Formula $1$
+\end_inset
+
+ will play 
+\begin_inset Formula $T$
+\end_inset
+
+ and get 
+\begin_inset Formula $3.$
+\end_inset
+
+ If 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $T$
+\end_inset
+
+ instead (best response to 
+\begin_inset Formula $R$
+\end_inset
+
+), then he is punished by 
+\begin_inset Formula $2$
+\end_inset
+
+ playing 
+\begin_inset Formula $C$
+\end_inset
+
+ in the second stage, when 
+\begin_inset Formula $1$
+\end_inset
+
+ will play 
+\begin_inset Formula $M$
+\end_inset
+
+ and get only 
+\begin_inset Formula $1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $1$
+\end_inset
+
+ will conform to 
+\begin_inset Formula $2$
+\end_inset
+
+'s expectations whenever the discounted payoff to 
+\begin_inset Formula $1$
+\end_inset
+
+ under this equilibrium, 
+\begin_inset Formula $4+3\delta$
+\end_inset
+
+ is more than the deviation payoff of 
+\begin_inset Formula $5+\delta$
+\end_inset
+
+.
+ This is true for 
+\begin_inset Formula $\delta\geq1/2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Now, suppose that as under this equilibrium, 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $B$
+\end_inset
+
+ in the first stage.
+ Then the best response for 
+\begin_inset Formula $2$
+\end_inset
+
+ is to play 
+\begin_inset Formula $R.$
+\end_inset
+
+ There is thus no incentive under this equilibrium for 2 to deviate from
+ the first stage action.
+\end_layout
+
+\begin_layout Standard
+Therefore, there is a PSNE of the two-stage game such that: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $2$
+\end_inset
+
+ plays 
+\begin_inset Formula $R$
+\end_inset
+
+ in the first stage, 
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $1$
+\end_inset
+
+ played 
+\begin_inset Formula $B$
+\end_inset
+
+ in the first stage, then 
+\begin_inset Formula $2$
+\end_inset
+
+ plays 
+\begin_inset Formula $L$
+\end_inset
+
+ in the second stage (so 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $T$
+\end_inset
+
+ in the second stage).
+ 
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $1$
+\end_inset
+
+ played 
+\begin_inset Formula $T$
+\end_inset
+
+ in the first stage then 
+\begin_inset Formula $2$
+\end_inset
+
+ plays 
+\begin_inset Formula $C$
+\end_inset
+
+ in the second stage (so 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $M$
+\end_inset
+
+ in the second stage).
+ 
+\end_layout
+
+\begin_layout Standard
+This equilibrium is supported for any 
+\begin_inset Formula $\delta\geq1/2.$
+\end_inset
+
+ One can check there is no incentive for players to deviate from its prescribed
+ course of action.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Definition
+\end_layout
+
+\begin_layout Description
+Definition: A finitely repeated game with discounting of the stage game
+ 
+\begin_inset Formula $G$
+\end_inset
+
+ over 
+\begin_inset Formula $T$
+\end_inset
+
+ periods is defined by 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Strategic form game 
+\begin_inset Formula $G=\left\{ N,\left\{ S_{i}\right\} _{i\in N},\left\{ u_{i}\right\} _{i\in N}\right\} $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T$
+\end_inset
+
+, the number of periods over which the stage game 
+\begin_inset Formula $G$
+\end_inset
+
+ is played.
+\end_layout
+
+\begin_layout Enumerate
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\begin_inset Formula $s^{t}$
+\end_inset
+
+ the strategy profile played in period 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H=\underset{t=0}{\overset{t=T}{\cup}}S^{t},$
+\end_inset
+
+ the set of possible histories in the game, with 
+\begin_inset Formula $S^{0}=\emptyset$
+\end_inset
+
+ the initial history.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $U_{i}=\underset{t=1}{\overset{t=T}{\sum}}\delta^{t-1}u_{i}(s^{t})$
+\end_inset
+
+, the set of payoffs of the game, with 
+\begin_inset Formula $s^{t}$
+\end_inset
+
+ the strategy profile played in period 
+\begin_inset Formula $t$
+\end_inset
+
+, and 
+\begin_inset Formula $\delta$
+\end_inset
+
+ the per-period discount factor.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features>
+<column alignment="center" valignment="top" width="0">
+<row topspace="default" bottomspace="default">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Gamma=\left\{ G,H,\left\{ U_{i}\right\} _{i\in N}\right\} $
+\end_inset
+
+ defines the finitely repeated game based on 
+\begin_inset Formula $G$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Note: A finitely repeated game is merely a special form of an extensive
+ form game with perfect information where the player function is the same
+ at every stage of the game and includes all players (
+\begin_inset Formula $P(h)=N$
+\end_inset
+
+ for any 
+\begin_inset Formula $h$
+\end_inset
+
+ in 
+\begin_inset Formula $H$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Description
+
+\emph on
+Example:
+\emph default
+ In the game given as our first example, then:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $N=\left\{ 1,2\right\} $
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S_{1}=\left\{ T,M,B\right\} ,$
+\end_inset
+
+ 
+\begin_inset Formula $S_{2}=\left\{ L,C,R\right\} ,$
+\end_inset
+
+ while 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\{ u_{i}\right\} _{i\in N}$
+\end_inset
+
+ are as shown in the normal form representation of the game (for example,
+ 
+\begin_inset Formula $u_{2}(T,L)=1$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+The twice repeated game is such that 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $H=\underset{t=0}{\overset{t=T}{\cup}}S^{t},$
+\end_inset
+
+ the set of possible histories in the game, has got elements such as for
+ example 
+\begin_inset Formula $\left\{ (T,L),(M,C)\right\} .$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $U_{i}=\underset{t=1}{\overset{t=T}{\sum}}\delta^{t-1}u_{i}(s^{t})$
+\end_inset
+
+ with 
+\begin_inset Formula $s^{t}$
+\end_inset
+
+ the strategy profile played in period 
+\begin_inset Formula $t.$
+\end_inset
+
+ For example, in the example above, 
+\begin_inset Formula $U_{1}=u_{1}(T,L)+\delta u_{1}(M,C)=3+\delta.$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Exercise
+\end_layout
+
+\begin_layout Standard
+Consider the following game:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $W$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $X$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Y$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Z$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2,2$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x,0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1,0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $B$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,x$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4,4$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1,0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,2$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $D$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,-1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,-1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1,-1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2,0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $x>4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+a) Assume that the game is played only once.
+ Find all its pure strategy Nash equilibria.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+
+\series bold
+\shape slanted
+\emph on
+Answer:
+\series default
+\shape default
+ 
+\shape slanted
+There are three PSNEs: 
+\begin_inset Formula $(A,W)$
+\end_inset
+
+, 
+\begin_inset Formula $(C,Y)$
+\end_inset
+
+ and 
+\begin_inset Formula $(D,Z)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+b) Assume now that the game is repeated 
+\begin_inset Formula $N$
+\end_inset
+
+ times, that the players can observe past outcomes before the current stage
+ begins and that the discount factor is 
+\begin_inset Formula $\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+i) Suppose that 
+\begin_inset Formula $N=2$
+\end_inset
+
+.
+ For what values of 
+\begin_inset Formula $x$
+\end_inset
+
+ can the payoff 
+\begin_inset Formula $(4,4)$
+\end_inset
+
+ be achieved in the first stage in a pure-strategy subgame-perfect Nash
+ equilibrium.
+ Describe the strategies which achieve this.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape slanted
+\emph on
+Answer:
+\series default
+\shape default
+ 
+\shape slanted
+
+\begin_inset Formula $(B,X)$
+\end_inset
+
+ can be supported in the first stage if 
+\begin_inset Formula $1$
+\end_inset
+
+ does not deviate to 
+\begin_inset Formula $A$
+\end_inset
+
+ to get 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $2$
+\end_inset
+
+ does not deviate to 
+\begin_inset Formula $W$
+\end_inset
+
+ to get 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ The best punishment if 
+\begin_inset Formula $1$
+\end_inset
+
+ deviates is for 
+\begin_inset Formula $2$
+\end_inset
+
+ to play 
+\begin_inset Formula $Y$
+\end_inset
+
+ in the second stage, and the best punishment if 
+\begin_inset Formula $2$
+\end_inset
+
+ deviates is for 
+\begin_inset Formula $1$
+\end_inset
+
+ to play 
+\begin_inset Formula $D$
+\end_inset
+
+ in the second stage.
+ The reward if both conform is to play 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $W$
+\end_inset
+
+ respectively in the second stage.
+ This equilibrium is supported if both 
+\begin_inset Formula $1$
+\end_inset
+
+ and 
+\begin_inset Formula $2$
+\end_inset
+
+ conform, which happens if 
+\begin_inset Formula $4+2\delta\geq x$
+\end_inset
+
+, which is rewritten as 
+\begin_inset Formula $\delta\geq\frac{x-4}{2}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\delta\leq1,$
+\end_inset
+
+ this is possible only subject to 
+\begin_inset Formula $x\leq6$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+ii) Suppose that 
+\begin_inset Formula $x=9$
+\end_inset
+
+.
+ What is the smallest number of 
+\begin_inset Formula $N$
+\end_inset
+
+ such that the payoff 
+\begin_inset Formula $(4,4)$
+\end_inset
+
+ can be achieved in the first stage in a pure-strategy subgame-perfect Nash
+ equilibrium.
+ Describe the strategies which achieve this.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape slanted
+\emph on
+Answer:
+\series default
+\shape default
+ 
+\shape slanted
+Since 
+\begin_inset Formula $x=9>6$
+\end_inset
+
+ then 
+\begin_inset Formula $(B,X)$
+\end_inset
+
+ cannot be supported in the first stage of a two stage game (see 
+\begin_inset Formula $(ii)$
+\end_inset
+
+).
+ Now, the minimum 
+\begin_inset Formula $N$
+\end_inset
+
+ that supports 
+\begin_inset Formula $(B,X)$
+\end_inset
+
+ in the first stage must be such that 
+\begin_inset Formula $4+2\delta+2\delta^{2}+2\delta^{3}+\ldots2\delta^{N-1}\geq9$
+\end_inset
+
+.
+ If this is supported for 
+\begin_inset Formula $\delta=1$
+\end_inset
+
+, then this is sufficient for our proof.
+ Now, 
+\begin_inset Formula $4+2+2+2>9>4+2+2$
+\end_inset
+
+, so we need only 
+\begin_inset Formula $4$
+\end_inset
+
+ periods to support 
+\begin_inset Formula $(B,X)$
+\end_inset
+
+ in the first period.
+ If 
+\begin_inset Formula $(B,X)$
+\end_inset
+
+ is played in the first period, then this will be followed by 
+\begin_inset Formula $(A,W)$
+\end_inset
+
+ in all the following periods.
+ If 
+\begin_inset Formula $1$
+\end_inset
+
+ deviates to 
+\begin_inset Formula $A$
+\end_inset
+
+ in the first period, then 
+\begin_inset Formula $(C,Y)$
+\end_inset
+
+ will be played in all the following periods, while if 
+\begin_inset Formula $2$
+\end_inset
+
+ deviates, then 
+\begin_inset Formula $(D,Z)$
+\end_inset
+
+ will be played in all the following periods.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Infinitely repeated games
+\end_layout
+
+\begin_layout Standard
+Consider in this part situations in which the time horizon for both players
+ is infinite, so they do not know when the game will end.
+ In that case, solving by backward induction does not work, since there
+ is no final period to start the backward induction from.
+\end_layout
+
+\begin_layout Subsubsection
+Example 
+\end_layout
+
+\begin_layout Standard
+Consider the following prisoners' dilemma game in normal form:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $D$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $5,5$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,7$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $D$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $7,0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1,1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The one-stage PSNE of this game is 
+\begin_inset Formula $(D,D).$
+\end_inset
+
+ This is the unique NE of this game.
+ Consider now a finitely repeated game of this stage game, with end period
+ 
+\begin_inset Formula $T.$
+\end_inset
+
+ One can check that by backward induction, the only SPNE of this stage game
+ is to play 
+\begin_inset Formula $(D,D)$
+\end_inset
+
+ in all periods.
+ Does this translate into the infinitely repeated version of the prisoners'
+ dilemma game? One will see that under some conditions on the discount factor,
+ the outcome 
+\begin_inset Formula $(C,C)$
+\end_inset
+
+ can be obtained in every stages of the repeated game if 
+\begin_inset Formula $T$
+\end_inset
+
+ is infinite.
+\end_layout
+
+\begin_layout Description
+Definition: 
+\emph on
+Convex
+\series bold
+ 
+\series default
+Hull:
+\emph default
+ Define the Convex Hull as the range of payoffs that can be attained by
+ playing pure-strategy combinations of the stage game, then the convex hull
+ of the game can be represented as follows:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page25.pdf
+	lyxscale 20
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\align center
+Convex hull for the prisoners' dilemma
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For example, if players play 
+\begin_inset Formula $(C,D)$
+\end_inset
+
+ with probability 
+\begin_inset Formula $\frac{1}{2},$
+\end_inset
+
+ 
+\begin_inset Formula $(D,C)$
+\end_inset
+
+ with probability 
+\begin_inset Formula $\frac{1}{4}$
+\end_inset
+
+ and 
+\begin_inset Formula $(D,D)$
+\end_inset
+
+ with probability 
+\begin_inset Formula $\frac{1}{4},$
+\end_inset
+
+ then 
+\begin_inset Formula $1$
+\end_inset
+
+ will get expected payoff of 
+\begin_inset Formula $2$
+\end_inset
+
+ and 
+\begin_inset Formula $2$
+\end_inset
+
+ will get expected payoff of 
+\begin_inset Formula $\frac{15}{4}=3.75$
+\end_inset
+
+.
+ This is the point that is represented inside the hull.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+The Nash-Threats Folk Theorem
+\end_layout
+
+\begin_layout Description
+Nash-Threats
+\series medium
+ 
+\series bold
+Folk Theorem:
+\series default
+ Every payoffs within the convex hull that are higher than the Nash equilibrium
+ payoff profile for both players can be achieved as a SPNE of the infinitely
+ repeated game subject to 
+\begin_inset Formula $\delta$
+\end_inset
+
+ being high enough.
+ 
+\end_layout
+
+\begin_layout Description
+Remark: Note the proviso that 
+\begin_inset Formula $\delta$
+\end_inset
+
+ be high enough.
+ This means that some payoffs that may be achieved for some 
+\begin_inset Formula $\delta$
+\end_inset
+
+ may not be achievable for some lower 
+\begin_inset Formula $\delta$
+\end_inset
+
+, and conversely.
+ There are thus two ways to apply the theorem: either see what is the maximum
+ payoff that may be achieved for a given 
+\begin_inset Formula $\delta$
+\end_inset
+
+, or see what level of 
+\begin_inset Formula $\delta$
+\end_inset
+
+ is needed to attain a given payoff.
+\end_layout
+
+\begin_layout Description
+\align left
+Example: The payoffs that are attainable can be represented as follows in
+ the PD studied above:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page26.pdf
+	lyxscale 20
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\align center
+Set of attainable payoffs in the prisoners' dilemma 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The convex hull minus its hashed areas is the set of attainable payoffs.
+ We will see below how such payoffs may be achieved.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Example: In the PD under study, let us for example study how the payoff
+ 
+\begin_inset Formula $(5,5)$
+\end_inset
+
+ can be attained.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Consider the following `tit-for-tat' conditional stage game strategy: Play
+ 
+\begin_inset Formula $C$
+\end_inset
+
+ in the first period.
+ In the 
+\begin_inset Formula $t^{th}$
+\end_inset
+
+ period, and if the other player played 
+\begin_inset Formula $C$
+\end_inset
+
+ in all previous periods, then play 
+\begin_inset Formula $C$
+\end_inset
+
+ as well.
+ If the other player played 
+\begin_inset Formula $D$
+\end_inset
+
+ in any of the previous periods, then play 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Playing 
+\begin_inset Formula $C$
+\end_inset
+
+ will then be optimal only if in all previous periods both players always
+ played 
+\begin_inset Formula $C,$
+\end_inset
+
+ and if playing 
+\begin_inset Formula $C$
+\end_inset
+
+ in this period obtains higher payoff than playing 
+\begin_inset Formula $D.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let us see therefore what is the payoff to playing 
+\begin_inset Formula $D$
+\end_inset
+
+: If one plays 
+\begin_inset Formula $D$
+\end_inset
+
+ in this period, then one makes 
+\begin_inset Formula $7$
+\end_inset
+
+ this period, and 
+\begin_inset Formula $1$
+\end_inset
+
+ in all subsequent periods.
+ If one plays 
+\begin_inset Formula $C$
+\end_inset
+
+ in this period, then one will also play 
+\begin_inset Formula $C$
+\end_inset
+
+ in the next period (the incentives are the same next period as in this
+ period), so the expected payoff of playing 
+\begin_inset Formula $C$
+\end_inset
+
+ this period is 
+\begin_inset Formula $5$
+\end_inset
+
+ forever.
+ Therefore, playing 
+\begin_inset Formula $C$
+\end_inset
+
+ this period is optimal s.t.
+ 
+\begin_inset Formula \[
+5+5\delta+5\delta^{2}+5\delta^{3}+....=\frac{5}{1-\delta}\geq7+\frac{\delta}{1-\delta}\]
+
+\end_inset
+
+ which translates in 
+\begin_inset Formula \[
+\delta\geq\frac{1}{3}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As claimed in the theorem, one can attain payoff 
+\begin_inset Formula $(5,5)$
+\end_inset
+
+, which is inside the convex hull and more than what is obtained in the
+ NE of the stage game for both agents, s.t.
+ 
+\begin_inset Formula $\delta$
+\end_inset
+
+ high enough, in this case, 
+\begin_inset Formula $\delta\geq\frac{1}{3}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Extension: Suppose 
+\begin_inset Formula $\delta<\frac{1}{3}$
+\end_inset
+
+, for example, 
+\begin_inset Formula $\delta=\frac{1}{4}$
+\end_inset
+
+.
+ What is the maximum payoff that can be attained? The theorem tells us that
+ a payoff within the non-shaded area in the convex hull on the graph above
+ can be attained, but how, and what payoff?
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The `how' is rather complicated, and involves assuming that players have
+ access to publicly observable randomizing devices so that for example,
+ they know when to play 
+\begin_inset Formula $C$
+\end_inset
+
+ and when to play 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ This public randomizing device would draw their strategy at random according
+ to pre-determined probabilities.
+ It would be possible for either player to check the other player played
+ what they were supposed to play.
+ We can prove that the greatest payoff that may be achieved subject to a
+ given 
+\begin_inset Formula $\delta$
+\end_inset
+
+ is such that both players play symmetric strategies, i.e.
+ both play C with the same probability.
+ The probability 
+\begin_inset Formula $p$
+\end_inset
+
+ with which both 1 and 2 are asked to play C determines their payoff 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Indeed, I will have 
+\begin_inset Formula $a=5p^{2}+7p(1-p)+(1-p)^{2}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1 will not deviate from playing C when told to do so s.t.
+ 
+\begin_inset Formula $5p+\delta\frac{a}{1-\delta}\geq7p+1(1-p)+\frac{\delta}{1-\delta}$
+\end_inset
+
+ (the constraint for 2 is the same).
+ I can thus conclude, replacing 
+\begin_inset Formula $a$
+\end_inset
+
+ by its expression in 
+\begin_inset Formula $p$
+\end_inset
+
+ and rewriting the above equation, that I will need that 
+\begin_inset Formula $p$
+\end_inset
+
+ be set such that 
+\begin_inset Formula $\frac{a-1}{1+p}\geq\frac{1-\delta}{\delta}$
+\end_inset
+
+.
+ Note that, as stated previously, for any 
+\begin_inset Formula $\delta\geq\frac{1}{3}$
+\end_inset
+
+ then 
+\begin_inset Formula $p=1$
+\end_inset
+
+ and full cooperation can be sustained.
+ For 
+\begin_inset Formula $\delta=\frac{1}{4}$
+\end_inset
+
+, no cooperation is sustainable (
+\begin_inset Formula $p=0)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

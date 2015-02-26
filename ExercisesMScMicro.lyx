@@ -1,0 +1,2865 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Choice under uncertainty
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Exercises 1, 2 and 3 were contributed by previous teachers in MSc Economic
+ Theory 1 at the UEA.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+1.
+ The figure shows indifference curves for a particular individual over lotteries
+ involving three possible outcomes, 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+, and 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+, such that 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+ is strictly preferred to 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ which in turn is strictly preferred to 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page27.pdf
+	lyxscale 20
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\align center
+
+\size normal
+Two lotteries and indifference curves in the Marschak-Machina triangle
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Justifying your answer, explain:
+\end_layout
+
+\end_deeper
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) how their attitudes towards risk differs between point A and point B
+ in the figure and 
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) which of the axioms of expected utility theory are broken by these indifferen
+ce curves.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+2.
+ A six-sided die is to be rolled.
+ Consider the following four lotteries:
+\end_layout
+
+\begin_layout Itemize
+Lottery A pays £10 on all numbers.
+\end_layout
+
+\begin_layout Itemize
+Lottery B pays £24 on number 1-3, and nothing on 4-6.
+\end_layout
+
+\begin_layout Itemize
+Lottery C pays £10 on numbers 1-4, and nothing on 5-6.
+\end_layout
+
+\begin_layout Itemize
+Lottery D pays £24 on numbers 5-6, and nothing on 1-4.
+\end_layout
+
+\begin_layout Description
+Alexia prefers A to B.
+ She also prefers D to C.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) Are these preferences consistent with expected utility theory?
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) Are they consistent with prospect theory?
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) Are they consistent with regret theory?
+\end_layout
+
+\begin_layout Standard
+In each case justify your answer.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+3.
+ Consider the following six lotteries:
+\end_layout
+
+\begin_layout Itemize
+Lottery A pays £10 with probability 1.
+\end_layout
+
+\begin_layout Itemize
+Lottery B pays £30 with probability 0.4, otherwise nothing.
+\end_layout
+
+\begin_layout Itemize
+Lottery C pays £10 with probability 0.25 otherwise nothing.
+\end_layout
+
+\begin_layout Itemize
+Lottery D pays £30 with probability 0.1, otherwise nothing.
+\end_layout
+
+\begin_layout Itemize
+Lottery E pays £12 with probability 0.5, otherwise nothing.
+\end_layout
+
+\begin_layout Itemize
+Lottery F pays £30 with probability 0.2, £12 with probability 0.6, otherwise
+ nothing.
+\end_layout
+
+\begin_layout Description
+Adelina's preferences over lotteries satisfy the axioms of expected utility
+ theory.
+ She prefers lottery C to D.
+ What are her preferences over the following pairs of lotteries?
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) C versus E
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) D versus E
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) E versus F
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+d) A versus B
+\end_layout
+
+\begin_layout Standard
+In each case provide careful justification for your answer.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+4.
+ Consider an individual with utility function 
+\begin_inset Formula $U(x)=ln(x)$
+\end_inset
+
+, where 
+\begin_inset Formula $x$
+\end_inset
+
+ is income.
+ Suppose the individual rejects a 50-50 chance of losing £10 and winning
+ £11 at an initial wealth level 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) Show that this implies that 
+\begin_inset Formula $ln(w-10)+ln(w+11)\leq2ln(w)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) Deduce from a) that 
+\begin_inset Formula $w\leq110$
+\end_inset
+
+ (Reminder: 
+\begin_inset Formula $ln(ab)=ln(a)+ln(b)$
+\end_inset
+
+ and 
+\begin_inset Formula $cln(a)=ln(a^{c})$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) Suppose the individual's wealth is 
+\begin_inset Formula $w=110$
+\end_inset
+
+ and the individual is offered a 50-50 chance of losing £100 and winning
+ £
+\begin_inset Formula $Y$
+\end_inset
+
+.
+ What is the minimum 
+\begin_inset Formula $Y$
+\end_inset
+
+ such that the individual accepts?
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+d) Suppose now the individual's wealth is 
+\begin_inset Formula $w=200$
+\end_inset
+
+ and the individual is offered a 50-50 chance of losing £100 and winning
+ £
+\begin_inset Formula $Z$
+\end_inset
+
+.
+ What is the minimum 
+\begin_inset Formula $Z$
+\end_inset
+
+ such that the individual accepts?
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+e) Comment on the above results.
+ Do you find the predictions from c) and b) reasonable? Justify your answer.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+5.
+ Consider a lottery that gives outcome G with probability 
+\begin_inset Formula $q$
+\end_inset
+
+ and outcome L with probability 
+\begin_inset Formula $1-q$
+\end_inset
+
+.
+ Suppose the initial wealth of the agent is 
+\begin_inset Formula $w$
+\end_inset
+
+ and the agent is an expected utility maximizer.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) Suppose the agent offers others to play the lottery and prices the ticket
+ for the lottery at 
+\begin_inset Formula $p_{S}$
+\end_inset
+
+.
+ What is the minimum price that the agent will set? Write down the condition
+ on 
+\begin_inset Formula $p_{S}$
+\end_inset
+
+ in terms of the agent's utility function 
+\begin_inset Formula $u(.)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) Suppose now the agent wishes to buy a ticket for the lottery.
+ What is the maximum price 
+\begin_inset Formula $p_{B}$
+\end_inset
+
+ that the agent would be ready to pay for that ticket?
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) Suppose that 
+\begin_inset Formula $G=10$
+\end_inset
+
+, 
+\begin_inset Formula $L=2$
+\end_inset
+
+, 
+\begin_inset Formula $w=10$
+\end_inset
+
+ and 
+\begin_inset Formula $q=0.5$
+\end_inset
+
+.
+ Suppose also that 
+\begin_inset Formula $u(x)=ln(x)$
+\end_inset
+
+.
+ Compute the values of 
+\begin_inset Formula $p_{S}$
+\end_inset
+
+ and of 
+\begin_inset Formula $p_{B}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+d) Do you find that 
+\begin_inset Formula $p_{S}=p_{B}$
+\end_inset
+
+? Why or why not?
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+6.
+ [From Loomes and Taylor (1992)]
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Loomes G.
+ and C.
+ Taylor, 1992, Non-transitive preferences over gains and losses, The Economic
+ Journal 102(411), 357-365.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Consider a world with three possible states, 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+, that occur with probabilities 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{3}$
+\end_inset
+
+ respectively.
+ An agent has the choice between actions A, B and C, such that action A
+ obtains outcome a if 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ occurs, and d otherwise; action B obtains outcome e if 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ occurs, and b otherwise; and action C obtains outcome c in any state of
+ the world.
+ Outcomes are expressed in monetary terms and 
+\begin_inset Formula $a>b>c>d>e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Suppose the agent’s behaviour fit the axioms of Expected Utility Theory.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) Represent A, B and C as lotteries over outcomes a, b, c, d and e.
+ What are the expected utilities of A, B and C?
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) Is it possible for an agent to prefer A to B, B to C, and C to A? Explain
+ your answer.
+\end_layout
+
+\begin_layout Description
+Suppose now the agent exhibits regret aversion.
+ She associates regret 
+\begin_inset Formula $r(x,y)$
+\end_inset
+
+ when she would have obtained outcome x in the lottery she chose while she
+ would have obtained outcome y in the lottery she did not choose.
+ When comparing two lotteries, 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+, she chooses 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ if the expected regret of choosing 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ is positive.
+ Assume that: 
+\begin_inset Formula $r(x,y)$
+\end_inset
+
+ is increasing in 
+\begin_inset Formula $x$
+\end_inset
+
+; 
+\begin_inset Formula $r(x,y)=-r(y,x)$
+\end_inset
+
+; and 
+\begin_inset Formula $r(x,y)>r(x,z)+r(z,y)$
+\end_inset
+
+ when 
+\begin_inset Formula $x>z>y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) Interpret the above assumptions concerning the regret function.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+d) Write down the conditions under which the agent chooses: B over A; C
+ over B; A over C.
+ Is this consistent with regret theory? Comment.
+ (Hint: sum up the three conditions you identified and simplify using the
+ properties of the regret function).
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+e) Write down the conditions under which the agent chooses: A over B; B
+ over C; C over A.
+ Is this consistent with regret theory? Conclude.
+\end_layout
+
+\begin_layout Section
+Game Theory 1 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Exercises 1 to 5 were contributed by previous teachers in MSc Economic Theory
+ 1 at the UEA.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+1.
+ In the following game, find all pure strategy Nash equilibria:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6,6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+2.
+ Consider the following game:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+W
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Y
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Z
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8,4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9,2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6,4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8,4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6,0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) Apply the procedure of iteratively deleting strictly dominated strategies.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) Apply iterative deletion of weakly dominated strategies to the game that
+ remains after completion of (i).
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) Identify all pure and mixed strategy Nash equilibria of the game.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+3.
+ Consider the following game in extensive form
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page28.pdf
+	lyxscale 20
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\align center
+
+\size normal
+Extensive form game for exercise 3
+\size default
+, Game Theory 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) Convert the game into a game in normal form.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) Find all Nash and subgame perfect Nash equilibria.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+4.
+ Consider the following game in extensive form:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page29.pdf
+	lyxscale 20
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\align center
+
+\size normal
+Extensive form game for exercise 4
+\size default
+, Game Theory 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) Convert the game into a game in normal form.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) Find all Nash and subgame perfect Nash equilibria.
+ 
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) Comment on the plausibility of these.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+5.
+ Consider the following game in extensive form:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page30.pdf
+	lyxscale 20
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\align center
+
+\size normal
+Extensive form game for exercise 5
+\size default
+, Game Theory 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) Convert the game into a game in normal form.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) Find all Nash and subgame perfect Nash equilibria.
+ 
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) Comment on the plausibility of these.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+6.
+ Consider the following game:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Stop
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Left
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Middle
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Right
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Up
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-10,1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-10,-10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Down
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-10,-10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,-5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10,2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) Suppose that players are able to agree on their move before playing.
+ What would they choose?
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) From now on, suppose players 1 and 2 are not able to communicate and
+ must choose their moves independently.
+ Suppose you are player 2.
+ Intuitively, what seems like a reasonable way to play when you are not
+ sure what player 1 will choose? Explain.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) What are the pure strategy Nash equilibria of this game?
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+d) Consider mixed strategy equilibria such that player 1 mixes between Up
+ and Down with probability 
+\begin_inset Formula $q$
+\end_inset
+
+ and 
+\begin_inset Formula $1-q$
+\end_inset
+
+ respectively.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+i) Show that player 2 will never play Left for any value of 
+\begin_inset Formula $q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ii) Show that if player 2 plays mixed strategies and plays Stop with some
+ positive probability, then it plays Right with zero probability.
+\end_layout
+
+\begin_layout Standard
+iii) Show that player 2 will play Middle whenever 
+\begin_inset Formula $q$
+\end_inset
+
+ belongs to the interval 
+\begin_inset Formula $[1/6,\:5/6]$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout List
+\labelwidthstring 00.00.0000
+e) Rationalize your choice of action in (a) taking into account (d)(iii).
+\end_layout
+
+\begin_layout Section
+Game Theory 2
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+1.
+ Consider the following game in extensive form:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page31.pdf
+	lyxscale 20
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\align center
+
+\size normal
+Extensive form game for exercise 1, Game Theory 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) Write the game in normal form and find all of its Nash equilibria.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) Find the Subgame Perfect Nash Equilibrium of this game.
+ Explain the intuition for this equilibrium.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) Suppose player two can pre-commit to spend 
+\begin_inset Formula $c>0$
+\end_inset
+
+ in case it has to play R.
+ The decision of player two whether to pre-commit or not is know to player
+ 1.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+i) Draw the new game in extensive form, where in a first stage player 2
+ decides to pre-commit or not.
+\end_layout
+
+\begin_layout Standard
+ii) Find the Subgame Perfect Nash Equilibrium of this new game for every
+ possible value of 
+\begin_inset Formula $c>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+iii) When does player 2 pre-commit? Explain.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+2.
+ Consider a buyer and a seller.
+ The seller has only one unit to sell and values the good at £50 while the
+ buyer values it at £60 if it is of a high type and £55 if it is a low type.
+ The seller does not know the type of the buyer, but knows there is proportion
+ 
+\begin_inset Formula $h$
+\end_inset
+
+ of high type.
+ The buyer knows its own type.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) Suppose the seller asks for a price 
+\begin_inset Formula $p$
+\end_inset
+
+ for the good and 
+\begin_inset Formula $p$
+\end_inset
+
+ is a take it or leave it offer.
+ The buyer can only either accept or reject the price offer.
+ Find out the seller expected payoff as a function of 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ What price will the seller set?
+\end_layout
+
+\begin_layout Description
+Suppose now the game is played over two periods, and the buyer’s discount
+ factor is 
+\begin_inset Formula $t<1$
+\end_inset
+
+ (the buyer is impatient) while the seller’s discount factor is 1 (the seller
+ is patient).
+ Suppose also the seller can change prices between periods: 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ is the price asked in period 1 while 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ is the price asked in period 2.
+ Both periods involve the same buyer and the same seller, and prices 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ are announced in the first period.
+ The seller can commit to prices 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) Draw the extensive form of the game, with N a play by nature determining
+ the type of the buyer.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) Suppose 
+\begin_inset Formula $60>p_{1}>55>p_{2}>50$
+\end_inset
+
+.
+ What is the expected payoff for a high type buyer from accepting in the
+ first period? From waiting? What about the low type?
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+d) Show there exist 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ such that high type buyers buy in the first period and low type buyers
+ buy in the second.
+ What conditions must 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ satisfy? What is the expected payoff of the seller under that type of equilibri
+um?
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+e) Suppose the seller cannot commit on 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ in period 1.
+ Is the separating equilibrium of question d) still sustainable? Why or
+ why not?
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+3.
+ Consider two players, A and B, who are engaged in a public goods game whereby
+ the public good is produced and has value 1 to both if either or both of
+ the players contribute to it, while it has value 0 if neither contributes.
+ This means the good is produced and its value is available to all even
+ if only one player contributes to it.
+ The costs of contributing are 
+\begin_inset Formula $c_{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{b}$
+\end_inset
+
+ for players A and B respectively.
+ The term 
+\begin_inset Formula $c_{a}$
+\end_inset
+
+ can take one of the two values: 
+\begin_inset Formula $C>1$
+\end_inset
+
+ with probability 
+\begin_inset Formula $1-\lambda$
+\end_inset
+
+ and 
+\begin_inset Formula $c<1$
+\end_inset
+
+ with probability 
+\begin_inset Formula $\lambda$
+\end_inset
+
+; 
+\begin_inset Formula $c_{b}$
+\end_inset
+
+ independently follows the same distribution.
+ We call a player whose cost of contributing is 
+\begin_inset Formula $C$
+\end_inset
+
+ the inefficient type, while if that cost is 
+\begin_inset Formula $c$
+\end_inset
+
+ we call that agent the efficient type.
+ Each player knows his/her type, but not the other player’s type.
+ Players choose at the same time whether to contribute and do not observe
+ whether the other player contributes.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) Explain why a player of type 
+\begin_inset Formula $C$
+\end_inset
+
+ is called inefficient and a player of type 
+\begin_inset Formula $c$
+\end_inset
+
+ is called efficient.
+ 
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) Explain why it is important that contributions be made at the same time
+ and players cannot observe whether the other player contributes.
+ 
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) Suppose 
+\begin_inset Formula $\lambda=0$
+\end_inset
+
+ which means both players are efficient.
+ Draw the game in normal form.
+ What are the Nash equilibria of the game? What if 
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+d) Suppose now 
+\begin_inset Formula $1>\lambda>0$
+\end_inset
+
+.
+ Draw the game in extensive form (Hint: Represent the draw of players' type
+ as a move by nature).
+ 
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+e) Depending on the type of the agents, what is the Pareto optimal outcome
+ of this game? 
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+f) Show that in a Bayesian equilibrium of this game, inefficient player
+ A never contributes, while efficient player A contributes with some probability
+ 
+\begin_inset Formula $p_{a}$
+\end_inset
+
+.
+ Express 
+\begin_inset Formula $p_{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{b}$
+\end_inset
+
+ as a function of the parameters of the game.
+ Be careful to explain the notations you use and the reasoning you are following.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+g) Suppose now the game is repeated twice, and players observe each other's
+ action after the first period and before playing the game again.
+ Denote 
+\begin_inset Formula $p_{a}^{t}(c_{a})$
+\end_inset
+
+ the probability that player A of type 
+\begin_inset Formula $c_{a}$
+\end_inset
+
+ contributes in period t.
+ Show again that a player of a low type never contributes.
+ How does player B interpret a contribution by player B in period 1?
+\end_layout
+
+\begin_layout Section
+Incentive theory
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Exercises 1, 3 and 4 were contributed by previous teachers in MSc Economic
+ Theory 1 at the UEA.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+1.
+ Consider an agency relationship in which an agent can take two efforts,
+ either low or high.
+ The agent’s effort might result in two results, 10 or 100 depending on
+ the state of nature.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+We will consider three different agency relationships.
+ Each relationship is summarised by one of the following matrices.
+ In these matrices, each entry is defined as the probability that the result
+ is the COLUMN result given that the effort is the ROW effort.
+ So, for instance, in CASE A, 0.3 is the probability of the result being
+ 100, given effort is LOW.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+CASE A
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+effort/result
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HIGH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+CASE B
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+effort/result
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HIGH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+CASE C
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+effort/result
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HIGH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Each matrix represents a different situation but in only one of them is
+ there a real moral hazard problem.
+ Discard two of these matrices and carefully argue why there is no moral
+ hazard problem in them.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+2.
+ [Simplified from Myerson (2008)]
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Myerson R.B., 2008, Perspectives on Mechanism Design in Economic Theory, American
+ Economic Review 98(3), 586-603.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Consider a one-time production project that requires an initial capital
+ input worth 
+\begin_inset Formula $K=100$
+\end_inset
+
+, and then returns revenue worth 
+\begin_inset Formula $R=240$
+\end_inset
+
+ if the project is a success, or returns no revenue (0) if the project is
+ not a success.
+ 
+\end_layout
+
+\begin_layout Standard
+The project’s probability of success depends on the manager’s hidden action.
+ If the manager diligently applies good effort to managing the project,
+ then probability of success is 
+\begin_inset Formula $p_{G}=1/2$
+\end_inset
+
+.
+ On the other hand, if the manager behaves badly and abuses her managerial
+ authority in the project, then the probability of success is 
+\begin_inset Formula $p_{B}=0$
+\end_inset
+
+, but the manager gets hidden private benefits worth 
+\begin_inset Formula $B=30$
+\end_inset
+
+ from such abuse of power.
+ 
+\end_layout
+
+\begin_layout Standard
+The manager owns no personal assets and does not invest anything in the
+ project.
+\end_layout
+
+\end_deeper
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) Show that the expected returns from the project (including possible private
+ benefits) are greater than the cost of its capital inputs only if the manager
+ chooses to be good.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) Suppose the manager is paid wage 
+\begin_inset Formula $w>0$
+\end_inset
+
+ in case of success, and nothing in case of failure.
+ Under what condition on 
+\begin_inset Formula $w$
+\end_inset
+
+ does the manager undertake to be good?
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) Suppose the investor chooses 
+\begin_inset Formula $w$
+\end_inset
+
+ such that the manager undertakes to be good.
+ What is then the highest possible return of the project to the investor?
+ Does the investor invest? Comment.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+3.
+ Consider a monopolist who has 
+\begin_inset Formula $N$
+\end_inset
+
+ customers, of which a proportion 
+\begin_inset Formula $p$
+\end_inset
+
+ is of type 1, and the remaining proportion 
+\begin_inset Formula $(1-p)$
+\end_inset
+
+ is of type 2.
+ The payoff for a consumer of type 
+\begin_inset Formula $i={1,2}$
+\end_inset
+
+ from consuming quantity 
+\begin_inset Formula $q$
+\end_inset
+
+ of the good is 
+\begin_inset Formula $U_{i}=q[t_{i}-q/2]-R(q)$
+\end_inset
+
+, with 
+\begin_inset Formula $i=1,2$
+\end_inset
+
+, 
+\begin_inset Formula $t_{2}>t_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $R(q)$
+\end_inset
+
+ denotes the payment made to buy 
+\begin_inset Formula $q$
+\end_inset
+
+.
+ The consumers’ reservation payoff (or consumer surplus) is zero.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The monopolist wishes to discriminate between customers; would he know the
+ customers ‘types’ he would extract the full consumer surplus from them.
+ However, he is unable to do so, and manages to price discriminate only
+ up to the second degree.
+ This means he will offer two contracts destined for each type, with contract
+ 
+\begin_inset Formula $i={1,2}$
+\end_inset
+
+ to be chosen by type 
+\begin_inset Formula $i$
+\end_inset
+
+ denoted as 
+\begin_inset Formula $C_{i}=(q_{i},R(q_{i}))$
+\end_inset
+
+.
+ The monopolist has a constant marginal cost c and no fixed cost so the
+ firm’s type-specific profit is 
+\begin_inset Formula $S_{i}=R(q_{i})-cq_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Your task is to determine the monopolist’s optimal quantity-payment schedule
+ that accomplishes second-degree price discrimination.
+ Follow the questions in sequence.
+\end_layout
+
+\end_deeper
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) Derive the optimal quantity-payment schedule when the monopolist can
+ distinguish between the types of the consumers.
+ Show your answer graphically (on a quantity- payment plane) and explain
+ your findings.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) Introduce asymmetric information and show how the first best scheme becomes
+ sub-optimal using a graph.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) Set the monopolist’s profit maximization problem formally with appropriate
+ self-selection and participation constraints.
+ Identify which constraints will bind, and which will not.
+ 
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+d) What is the meaning of “no distortion at the top” and “no rent at the
+ bottom” in this context?
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+e) Finally, solve for the optimal quantity-payment schedule and show it
+ on the graph.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+4.
+ Imagine that a hospital is contracting out its cleaning service.
+ The contracted firm is to supply a level 
+\begin_inset Formula $I$
+\end_inset
+
+ of cleanliness, which is observable.
+ There are two types of firms, which differ in their costs of producing
+ cleanliness.
+ For the first type, the cost of providing 
+\begin_inset Formula $I$
+\end_inset
+
+ level of cleanliness is 
+\begin_inset Formula $I^{2}$
+\end_inset
+
+, while for the second one it is 
+\begin_inset Formula $kI^{2}$
+\end_inset
+
+, with 
+\begin_inset Formula $k>1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The payment that is made to the chosen contractor is P, which may be made
+ dependent on I.
+ The contractor’s profit is thus 
+\begin_inset Formula $S=P-I^{2}$
+\end_inset
+
+, or 
+\begin_inset Formula $S=P-kI^{2}$
+\end_inset
+
+ depending on its type.
+ Assume that its reservation profit is 10.
+ The hospital’s utility is 
+\begin_inset Formula $U=AI-P$
+\end_inset
+
+, where A is a positive parameter.
+\end_layout
+
+\end_deeper
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) Which firm is the 
+\begin_inset Quotes eld
+\end_inset
+
+top
+\begin_inset Quotes erd
+\end_inset
+
+ (efficient) type, which one is the 
+\begin_inset Quotes eld
+\end_inset
+
+bottom
+\begin_inset Quotes erd
+\end_inset
+
+ (inefficient) type?
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) Assume that the hospital can observe the type of the firm.
+ Write the maximisation problem for the hospital if it contracts with the
+ top type.
+ Find the first order conditions and the relationship between P and I at
+ the solution.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) Assume that the hospital cannot observe the type of the firm.
+ Write the maximisation problem for the hospital if it wants the two types
+ of firms themselves to select different types of contract.
+ Assume that 1/2 of catering firms are of each type.
+ 
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+d) Identify the constraints that will bind in the solution, and solve for
+ the optimal 
+\begin_inset Formula $(P,I)$
+\end_inset
+
+ schedule.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+e) Present your answer to d) graphically.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+5.
+ Consider an agent with utility function 
+\begin_inset Formula $U=u(q)-c(e)$
+\end_inset
+
+ where 
+\begin_inset Formula $u(.)$
+\end_inset
+
+ is defined over output and 
+\begin_inset Formula $c(e)$
+\end_inset
+
+ is the cost of effort e.
+ Effort e can be either 0 or 1 and determines the probability of success
+ in producing output 
+\begin_inset Formula $Q>0$
+\end_inset
+
+.
+ The cost of effort is 
+\begin_inset Formula $C>0$
+\end_inset
+
+ if effort is 1 and 
+\begin_inset Formula $0$
+\end_inset
+
+ if effort is 0.
+ 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ is the probability with which the agent exerting effort 
+\begin_inset Formula $e=1$
+\end_inset
+
+ is successful and produces output 
+\begin_inset Formula $Q>0$
+\end_inset
+
+, while 
+\begin_inset Formula $p_{0}<p_{1}$
+\end_inset
+
+ is the probability with which the agent exerting effort 
+\begin_inset Formula $e=0$
+\end_inset
+
+ is successful and produces output 
+\begin_inset Formula $Q>0$
+\end_inset
+
+.
+ If the agent is not successful, then he produces no output.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Consider a paternalistic employer that seeks to maximize the welfare 
+\begin_inset Formula $U$
+\end_inset
+
+ of the agent, and can pay wages such that the agent that is successful
+ receives wage 
+\begin_inset Formula $W$
+\end_inset
+
+ and the agent that is not successful receives 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ Note that wages can be negative in which case the agent pays the employer.
+ Note also that the employer cannot make losses in expected terms.
+\end_layout
+
+\end_deeper
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) Consider the first best scenario in which effort is verifiable.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+i) Write down the agent's participation constraint (the condition under
+ which expected payoffs for the agent is positive, taking into account wages
+ from the employer) and the agent's incentive compatibility constraint (the
+ condition under which the agent exerts effort).
+\end_layout
+
+\begin_layout Standard
+ii) Write down the employer's objective function and maximization program.
+\end_layout
+
+\begin_layout Standard
+iii) Write down the employer’s necessary and sufficient Kuhn and Tucker
+ optimality conditions with respect to 
+\begin_inset Formula $W$
+\end_inset
+
+ and 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ How much does the employer pay in case of success and in case of failure?
+ Comment.
+\end_layout
+
+\end_deeper
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) Consider now the second best scenario in which effort is non-verifiable.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+i) Write down the employer's objective function and maximization program.
+\end_layout
+
+\begin_layout Standard
+ii) Write down the employer’s first-order condition for optimality with
+ respect to 
+\begin_inset Formula $W$
+\end_inset
+
+ and 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ Show that 
+\series bold
+
+\begin_inset Formula $W\neq w$
+\end_inset
+
+
+\series default
+.
+ Comment.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+6.
+ A firm that faces productivity shocks has the following profit function:
+ 
+\begin_inset Formula $\pi=xh-w$
+\end_inset
+
+ with 
+\begin_inset Formula $x=x_{H}$
+\end_inset
+
+ with probability 
+\begin_inset Formula $q$
+\end_inset
+
+ (favourable shock) and 
+\begin_inset Formula $x=x_{L}$
+\end_inset
+
+ with probability 
+\begin_inset Formula $1-q$
+\end_inset
+
+ (adverse shock), 
+\begin_inset Formula $x_{H}>x_{L}>0$
+\end_inset
+
+, 
+\begin_inset Formula $h$
+\end_inset
+
+ the number of hours worked by the employee of the firm and 
+\emph on
+w
+\emph default
+ the wage paid to the worker.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The worker's utility is 
+\begin_inset Formula $u(w)-f(h)$
+\end_inset
+
+, with 
+\begin_inset Formula $u(.)$
+\end_inset
+
+ concave, 
+\begin_inset Formula $f(.)$
+\end_inset
+
+ convex, 
+\begin_inset Formula $w$
+\end_inset
+
+ the wage paid by the firm to the employee and 
+\emph on
+h
+\emph default
+ the number of hours worked by the employee.
+ Suppose the firm chooses the terms of the worker’s employment contract,
+ and the worker’s reservation utility is 0.
+ The contract is signed before realization of the shock; the productivity
+ shock is observed after contracting.
+ Contract variable can be made dependent on the realization of the shock
+ as its realization is publicly observable and the contract can thus be
+ enforced by the Courts.
+\end_layout
+
+\end_deeper
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) Who is the principal? Who is the agent? What variables are the firm and
+ the worker going to contract upon?
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) Draw the timeline of contracting.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) Write the principal’s objective function.
+ Write the agent’s individual rationality (IR) constraint.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+d) Find the first order condition for the maximization of the principal’s
+ objective function subject to the agent’s IR constraint.
+ (Reminder on constrained maximization: The solution(s) to a constrained
+ maximization program, with 
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+ the objective function and 
+\begin_inset Formula $u(x,y)>0$
+\end_inset
+
+ the constraint, is obtained by taking the derivative of that program’s
+ Lagrangian 
+\begin_inset Formula $f(x,y)-vu(x,y)$
+\end_inset
+
+, 
+\emph on
+w.r.t.
+
+\emph default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $y$
+\end_inset
+
+ and 
+\begin_inset Formula $v$
+\end_inset
+
+, and equating it to 
+\emph on
+0
+\emph default
+, with 
+\begin_inset Formula $v$
+\end_inset
+
+ the Lagrange multiplier).
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+e) Prove that the agent will receive the same wage regardless of the realization
+ of the shock.
+ When does the agent work more?
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+f) Suppose the shock is not publicly observable, is known only to the firm
+ and the firm can lie about the realization of the shock.
+ Suppose it offers the contract determined in 
+\emph on
+e)
+\emph default
+ above.
+ Will the principal lie about the realization of the shock? When? Why?
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+g) Write down the conditions under which the principal has no incentive
+ to lie.
+ Using only those conditions, compare the wage and the hours worked in case
+ of an adverse and in case of a favourable shock.
+\end_layout
+
+\end_body
+\end_document

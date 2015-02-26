@@ -1,0 +1,1056 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+
+\end_preamble
+\options notitlepage,fleqn,leqno
+\use_default_options false
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 0
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Choice under uncertainty
+\end_layout
+
+\begin_layout Description
+1.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) The steeper the indifference line, the more risk averse the agent is.
+ See page 126, note 6 of Machina (1987).
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Machina M., 1987, Choice under Uncertainty: problems solved and unsolved,
+ Journal of Economic Perspective 1(1), 121-154.
+\end_layout
+
+\end_inset
+
+ Intuitively, suppose for example that the vertices of the triangle are
+ 
+\emph on
+£0
+\emph default
+, 
+\emph on
+£50
+\emph default
+ and 
+\emph on
+£100
+\emph default
+.
+ If the agent is risk neutral, then she values a lottery 
+\emph on
+(1/2, 0, 1/2) 
+\emph default
+the same as 
+\emph on
+(0, 1, 0) 
+\emph default
+and the indifference line linking those two points thus represents the preferenc
+es of a risk neutral agent.
+ A risk averse agent will prefer the second lottery to the first, so her
+ indifference line will be steeper.
+ The opposite holds for an agent that is risk loving.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) The independence axiom requires that indifference lines be parallel,
+ but here they are not parallel, so the independence axiom is not respected.
+ Other axioms are not broken, as there is no crossing of indifference curves
+ within the triangle, indifference curves are continuous and they span the
+ whole area of the triangle.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+2.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) According to EUT, A preferred to B translates in 
+\begin_inset Formula $u(10)\geq\frac{1}{2}u(24)+\frac{1}{2}u(0).$
+\end_inset
+
+ Multiplying by 
+\begin_inset Formula $\frac{2}{3}$
+\end_inset
+
+ both sides and adding 
+\begin_inset Formula $\frac{1}{3}u(0)$
+\end_inset
+
+ on both sides, one finds 
+\begin_inset Formula $\frac{2}{3}u(10)+\frac{1}{3}u(0)\geq\frac{1}{3}u(24)+\frac{2}{3}u(0),$
+\end_inset
+
+ which translates into C preferred to D.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Therefore, the combination A preferred to B and D preferred to C is not
+ consistent with EUT.
+\end_layout
+
+\end_deeper
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) For A preferred to B and D preferred to C to be consistent with prospect
+ theory we must have both:
+\begin_inset Formula \begin{align}
+\pi(1)u(10) & \geq\pi(\frac{1}{2})u(24)+\pi(\frac{1}{2})u(0)\\
+ & \text{and}\\
+\pi(\frac{2}{3})u(10)+\pi(\frac{1}{3})u(0) & \leq\pi(\frac{1}{3})u(24)+\pi(\frac{2}{3})u(0)\end{align}
+
+\end_inset
+
+ Normalizing 
+\begin_inset Formula $u(0)=0$
+\end_inset
+
+ (this is allowed as the utility function is unique up to a linear transformatio
+n) this can be rewritten into the following condition:
+\begin_inset Formula \begin{equation}
+\frac{\pi(1)}{\pi(\frac{1}{2})}\geq\frac{u(24)}{u(10)}\geq\frac{\pi(\frac{2}{3})}{\pi(\frac{1}{3})}\end{equation}
+
+\end_inset
+
+I will show that this can occur under some specification of the function
+ 
+\begin_inset Formula $\pi(.).$
+\end_inset
+
+ Suppose 
+\begin_inset Formula $\pi(.)$
+\end_inset
+
+ is a continuously increasing function, 
+\begin_inset Formula $\pi(\frac{1}{3})=\frac{1}{3},$
+\end_inset
+
+ 
+\begin_inset Formula $\pi(x)>x$
+\end_inset
+
+ for any 
+\begin_inset Formula $x<\frac{1}{3}$
+\end_inset
+
+ and 
+\begin_inset Formula $\pi(x)<x$
+\end_inset
+
+ for any 
+\begin_inset Formula $x>\frac{1}{3}$
+\end_inset
+
+ (this fits common assumption about the shape of the 
+\begin_inset Formula $\pi(.)$
+\end_inset
+
+ function and corresponds to some empirical findings), and suppose 
+\begin_inset Formula $u(x)=x$
+\end_inset
+
+ for any 
+\begin_inset Formula $x$
+\end_inset
+
+ (risk neutral agent).
+ Note also that 
+\begin_inset Formula $\pi(1)=1.$
+\end_inset
+
+ The condition above can then be rewritten as
+\begin_inset Formula \begin{equation}
+\frac{1}{\pi(\frac{1}{2})}\geq\frac{24}{10}\geq3\pi(\frac{2}{3})\end{equation}
+
+\end_inset
+
+ so I must have and This is consistent with prospect theory, as 
+\begin_inset Formula $\pi(\frac{2}{3})\leq\frac{2.4}{3}$
+\end_inset
+
+ from the fact 
+\begin_inset Formula $\pi(x)<x$
+\end_inset
+
+ for any 
+\begin_inset Formula $x>\frac{1}{3}$
+\end_inset
+
+, while 
+\begin_inset Formula $\pi(\frac{1}{2})\leq\frac{10}{24}$
+\end_inset
+
+, while more stringent than what we assumed, does not contradict PT.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) Under regret theory, A preferred to B translates in
+\begin_inset Formula \begin{equation}
+\frac{1}{2}r(10,0)+\frac{1}{2}r(10,24)\geq0\end{equation}
+
+\end_inset
+
+ while D preferred to C translates in 
+\begin_inset Formula \begin{equation}
+\frac{1}{3}r(24,0)+\frac{2}{3}r(0,10)\geq0\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+In regret theory, one will generally expect 
+\begin_inset Formula $r(x,y)>r(x,z)+r(z,y)$
+\end_inset
+
+ with 
+\begin_inset Formula $z\in]y,x[$
+\end_inset
+
+ (rejoice increases more than proportionally in the size of the difference
+ between bad and good outcome).
+ This means that 
+\begin_inset Formula $r(24,0)>r(24,10)+r(10,0)$
+\end_inset
+
+ (condition A).
+\end_layout
+
+\begin_layout Standard
+One will also expect that 
+\begin_inset Formula $r(x,y)=-r(y,x)$
+\end_inset
+
+ (symmetry between rejoice and regret) and allows one to rewrite the two
+ equations as
+\begin_inset Formula \[
+r(10,0)\geq r(24,10)\]
+
+\end_inset
+
+
+\begin_inset Formula \[
+r(24,0)\geq2r(10,0)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I can accept that the first equation is verified (the feeling of rejoicing
+ when getting 24 rather than 10 may be less than from getting 10 rather
+ than nothing).
+ If that first equation is verified, the second equation is more stringent
+ than condition A.
+ However, while more stringent than usual assumptions of RT, the second
+ equation does not contradict it in any way.
+ Therefore, such preferences are consistent with regret theory.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+3.
+ We will use the same logic as the one used in 2.b), by making appropriate
+ substitutions and using dominance arguments.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) E is preferred to C because it gives more weight to a higher outcome
+ (First Order Stochastic Dominance)
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) Since E is preferred to C which is preferred to D, then E is preferred
+ to D (Transitivity)
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) F preferred to E, again by First Order Stochastic Dominance.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+d) C is preferred to D so A is preferred to B (EUT, as in 2.b).
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+4.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) The utility of rejecting the lottery is 
+\begin_inset Formula $\ln(w)$
+\end_inset
+
+ (the individual is left with the same wealth as before), while if the individua
+l plays the lottery, then she either loses 
+\begin_inset Formula $\pounds10$
+\end_inset
+
+, in which case wealth is reduced to 
+\begin_inset Formula $w-10,$
+\end_inset
+
+ or she gains 
+\begin_inset Formula $\pounds10,$
+\end_inset
+
+ in which case her wealth is 
+\begin_inset Formula $w+11.$
+\end_inset
+
+ The expected utility of playing the lottery is then 
+\begin_inset Formula $\frac{1}{2}\ln(w-10)+\frac{1}{2}\ln(w+11),$
+\end_inset
+
+ and rejecting the lottery translates by EUT in 
+\begin_inset Formula $\frac{1}{2}\ln(w-10)+\frac{1}{2}\ln(w+11)\leq\ln(w).$
+\end_inset
+
+ A straightforward transformation obtains the result.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) Transforming the inequality in 
+\begin_inset Formula $a),$
+\end_inset
+
+ 
+\begin_inset Formula \begin{align}
+\ln(w-10)+\ln(w+11) & \leq2\ln(w)\\
+(w-10)(w+11) & \leq w^{2}\\
+w & \leq110\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) The individual accepts subject to 
+\begin_inset Formula \begin{align}
+\ln(109-100)+\ln(109+Y) & \geq2\ln(109)\\
+Y & \geq\frac{109^{2}}{9}-109\\
+Y & \geq1211.111...\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+d) The individual accepts subject to 
+\begin_inset Formula \begin{align}
+\ln(200-100)+\ln(200+Z) & \geq2\ln(200)\\
+Z & \geq\frac{200^{2}}{100}-200\\
+Z & \geq200\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+e) Whether an individual accepts or rejects a lottery depends on his wealth
+ as much as on the shape of his utility function.
+ Losses that are big with respect to one's wealth require high compensation.
+ In 
+\begin_inset Formula $c),$
+\end_inset
+
+ the individual requests a very high 
+\begin_inset Formula $Y$
+\end_inset
+
+ to compensate for the risk to lose 
+\begin_inset Formula $100.$
+\end_inset
+
+ The expected value of the lottery is then required to be at least 
+\begin_inset Formula $\pounds555.$
+\end_inset
+
+ It would seem irrational to reject it, but then, one must put oneself in
+ the situation where one risks to lose 92% of one wealth, vs.
+ the chance to multiply it by 11.
+ Would you necessarily accept it?
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+5.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) Suppose the agent owns the lottery and prices the ticket for the lottery
+ at 
+\begin_inset Formula $p_{S}$
+\end_inset
+
+.
+ The price 
+\begin_inset Formula $p_{S}$
+\end_inset
+
+ at which the agent will sell must be such that 
+\begin_inset Formula $qu(w+G)+(1-q)u(w+L)\leq u(w+p_{S})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) Suppose the agent does not own the lottery.
+ The maximum price 
+\begin_inset Formula $p_{B}$
+\end_inset
+
+ that the agent would be ready to pay for a ticket to play the lottery must
+ be such that 
+\begin_inset Formula $qu(w-p_{B}+G)+(1-q)u(w-p_{B}+L)\geq u(w).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) I will have 
+\begin_inset Formula $p_{S}$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+such that 
+\begin_inset Formula \begin{align*}
+0.5\ln(10+10)+(1-0.5)\ln(10+2) & =\ln(10+p_{S})\\
+p_{S} & =\sqrt{(10+10)(10+2)}-10\\
+p_{S} & =5.4919\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+and I will have 
+\begin_inset Formula $p_{B}$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+such that 
+\begin_inset Formula \begin{align*}
+0.5\ln(10-p_{B}+10)+0.5\ln(10-p_{B}+2) & =\ln10\\
+(10-p_{B}+10)(10-p_{B}+2) & =10^{2}\\
+p_{B}^{2}-32p_{B}+140 & =0\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which has got two solutions, 
+\begin_inset Formula $p_{1}=\frac{32+\sqrt{464}}{2}=26.7$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{2}=\frac{32-\sqrt{464}}{2}=5.2297.$
+\end_inset
+
+ Obviously, 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+is not reasonable, so 
+\begin_inset Formula $p_{B}=5.2297.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout List
+\labelwidthstring 00.00.0000
+d) 
+\begin_inset Formula $p_{B}$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+is lower than the selling price 
+\begin_inset Formula $p_{S}$
+\end_inset
+
+ so we have some explanation from EUT for the apparent paradox of the WTA/WTP
+ disparity.
+ However, in reality, the disparity one finds between WTA and WTP is much
+ higher than what is obtained here, or that obtained under any reasonable
+ functional form for 
+\begin_inset Formula $u(.),$
+\end_inset
+
+ so EUT is not sufficient to explain the observed disparities.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+6.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) A table that summarizes the situation is as follows:
+\end_layout
+
+\begin_deeper
+\begin_layout List
+\labelwidthstring 00.00.0000
+\noindent
+\align block
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features>
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+S
+\begin_inset Formula $_{1}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+S
+\begin_inset Formula $_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+S
+\begin_inset Formula $_{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+A 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+d 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+d
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+B 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+b 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+b 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+e
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+C 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ can thus be represented as a lottery over outcomes 
+\begin_inset Formula $a,b,c,d,e$
+\end_inset
+
+ as 
+\begin_inset Formula $(p_{1},0,0,p_{2}+p_{3},0).$
+\end_inset
+
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ is 
+\begin_inset Formula $(0,p_{1}+p_{2},0,0,p_{3})$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+ is 
+\begin_inset Formula $(0,0,1,0,0).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The expected utility of 
+\begin_inset Formula $A$
+\end_inset
+
+ is 
+\begin_inset Formula $u(A)=p_{1}u(a)+(1-p_{1})u(d).$
+\end_inset
+
+ Similarly, 
+\begin_inset Formula $u(B)=(1-p_{3})u(b)+p_{3}u(e)$
+\end_inset
+
+ and 
+\begin_inset Formula $u(C)=u(c).$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) Such a pattern of preference is not possible under EUT since it is intransiti
+ve.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) 
+\begin_inset Formula $r(x,y)$
+\end_inset
+
+ increasing in 
+\begin_inset Formula $x$
+\end_inset
+
+ means that the higher the good outcome, the higher the rejoicing.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $r(x,y)=-r(y,x)$
+\end_inset
+
+ means that regret/rejoice is symmetric.
+ Getting the good outcome 
+\begin_inset Formula $x$
+\end_inset
+
+ rather than the bad outcome 
+\begin_inset Formula $y$
+\end_inset
+
+ produces the same amount of rejoicing than the amount of regret induced
+ by getting the symmetric outcome.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r(x,y)>r(x,z)+r(z,y)$
+\end_inset
+
+ (condition A) means that the rejoicing increases more than proportionately
+ with the difference in outcome.
+ I rejoice more if I gain 
+\begin_inset Formula $\pounds100$
+\end_inset
+
+ rather than 
+\begin_inset Formula $\pounds0$
+\end_inset
+
+ than if I gain 
+\begin_inset Formula $\pounds50$
+\end_inset
+
+ rather than 
+\begin_inset Formula $\pounds0$
+\end_inset
+
+ and then 
+\begin_inset Formula $\pounds100$
+\end_inset
+
+ rather than 
+\begin_inset Formula $\pounds50$
+\end_inset
+
+, even though the result is the same.
+\end_layout
+
+\end_deeper
+\begin_layout List
+\labelwidthstring 00.00.0000
+d) The agent chooses 
+\begin_inset Formula $B$
+\end_inset
+
+ over 
+\begin_inset Formula $A$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $p_{1}r(b,a)+p_{2}r(b,d)+p_{3}r(e,d)\geq0.$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The agent chooses 
+\begin_inset Formula $C$
+\end_inset
+
+ over 
+\begin_inset Formula $B$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $p_{1}r(c,b)+p_{2}r(c,b)+p_{3}r(c,e)\geq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The agent chooses 
+\begin_inset Formula $A$
+\end_inset
+
+ over 
+\begin_inset Formula $C$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $p_{1}r(a,c)+p_{2}r(d,c)+p_{3}r(d,c)\geq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Summing up the three equations, one obtains: 
+\begin_inset Formula \[
+p_{1}(r(b,a)+r(c,b)+r(a,c))+p_{2}(r(b,d)+r(c,b)+r(d,c))+p_{3}(r(e,d)+r(c,e)+r(d,c))\geq0\]
+
+\end_inset
+
+Each of the terms are positive by inequality 
+\begin_inset Formula $(A)$
+\end_inset
+
+, so the inequalities are consistent with regret theory, meaning that nothing
+ in regret theory precludes that this pattern of intransitive choice could
+ happen (which does not mean it must happen under regret theory!).
+\end_layout
+
+\end_deeper
+\begin_layout List
+\labelwidthstring 00.00.0000
+e) In the same way as in 
+\begin_inset Formula $(d),$
+\end_inset
+
+ write the inequalities and sum them up, and you will see that the sum cannot
+ be more than 
+\begin_inset Formula $0$
+\end_inset
+
+ under regret theory.
+ This means that while regret theory would allow a cycle whereby 
+\begin_inset Formula $B$
+\end_inset
+
+ is preferred to 
+\begin_inset Formula $A$
+\end_inset
+
+ which is preferred to 
+\begin_inset Formula $C$
+\end_inset
+
+ which is preferred to 
+\begin_inset Formula $B,$
+\end_inset
+
+ it does not allow for the opposite cycle whereby 
+\begin_inset Formula $A$
+\end_inset
+
+ is preferred to 
+\begin_inset Formula $B,$
+\end_inset
+
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ is preferred to 
+\begin_inset Formula $C$
+\end_inset
+
+ which is preferred to 
+\begin_inset Formula $A.$
+\end_inset
+
+ This type of prediction can then be tested experimentally; verifying such
+ a pattern would give credence to regret theory if it is shown that other
+ alternatives to EUT that allow for intransitivity do not however mandate
+ that cyclical preferences have a specific direction.
+\end_layout
+
+\end_body
+\end_document

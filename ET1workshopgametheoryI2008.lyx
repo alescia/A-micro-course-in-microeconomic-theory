@@ -1,0 +1,2402 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Game theory 1
+\end_layout
+
+\begin_layout Description
+1.
+\end_layout
+
+\begin_layout Standard
+There are no pure strategy equilibria of this game.
+ (Note: Any provision of mixed strategy equilibria would be a waste of time
+ and would potentially evidence lack of knowledge of the concept of pure
+ strategy Nash equilibrium).
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+2.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) 
+\begin_inset Formula $D$
+\end_inset
+
+ is strictly dominated by 
+\begin_inset Formula $B$
+\end_inset
+
+ and also by 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Once 
+\begin_inset Formula $D$
+\end_inset
+
+ is eliminated, 
+\begin_inset Formula $Z$
+\end_inset
+
+ is strictly dominated by 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) 
+\begin_inset Formula $C$
+\end_inset
+
+ is weakly dominated by 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ 
+\begin_inset Formula $Y$
+\end_inset
+
+ is weakly dominated by 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ In the game that remains, 
+\begin_inset Formula $A$
+\end_inset
+
+ is weakly dominated by 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Knowing player 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $B$
+\end_inset
+
+, player 2 plays 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ The equilibrium obtained by iterated elimination of weakly dominated strategies
+ is thus 
+\begin_inset Formula $(B,X)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) NE do not involve any strictly dominated strategies, but may involve
+ weakly dominated ones, so the game to consider involves only 
+\begin_inset Formula $A,B$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+ and 
+\begin_inset Formula $W,X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+There are two PSNE of this game, 
+\begin_inset Formula $(A,W)$
+\end_inset
+
+ and 
+\begin_inset Formula $(B,X)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Denoting 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ the probabilities for player 
+\begin_inset Formula $1$
+\end_inset
+
+ to play 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+ respectively, and 
+\begin_inset Formula $w,x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ the probabilities for player 
+\begin_inset Formula $2$
+\end_inset
+
+ to play 
+\begin_inset Formula $W,X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ respectively, MSNEs must be such that player 
+\begin_inset Formula $1$
+\end_inset
+
+ must be indifferent between playing 
+\begin_inset Formula $A,$
+\end_inset
+
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ or 
+\begin_inset Formula $C.$
+\end_inset
+
+ I must thus have
+\begin_inset Formula \begin{align*}
+u_{1}(A) & =4w+8y=u_{1}(B)=4w+2x+6y=u_{1}(C)=4w+2x+4y\\
+w+x+y & =1\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is possible only if 
+\begin_inset Formula $y=0$
+\end_inset
+
+ and 
+\begin_inset Formula $x=0$
+\end_inset
+
+ so that 
+\begin_inset Formula $w=1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+That equilibrium can hold only if player 
+\begin_inset Formula $2$
+\end_inset
+
+ plays 
+\begin_inset Formula $W$
+\end_inset
+
+ with probability 
+\begin_inset Formula $1$
+\end_inset
+
+ so one must have:
+\begin_inset Formula \begin{align*}
+u_{2}(W) & =6a+2b+2c\geq u_{2}(X)=4a+6b+8c\\
+u_{2}(W) & =6a+2b+2c\geq u_{2}(Y)=4a+4b+9c\\
+a+b+c & =1\\
+a & \geq0,b\geq0,c\geq0\end{align*}
+
+\end_inset
+
+ This can be rewritten:
+\begin_inset Formula \begin{align*}
+(6-2b)/8 & \leq a\\
+(7-5b)/9 & \leq a\\
+a+b+c & =1\\
+a & \geq0,b\geq0,c\geq0\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+or 
+\begin_inset Formula $a\geq\max((6-2b)/8,(7-5b)/9)$
+\end_inset
+
+ and 
+\begin_inset Formula $a+b+c=1$
+\end_inset
+
+ and 
+\begin_inset Formula $a\geq0,b\geq0,c\geq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Now, 
+\begin_inset Formula $(6-2b)/8\geq(7-5b)/9$
+\end_inset
+
+ when 
+\begin_inset Formula $b\geq1/11,$
+\end_inset
+
+ so we can summarize by saying that if 
+\begin_inset Formula $b\geq1/11$
+\end_inset
+
+ then I must have 
+\begin_inset Formula $a\geq(6-2b)/8$
+\end_inset
+
+ and 
+\begin_inset Formula $c=1-a-b$
+\end_inset
+
+ and 
+\begin_inset Formula $a\geq0,b\geq0,c\geq0$
+\end_inset
+
+ while if 
+\begin_inset Formula $b\leq1/11$
+\end_inset
+
+ then I must have 
+\begin_inset Formula $a\geq(7-5b)/9$
+\end_inset
+
+ and 
+\begin_inset Formula $c=1-a-b$
+\end_inset
+
+ and 
+\begin_inset Formula $a\geq0,b\geq0,c\geq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+This is represented in the graph below with 
+\begin_inset Formula $b$
+\end_inset
+
+ on the horizontal axis and 
+\begin_inset Formula $a$
+\end_inset
+
+ on the vertical axis.
+ For 
+\begin_inset Formula $b\leq1/11,$
+\end_inset
+
+ I must have 
+\begin_inset Formula $a$
+\end_inset
+
+ higher than 
+\begin_inset Formula $(7-5b)/9$
+\end_inset
+
+ while for 
+\begin_inset Formula $b\geq1/11$
+\end_inset
+
+ I must have 
+\begin_inset Formula $a$
+\end_inset
+
+ higher than 
+\begin_inset Formula $(6-2b)/8.$
+\end_inset
+
+ I must also have 
+\begin_inset Formula $a\leq1-b$
+\end_inset
+
+ to ensure that 
+\begin_inset Formula $c\geq0.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page14.pdf
+	lyxscale 20
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\align center
+ Range of possible MSNEs in Exercise 2, Game Theory 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This thus defines a range of possible mixed strategies defined by the constraint
+s represented above.
+ Note that the PSNE such that 
+\begin_inset Formula $a=1$
+\end_inset
+
+ and 
+\begin_inset Formula $w=1$
+\end_inset
+
+ fits the constraints above.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+3.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) The game in normal form is as follows:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{c|cc}  &  Left  &  Right
+\backslash
+
+\backslash
+
+\backslash
+hline Up  &  $0,0$  &  $4,1$
+\backslash
+
+\backslash
+Down  &  $2,2$  &  $-1,-1$
+\backslash
+end{tabular}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\ $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) There are two PSNE in this game, 
+\begin_inset Formula $(U,R)$
+\end_inset
+
+ and 
+\begin_inset Formula $(D,L)$
+\end_inset
+
+, and a MSNE s.t.
+ 
+\begin_inset Formula \begin{align*}
+u_{1}(U) & =4r=u_{1}(D)=2l-r\\
+l+r & =1\\
+u_{2}(L) & =2d=u_{2}(R)=u-d\\
+u+d & =1\end{align*}
+
+\end_inset
+
+with solution 
+\begin_inset Formula $\left[u=\frac{3}{4},d=\frac{1}{4},l=\frac{5}{7},r=\frac{2}{7}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The only SPNE, obtained by backward induction, is 
+\begin_inset Formula $(U,R)$
+\end_inset
+
+ as if 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $U,$
+\end_inset
+
+ then 
+\begin_inset Formula $2$
+\end_inset
+
+ plays 
+\begin_inset Formula $R$
+\end_inset
+
+ so 
+\begin_inset Formula $1$
+\end_inset
+
+ gets 
+\begin_inset Formula $4$
+\end_inset
+
+ while if 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $R,$
+\end_inset
+
+ then 
+\begin_inset Formula $2$
+\end_inset
+
+ plays 
+\begin_inset Formula $L$
+\end_inset
+
+ and 
+\begin_inset Formula $1$
+\end_inset
+
+ gets only 
+\begin_inset Formula $2.$
+\end_inset
+
+ Anticipating this, 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $U,$
+\end_inset
+
+ and this induces 
+\begin_inset Formula $2$
+\end_inset
+
+ to play 
+\begin_inset Formula $R.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+4.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) The game in normal form is as follows:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+l 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+r
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3,1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1,0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2,2$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2,2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout List
+\labelwidthstring 00.00.0000
+b)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+Nash equilibria:
+\end_layout
+
+\begin_layout Standard
+Note that 
+\begin_inset Formula $M$
+\end_inset
+
+ is strictly dominated by 
+\begin_inset Formula $R,$
+\end_inset
+
+ and can thus be eliminated from consideration.
+\end_layout
+
+\begin_layout Standard
+There are two PSNE in the remaining game, 
+\begin_inset Formula $(L,l)$
+\end_inset
+
+ and 
+\begin_inset Formula $(R,r)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+MSNEs must be such that 
+\begin_inset Formula $2$
+\end_inset
+
+ must be indifferent between 
+\begin_inset Formula $l$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+ so it must be that
+\begin_inset Formula \begin{align*}
+p(L)+2p(R) & =2p(R)\\
+p(L)+p(R) & =1\end{align*}
+
+\end_inset
+
+ so 
+\begin_inset Formula \begin{align*}
+p(L) & =0\\
+p(R) & =1\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $1$
+\end_inset
+
+ must at least prefer R to L so 
+\begin_inset Formula \begin{align*}
+3p(l) & \leq2p(l)+2p(r)\\
+p(l)+p(r) & =1\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The solutions are thus such that 
+\begin_inset Formula $p(l)\leq2/3$
+\end_inset
+
+ so the range of MSNEs is such that 
+\begin_inset Formula $p(L)=0$
+\end_inset
+
+ and 
+\begin_inset Formula $p(R)=1$
+\end_inset
+
+ while 
+\begin_inset Formula $p(l)\leq2/3$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Subgame Perfect Nash Equilibria:
+\end_layout
+
+\begin_layout Standard
+There is one SPNE such that 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $R.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider now SPNE such that 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $L$
+\end_inset
+
+ or 
+\begin_inset Formula $M.$
+\end_inset
+
+ Denote the beliefs of 
+\begin_inset Formula $2$
+\end_inset
+
+ as 
+\begin_inset Formula $\mu(R),$
+\end_inset
+
+ 
+\begin_inset Formula $\mu(L),$
+\end_inset
+
+ 
+\begin_inset Formula $\mu(M),$
+\end_inset
+
+ i.e.
+ 2, when it comes its turn to play, believes 
+\begin_inset Formula $1$
+\end_inset
+
+ played 
+\begin_inset Formula $R$
+\end_inset
+
+ with probability 
+\begin_inset Formula $\mu(R).$
+\end_inset
+
+ Obviously, when it comes for 
+\begin_inset Formula $2$
+\end_inset
+
+ to play, 
+\begin_inset Formula $\mu(R)=0.$
+\end_inset
+
+ The expected payoff to 
+\begin_inset Formula $2$
+\end_inset
+
+ of playing 
+\begin_inset Formula $l$
+\end_inset
+
+ is 
+\begin_inset Formula $\mu(L),$
+\end_inset
+
+ and of playing 
+\begin_inset Formula $r$
+\end_inset
+
+ is 
+\begin_inset Formula $\mu(M).$
+\end_inset
+
+ Therefore,
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $\mu(L)>\mu(M),$
+\end_inset
+
+ then 
+\begin_inset Formula $2$
+\end_inset
+
+ plays 
+\begin_inset Formula $l$
+\end_inset
+
+ and then 
+\begin_inset Formula $1$
+\end_inset
+
+ is better off playing 
+\begin_inset Formula $L.$
+\end_inset
+
+ By backward induction, under those beliefs, 
+\begin_inset Formula $1$
+\end_inset
+
+ will indeed play 
+\begin_inset Formula $L$
+\end_inset
+
+ since this gets it 
+\begin_inset Formula $3$
+\end_inset
+
+ rather than 
+\begin_inset Formula $2$
+\end_inset
+
+ if it played 
+\begin_inset Formula $R,$
+\end_inset
+
+ so there is a sustainable belief such that 
+\begin_inset Formula $\mu(L)=1$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu(l)=1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $\mu(L)<\mu(M),$
+\end_inset
+
+ then 
+\begin_inset Formula $2$
+\end_inset
+
+ plays 
+\begin_inset Formula $r$
+\end_inset
+
+ and 
+\begin_inset Formula $1$
+\end_inset
+
+ is indifferent between playing 
+\begin_inset Formula $L$
+\end_inset
+
+ or 
+\begin_inset Formula $M$
+\end_inset
+
+ since both get it payoff 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ But then, by backward induction, 
+\begin_inset Formula $1$
+\end_inset
+
+ is better off playing 
+\begin_inset Formula $R$
+\end_inset
+
+ so the belief that 
+\begin_inset Formula $\mu(R)=0$
+\end_inset
+
+ is not sustainable.
+ We can thus eliminate the possibility that a belief such that 
+\begin_inset Formula $\mu(R)=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu(L)<\mu(M)$
+\end_inset
+
+ could be sustained under a SPNE.
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $\mu(L)=\mu(M)=\frac{1}{2}$
+\end_inset
+
+ then 
+\begin_inset Formula $2$
+\end_inset
+
+ is indifferent between playing 
+\begin_inset Formula $l$
+\end_inset
+
+ or 
+\begin_inset Formula $r.$
+\end_inset
+
+ 
+\begin_inset Formula $1$
+\end_inset
+
+ must be indifferent between playing 
+\begin_inset Formula $L$
+\end_inset
+
+ or 
+\begin_inset Formula $M$
+\end_inset
+
+ so I must have 
+\begin_inset Formula $3\mu(l)=\mu(l),$
+\end_inset
+
+ or 
+\begin_inset Formula $\mu(l)=0.$
+\end_inset
+
+ But if 
+\begin_inset Formula $\mu(l)=0,$
+\end_inset
+
+ then by backward induction 
+\begin_inset Formula $1$
+\end_inset
+
+ is better off playing 
+\begin_inset Formula $R$
+\end_inset
+
+ so the belief that 
+\begin_inset Formula $\mu(R)=0$
+\end_inset
+
+ is not sustainable.
+ We can thus eliminate the possibility that a belief such that 
+\begin_inset Formula $\mu(R)=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu(L)=\mu(M)$
+\end_inset
+
+ could be sustained under a SPNE.
+ 
+\end_layout
+
+\begin_layout Standard
+There are thus two pure SPNE, one such that 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $R,$
+\end_inset
+
+ the other such that 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $L$
+\end_inset
+
+ and 
+\begin_inset Formula $2$
+\end_inset
+
+ plays 
+\begin_inset Formula $l.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) In the first SPNE, the payoff to 
+\begin_inset Formula $1$
+\end_inset
+
+ is 
+\begin_inset Formula $2.$
+\end_inset
+
+ In the second SPNE, its payoff is 
+\begin_inset Formula $3$
+\end_inset
+
+.
+ By forward induction therefore, the second SPNE will be the equilibrium
+ of the game.
+ Indeed, when it comes the turn for 
+\begin_inset Formula $2$
+\end_inset
+
+ to play, it must assume 
+\begin_inset Formula $1$
+\end_inset
+
+ played 
+\begin_inset Formula $L$
+\end_inset
+
+ since this is the only way it could get a better payoff than by playing
+ 
+\begin_inset Formula $R.$
+\end_inset
+
+ Therefore, the only plausible SPNE, obtained by forward induction, is such
+ that 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $L$
+\end_inset
+
+ and 
+\begin_inset Formula $2$
+\end_inset
+
+ plays 
+\begin_inset Formula $l.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+5.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) The game in normal form is as follows:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+l 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+m 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+r
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+L 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1,3$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1,2$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4,0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+M 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4,0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,2$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3,3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+R 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2,4$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2,4$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2,4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+Nash equilibria:
+\end_layout
+
+\begin_layout Standard
+There are no strictly dominated strategies in this game.
+ There is one PSNE of this game, 
+\begin_inset Formula $(R,m).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+MSNEs must be such that player 
+\begin_inset Formula $2$
+\end_inset
+
+ is indifferent between 
+\begin_inset Formula $l,$
+\end_inset
+
+ 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ In shorthand, denote 
+\begin_inset Formula $p_{R}$
+\end_inset
+
+ as 
+\begin_inset Formula $R,$
+\end_inset
+
+ 
+\begin_inset Formula $p_{M}$
+\end_inset
+
+ as 
+\begin_inset Formula $M$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{L}$
+\end_inset
+
+ as 
+\begin_inset Formula $R$
+\end_inset
+
+
+\begin_inset Formula \begin{align*}
+3L+4R & =2L+2M+4R\\
+3L+4R & =3M+4R\\
+L+M+R & =1\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This means I must have 
+\begin_inset Formula $L=M$
+\end_inset
+
+ (second equation), which, translated into the first, means 
+\begin_inset Formula $L=M=0$
+\end_inset
+
+ and from the third, that 
+\begin_inset Formula $R=1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In that equilibrium, player 
+\begin_inset Formula $1$
+\end_inset
+
+ must at least prefer playing 
+\begin_inset Formula $R,$
+\end_inset
+
+ so I must have 
+\begin_inset Formula \begin{align*}
+2l+2m+2r & \geq l+m+4r\\
+2l+2m+2r & \geq4l+3r\\
+l+m+r & =1\\
+l & \geq0,m\geq0,r\geq0\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which can be rewritten as 
+\begin_inset Formula \begin{align*}
+3m & \geq2-3l\\
+3m & \geq l+1\\
+l+m+r & =1\\
+l & \geq0,m\geq0,r\geq0\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+or 
+\begin_inset Formula $m\geq\max[(2-3l)/3,(l+1)/3]$
+\end_inset
+
+ and 
+\begin_inset Formula $l+m+r=1$
+\end_inset
+
+ and 
+\begin_inset Formula $l\geq0,m\geq0,r\geq0.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, 
+\begin_inset Formula $(2-3l)/3\geq(l+1)/3$
+\end_inset
+
+ when 
+\begin_inset Formula $l\leq1/4$
+\end_inset
+
+ so we can summarize by saying that if 
+\begin_inset Formula $l\leq1/4$
+\end_inset
+
+ then I must have 
+\begin_inset Formula $m\geq(2-3l)/3$
+\end_inset
+
+ and 
+\begin_inset Formula $r=1-l-m$
+\end_inset
+
+ and 
+\begin_inset Formula $l\geq0,m\geq0,r\geq0$
+\end_inset
+
+ while if 
+\begin_inset Formula $l\geq1/4$
+\end_inset
+
+ then I must have 
+\begin_inset Formula $m\geq(l+1)/3$
+\end_inset
+
+ and 
+\begin_inset Formula $r=1-l-m$
+\end_inset
+
+ and 
+\begin_inset Formula $l\geq0,m\geq0,r\geq0.$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is represented in the graph below with 
+\begin_inset Formula $l$
+\end_inset
+
+ on the horizontal axis and 
+\begin_inset Formula $m$
+\end_inset
+
+ on the vertical axis.
+ Note the constraint that I must also have 
+\begin_inset Formula $m\leq1-l$
+\end_inset
+
+ to ensure that 
+\begin_inset Formula $r\geq0.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page15.pdf
+	lyxscale 20
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\align center
+ Range of possible MSNEs in Exercise 5, Game Theory 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Subgame Perfect Nash Equilibria:
+\end_layout
+
+\begin_layout Standard
+1 plays 
+\begin_inset Formula $R$
+\end_inset
+
+ is a SPNE.
+ Consider now if there are other SPNE that involve 1 playing 
+\begin_inset Formula $L$
+\end_inset
+
+ or 
+\begin_inset Formula $R.$
+\end_inset
+
+ Denote 
+\begin_inset Formula $\mu(L),$
+\end_inset
+
+ 
+\begin_inset Formula $\mu(M)$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu(R)$
+\end_inset
+
+ the beliefs of player 
+\begin_inset Formula $2$
+\end_inset
+
+ once it comes its turn to play, 
+\emph on
+i.e.
+
+\emph default
+ its estimated probabilities for 
+\begin_inset Formula $1$
+\end_inset
+
+ to play 
+\begin_inset Formula $L,$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ or 
+\begin_inset Formula $R$
+\end_inset
+
+ respectively.
+ Obviously, 
+\begin_inset Formula $\mu(R)=0$
+\end_inset
+
+ since 
+\begin_inset Formula $2$
+\end_inset
+
+ knows that since it is its turn to play then it must be that 
+\begin_inset Formula $1$
+\end_inset
+
+ did not play 
+\begin_inset Formula $R.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider the best strategy for 
+\begin_inset Formula $2$
+\end_inset
+
+ given its belief that 
+\begin_inset Formula $L$
+\end_inset
+
+ is played with probability 
+\begin_inset Formula $\mu(L).$
+\end_inset
+
+ The expected payoff of playing 
+\begin_inset Formula $l$
+\end_inset
+
+ is 
+\begin_inset Formula $3\mu(L),$
+\end_inset
+
+ the expected payoff of playing 
+\begin_inset Formula $m$
+\end_inset
+
+ is 
+\begin_inset Formula $2,$
+\end_inset
+
+ and the expected payoff of playing 
+\begin_inset Formula $r$
+\end_inset
+
+ is 
+\begin_inset Formula $3\mu(M).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $3\mu(L)>\max(2,3\mu(M)),$
+\end_inset
+
+ then 
+\begin_inset Formula $2$
+\end_inset
+
+ plays 
+\begin_inset Formula $l,$
+\end_inset
+
+ but in that case, by backward induction, 
+\begin_inset Formula $1$
+\end_inset
+
+ is better off playing 
+\begin_inset Formula $M,$
+\end_inset
+
+ therefore the belief of 
+\begin_inset Formula $2$
+\end_inset
+
+ is not sustainable (it should be 
+\begin_inset Formula $\mu(M)=1$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $2>\max(3\mu(L),3\mu(M))$
+\end_inset
+
+ then 
+\begin_inset Formula $2$
+\end_inset
+
+ plays 
+\begin_inset Formula $m,$
+\end_inset
+
+ but in that case, by backward induction, 
+\begin_inset Formula $1$
+\end_inset
+
+ is better off playing 
+\begin_inset Formula $R$
+\end_inset
+
+, therefore the belief of 
+\begin_inset Formula $2$
+\end_inset
+
+ is not sustainable.
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $3\mu(M)>\max(2,3\mu(L))$
+\end_inset
+
+ then 
+\begin_inset Formula $2$
+\end_inset
+
+ plays 
+\begin_inset Formula $r,$
+\end_inset
+
+ but in that case, by backward induction, 
+\begin_inset Formula $1$
+\end_inset
+
+ is better off playing 
+\begin_inset Formula $L,$
+\end_inset
+
+ therefore the belief of 
+\begin_inset Formula $2$
+\end_inset
+
+ is not sustainable.
+\end_layout
+
+\begin_layout Itemize
+Suppose now 
+\begin_inset Formula $\mu(L)=\frac{2}{3}$
+\end_inset
+
+ so 
+\begin_inset Formula $2$
+\end_inset
+
+ is indifferent between playing 
+\begin_inset Formula $l$
+\end_inset
+
+ or 
+\begin_inset Formula $m,$
+\end_inset
+
+ and does not play 
+\begin_inset Formula $r.$
+\end_inset
+
+ For this belief to be sustainable, 
+\begin_inset Formula $1$
+\end_inset
+
+ must be indifferent between playing 
+\begin_inset Formula $L$
+\end_inset
+
+ or 
+\begin_inset Formula $M,$
+\end_inset
+
+ and cannot believe that 
+\begin_inset Formula $\mu(r)>0.$
+\end_inset
+
+ So, denoting 
+\begin_inset Formula $\mu(l),$
+\end_inset
+
+ 
+\begin_inset Formula $\mu(m)$
+\end_inset
+
+ the beliefs of 
+\begin_inset Formula $1,$
+\end_inset
+
+ I must have
+\begin_inset Formula \begin{align*}
+\mu(l)+\mu(m) & =4\mu(l)\\
+\mu(r)+\mu(l)+\mu(m) & =1\\
+\mu(r) & =0\end{align*}
+
+\end_inset
+
+ so I must have
+\begin_inset Formula \begin{align*}
+\mu(l) & =\frac{1}{4}\\
+\mu(m) & =\frac{3}{4}\end{align*}
+
+\end_inset
+
+ There is thus a SPNE such that 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $L$
+\end_inset
+
+ with probability 
+\begin_inset Formula $\frac{2}{3}$
+\end_inset
+
+ and 
+\begin_inset Formula $2$
+\end_inset
+
+ plays 
+\begin_inset Formula $l$
+\end_inset
+
+ with probability 
+\begin_inset Formula $\frac{1}{4}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Suppose now 
+\begin_inset Formula $\mu(M)=\frac{2}{3}$
+\end_inset
+
+ so 
+\begin_inset Formula $2$
+\end_inset
+
+ is indifferent between playing 
+\begin_inset Formula $m$
+\end_inset
+
+ or 
+\begin_inset Formula $r,$
+\end_inset
+
+ and does not play 
+\begin_inset Formula $l.$
+\end_inset
+
+ For this belief to be sustainable, 
+\begin_inset Formula $1$
+\end_inset
+
+ must be indifferent between playing 
+\begin_inset Formula $L$
+\end_inset
+
+ or 
+\begin_inset Formula $M$
+\end_inset
+
+ and cannot believe 
+\begin_inset Formula $\mu(l)>0.$
+\end_inset
+
+ So, denoting 
+\begin_inset Formula $\mu(m)$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu(r)$
+\end_inset
+
+ the beliefs of 
+\begin_inset Formula $1,$
+\end_inset
+
+ I must have
+\begin_inset Formula \begin{align*}
+\mu(m)+4\mu(r) & =3\mu(r)\\
+\mu(r)+\mu(l)+\mu(m) & =1\\
+\mu(l) & =0\end{align*}
+
+\end_inset
+
+ This system does not admit solutions.
+ 
+\end_layout
+
+\begin_layout Standard
+There are thus two SPNE: 
+\begin_inset Formula $R$
+\end_inset
+
+ and a SPNE such that 
+\begin_inset Formula $p(L)=\frac{2}{3},$
+\end_inset
+
+ 
+\begin_inset Formula $p(M)=\frac{1}{3},$
+\end_inset
+
+ 
+\begin_inset Formula $\mu(l)=\frac{1}{4},$
+\end_inset
+
+ 
+\begin_inset Formula $\mu(m)=\frac{3}{4}.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) The expected payoff to 
+\begin_inset Formula $1$
+\end_inset
+
+ of playing 
+\begin_inset Formula $R$
+\end_inset
+
+ is 
+\begin_inset Formula $2$
+\end_inset
+
+ while the expected payoff of playing the other SPNE is 
+\begin_inset Formula $1,$
+\end_inset
+
+ so that by forward induction player 
+\begin_inset Formula $1$
+\end_inset
+
+ should play 
+\begin_inset Formula $R.$
+\end_inset
+
+ The only plausible SPNE is thus for 
+\begin_inset Formula $1$
+\end_inset
+
+ to play 
+\begin_inset Formula $R.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+6.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+a) Players would either agree on (Up, Stop) or (Down,Right), however, it
+ would be very hard for them to reach an agreement on which one to play,
+ so they would probably also agree on using a randomizing device to choose
+ which equilibrium to choose.
+ This randomizing device should guarantee each player the same payoff in
+ expectation, so one would need for this randomizing device to lead with
+ equal probability to one or the other equilibrium being chosen.
+ A coin toss would do the trick.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+b) It would seem reasonable for 
+\begin_inset Formula $2$
+\end_inset
+
+ to play Middle.
+ Indeed, while it could make more by playing Stop if 
+\begin_inset Formula $1$
+\end_inset
+
+ plays Up, there is too much of a risk to lose 
+\begin_inset Formula $-10$
+\end_inset
+
+ in case 
+\begin_inset Formula $1$
+\end_inset
+
+ plays Down (which may indeed happen if 
+\emph on
+1
+\emph default
+ bet on 
+\begin_inset Formula $2$
+\end_inset
+
+ playing Right).
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+c) There are two PSNE, (Up, Stop) and (Down, Right).
+ The 'reasonable' play by 
+\begin_inset Formula $2$
+\end_inset
+
+ evoked above is thus not a PSNE.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+d) Denote 
+\begin_inset Formula $p(\mbox{Up})=q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+i) The expected payoff for 
+\begin_inset Formula $2$
+\end_inset
+
+ if playing Left is 
+\begin_inset Formula $u_{2}(L)=q-5(1-q),$
+\end_inset
+
+ while the payoff of playing Stop is 
+\begin_inset Formula $u_{2}(S)=2q-10(1-q)$
+\end_inset
+
+, the payoff of playing Right is 
+\begin_inset Formula $u_{2}(R)=-10q+2(1-q)$
+\end_inset
+
+ and the payoff of playing Middle is 
+\begin_inset Formula $u_{2}(M)=0.$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Left is thus played subject to 
+\begin_inset Formula $6q-5\geq\max(12q-10,2-12q,0),$
+\end_inset
+
+ that is for 
+\begin_inset Formula $q\geq\max((12q-5)/6,(7-12q)/6,5/6),$
+\end_inset
+
+ while I must also have 
+\begin_inset Formula $q=q.$
+\end_inset
+
+ There is thus ONE point where 
+\begin_inset Formula $L$
+\end_inset
+
+ might be played, and that is when 
+\begin_inset Formula $q=5/6.$
+\end_inset
+
+ It is therefore false to say that 
+\begin_inset Formula $L$
+\end_inset
+
+ will never be played for any 
+\begin_inset Formula $q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Note:
+\emph default
+ Arguing that Left was never strictly preferred to either of the other actions
+ got the student full marks, with a bonus for those exploring the case where
+ 
+\begin_inset Formula $q=\frac{5}{6}.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout List
+\labelwidthstring 00.00.0000
+ii) The payoff for 
+\begin_inset Formula $2$
+\end_inset
+
+ of playing Stop is 
+\begin_inset Formula $u_{2}(S)=2q-10(1-q)$
+\end_inset
+
+ while the payoff of playing Right is 
+\begin_inset Formula $u_{2}(R)=-10q+2(1-q).$
+\end_inset
+
+ Stop is thus preferred to Right when 
+\begin_inset Formula $2q-10(1-q)>-10q+2(1-q)$
+\end_inset
+
+ that is when 
+\begin_inset Formula $q>\frac{1}{2},$
+\end_inset
+
+ and conversely.
+ Now, if 
+\begin_inset Formula $q=\frac{1}{2},$
+\end_inset
+
+ 
+\emph on
+2
+\emph default
+'s payoff of playing 
+\begin_inset Formula $R$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ are negative, so player 
+\begin_inset Formula $2$
+\end_inset
+
+ prefers to play Middle (note the payoff for Left is also negative ).
+ In summary, this means that whenever player 
+\begin_inset Formula $2$
+\end_inset
+
+ might be indifferent between 
+\begin_inset Formula $S$
+\end_inset
+
+ and 
+\begin_inset Formula $R,$
+\end_inset
+
+ it actually prefers playing something else than either 
+\begin_inset Formula $S$
+\end_inset
+
+ or 
+\begin_inset Formula $R,$
+\end_inset
+
+ so that in any situation where either 
+\begin_inset Formula $S$
+\end_inset
+
+ or 
+\begin_inset Formula $R$
+\end_inset
+
+ might be played, it must be that the other action is not preferred.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+iii) 
+\begin_inset Formula $2$
+\end_inset
+
+ will play Middle subject to 
+\begin_inset Formula $0\geq\max(q-5(1-q),2q-10(1-q),-10q+2(1-q))$
+\end_inset
+
+ or
+\begin_inset Formula \[
+\frac{5}{6}\geq q\geq\frac{1}{6}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+e) The range where Middle is optimal is large, so that if one assigns equal
+ probability to 
+\begin_inset Formula $q$
+\end_inset
+
+ being any number in the interval 
+\begin_inset Formula $(\frac{1}{6},\frac{5}{6})$
+\end_inset
+
+ (uniform distribution), then the probability to be right in playing Middle
+ is 
+\begin_inset Formula $\frac{2}{3},$
+\end_inset
+
+ which is more than the probability Stop is optimal (
+\begin_inset Formula $\frac{1}{6})$
+\end_inset
+
+ or the probability Right is optimal (
+\begin_inset Formula $\frac{1}{6}).$
+\end_inset
+
+ Therefore, in the absence of any reasonable belief over the possible actions
+ of 
+\begin_inset Formula $1,$
+\end_inset
+
+ it is best to play 
+\begin_inset Formula $M$
+\end_inset
+
+ as a way to reduce the risk of making a mistake.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1429 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Incentive theory
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Answer keys for exercises 1, 3 and 4 were originally written by Dr Bibhas
+ Saha.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+1.
+\end_layout
+
+\begin_layout Standard
+Of the three situations given in the question, case 
+\begin_inset Formula $A$
+\end_inset
+
+ is the only one where the real moral hazard problem arises.
+ 
+\end_layout
+
+\begin_layout Itemize
+First consider case 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Here Low effort gives the principal an expected payoff of 
+\begin_inset Formula $0.1\ast10+0.9\ast100=91$
+\end_inset
+
+, whereas High effort gives 
+\begin_inset Formula $0.9\ast10+0.1\ast100=19$
+\end_inset
+
+.
+ The principal would prefer the agent to give Low effort.
+ The agent on his part always prefers to give low effort, because it involves
+ low disutility.
+ So in this case there is no moral hazard.
+\end_layout
+
+\begin_layout Itemize
+Next, consider case 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Here, High effort gives 100 for sure.
+ So if the principal ever observes an outcome of 10, he will conclude that
+ the agent must have given Low effort.
+ This helps the principal write a contract in which an outcome of 10 is
+ always punishable.
+ The punishment can be made appropriately large so that the agent will be
+ deterred from giving low effort.
+ So here though the moral hazard problem potentially exists, it can be solved
+ easily as effort is in effect observable.
+\end_layout
+
+\begin_layout Itemize
+Now consider case 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Here Low effort gives a lower expected payoff (
+\begin_inset Formula $37$
+\end_inset
+
+), and High effort gives a higher expected payoff (
+\begin_inset Formula $91$
+\end_inset
+
+).
+ The principal prefers High effort, but the agent prefers Low effort, and
+ the principal cannot determine the agent's effort from the outcome observed.
+ Hence, there is a moral hazard problem.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\series bold
+2.
+
+\series default
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+a) 
+\begin_inset Formula $p_{G}R=120>K=100$
+\end_inset
+
+ while 
+\begin_inset Formula $p_{B}R+B=30<K=100$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+b) Moral hazard constraint: 
+\begin_inset Formula $p_{G}w>B$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Participation constraint: 
+\begin_inset Formula $p_{G}w>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Limited liability constraint is ensured as 
+\begin_inset Formula $w>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Therefore, I need 
+\begin_inset Formula $w>\frac{B}{p_{G}}=60$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+c) The investor will choose 
+\begin_inset Formula $w$
+\end_inset
+
+ as small as possible to ensure good behaviour, so 
+\begin_inset Formula $w=60$
+\end_inset
+
+.
+ In that case, the return to the investor is 
+\begin_inset Formula $p_{G}(R-w)-K=90-100=-10$
+\end_inset
+
+.
+ The investor does not invest due to moral hazard on the part of the manager.
+ The investor may try to get a manager with some capital to invest in the
+ project, or try to limit the private benefits 
+\begin_inset Formula $B$
+\end_inset
+
+ the manager can get when she behaves badly.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\series bold
+3.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+a) Full information solution: The monopolist's problem is:
+\begin_inset Formula 
+\begin{align*}
+\max\mathsf{\pi}_{i} & =R_{i}-{}cq_{i}\\
+\text{Subject to }U_{i} & =q_{i}[\mathsf{\theta}_{i}-q_{i}/2]-{}R_{i}\geq0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+This comes down to maximizing 
+\begin_inset Formula $\mathsf{\pi}_{i}=q_{i}[\mathsf{\theta}i-q_{i}/2]-{}cq_{i}$
+\end_inset
+
+.
+ The solution is 
+\begin_inset Formula $q_{i}=\mathsf{\theta}_{i}-{}c$
+\end_inset
+
+, for 
+\begin_inset Formula $i=1,2$
+\end_inset
+
+.
+ The monopolist will sell this much quantity to each type and will charge
+ 
+\begin_inset Formula $R_{i}=\frac{(\mathsf{\theta}_{i}^{2}-{}c^{2})}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page20.pdf
+	lyxscale 20
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+First best solution in Exercise 3, Incentive Theory
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the above figure we show the full information solution as it occurs at
+ the tangency point of the indifference curve and iso-profit curve for each
+ type.
+ Note that on the 
+\begin_inset Formula $(q,R)$
+\end_inset
+
+ plane, higher indifference curve means lower utility and higher iso-profit
+ curve means higher profit.
+ Also the indifference curve of type 2 is steeper than that of type 1.
+ In the figure we have drawn the indifference curves at the reservation
+ utility level (which must pass through origin).
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+b) See the graph below:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page21.pdf
+	lyxscale 20
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Outcome of the first best contracts under asymmetric information in Exercise
+ 3, Incentive Theory
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If the monopolist does not have full information and yet it offers 
+\begin_inset Formula $(q_{1},R_{1})$
+\end_inset
+
+ and 
+\begin_inset Formula $(q_{2},R_{2})$
+\end_inset
+
+ both, both types of consumers will choose 
+\begin_inset Formula $(q_{1},R_{1})$
+\end_inset
+
+.
+ As evident from the above graph, type 2 consumers' utility increases (thick
+ indifference curve below the dotted one), while the type 1 consumers cannot
+ choose anything else.
+ Hence, the monopolist will sell only 
+\begin_inset Formula $(q_{1},R_{1})$
+\end_inset
+
+ bundle and get 
+\begin_inset Formula $N(R_{1}-cq_{1})$
+\end_inset
+
+ as profit.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+c) The monopolist's problem is now modified as;
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Maximize 
+\begin_inset Formula $E\mathsf{\pi}_{i}=N[\mathsf{\alpha}\{R_{i}-{}cq_{1}\}+(1-\mathsf{\alpha})\{R_{2}-{}cq_{2}\}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Subject to
+\end_layout
+
+\begin_layout Standard
+Self-selection constraints:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $U_{1}=q_{1}[\mathsf{\theta}_{1}-q_{1}/2]-{}R_{1}\geq q_{2}[\mathsf{\theta}_{1}-q_{2}/2]-{}R_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $U_{2}=q_{2}[\mathsf{\theta}_{2}-{}q_{2}/2]-{}R_{2}\geq q_{1}[\mathsf{\theta}_{2}-{}q_{1}/2]-{}R_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and participation constraints
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $U_{1}\geq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $U_{2}\geq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Of these the second self-selection constraint will bind and the first participat
+ion constraint will bind.
+ This is easy to check.
+ Just assume otherwise and see that you will run into contradictions.
+\end_layout
+
+\begin_layout Standard
+No distortion at the top means that 
+\begin_inset Formula $q_{2}=\mathsf{\theta}_{2}-{}c$
+\end_inset
+
+ must hold.
+ The efficiency condition will hold for the top type.
+ No rent at the bottom means that 
+\begin_inset Formula $U_{1}=0$
+\end_inset
+
+ the reservation utility, which is confirmed at the binding of the first
+ participation constraint.
+\end_layout
+
+\begin_layout Standard
+Substitute into the objective function the expressions for 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ obtained by setting the second self-selection constraint and the first
+ participation constraint with equality, and then maximise it with respect
+ to 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{2}$
+\end_inset
+
+.
+ You should get the following:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $q_{2}=\mathsf{\theta}_{2}-c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $q_{1}=\mathsf{\theta}_{1}-c-\{(1-\mathsf{\alpha})/\mathsf{\alpha}\}[\mathsf{\theta}_{2}-\mathsf{\theta}_{1}]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Associated payments 
+\begin_inset Formula $(R_{1},R_{2})$
+\end_inset
+
+ can be easily calculated.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page22.pdf
+	lyxscale 20
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Second best solution in Exercise 3, Incentive Theory
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this figure we have shown the optimal solution.
+ Optimal 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ has now fallen as the monopolist's choice is now given at the point of
+ intersection of the two solid indifference curves.
+ This follows from the fact that the self-selection constraint must bind
+ for the top type.
+ He should be indifferent between choosing his own bundle and the one meant
+ for the bottom type.
+ Choice of 
+\begin_inset Formula $q_{2}$
+\end_inset
+
+ is unaffected, but 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ falls, implying that concession has been given to the top type.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+
+\series bold
+\size small
+4.
+
+\series default
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+a) The second firm is the top type.
+ It is the efficient type as it can supply a given level of cleanliness
+ at a lower cost.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+b) Full information solution.
+ The hospital's problem is to
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Maximise 
+\begin_inset Formula $U=AI-{}P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Subject to 
+\begin_inset Formula $P-kI^{2}\geq10$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+It is straightforward to obtain: 
+\begin_inset Formula $I=\frac{A}{2k}$
+\end_inset
+
+ and 
+\begin_inset Formula $P=10+\frac{A^{2}}{4k}.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+c) The hospital's problem is to
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Maximise 
+\begin_inset Formula $EU=(1/2)[AI_{1}-{}P_{1}]+(1/2)[AI_{2}-P_{2}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Subject to,
+\end_layout
+
+\begin_layout Standard
+Self-selection constraints:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P_{1}-{}I_{1}^{2}\geq P_{2}-{}I_{2}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P_{2}-{}kI_{2}^{2}\geq P_{1}-{}kI_{1}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Participation constraints:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P_{1}-{}I_{1}^{2}\geq10$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P_{2}-{}kI_{2}^{2}\geq10$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+d) The second self-selection constraint and the first participation constraint
+ will bind.
+ By setting equality to these two constraints obtain expressions for 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $P_{2},$
+\end_inset
+
+ substituting them into the objective function and maximising it, one obtains
+ the following:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $I_{1}=A/[2(2-k)]<A/2$
+\end_inset
+
+, because 
+\begin_inset Formula $k<1$
+\end_inset
+
+, and
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $I_{2}=A/(2k)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+You can derive 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ accordingly.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+e) See the following graphs.
+ In the top panel we have depicted the full information solution.
+ The bottom panel shows how the optimal solution will look like under asymmetric
+ information.
+ 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ rises above the full information solution, while 
+\begin_inset Formula $I_{1}$
+\end_inset
+
+ is below its full information level.
+ If these two bundles 
+\begin_inset Formula $\{(I_{1}^{SB},P_{1}^{SB}),(I_{2}^{SB},P_{2}^{SB})\}$
+\end_inset
+
+ are offered together, the top type will select 
+\begin_inset Formula $(I_{2}^{SB},P_{2}^{SB})$
+\end_inset
+
+ as intended.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page23.pdf
+	lyxscale 20
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+First best solution in Exercise 4, Incentive Theory
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page24.pdf
+	lyxscale 20
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Second best solution in Exercise 4, Incentive Theory
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\series bold
+5.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+a)
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+i) The agent that does not exert effort will have expected payoff:
+\begin_inset Formula 
+\[
+EU_{e=0}=p_{0}u(Q+\overline{w})+(1-p_{0})u(\underline{w})
+\]
+
+\end_inset
+
+ The agent that exerts effort will have expected payoff:
+\begin_inset Formula 
+\[
+EU_{e=1}=p_{1}u(Q+\overline{w})+(1-p_{1})u(\underline{w})-C
+\]
+
+\end_inset
+
+Since effort is monitorable, the agent's incentive compatibility constraint
+ (
+\begin_inset Formula $(p_{1}-p_{0})(u(Q+\overline{w})-u(\underline{w}))\geq C$
+\end_inset
+
+) does not come into account, and one only has to check that 
+\begin_inset Formula $EU_{e=1}>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ii) The employer will maximize its objective function 
+\begin_inset Formula $EU_{e=1}$
+\end_inset
+
+ (the utility of the agent) s.t.
+ 
+\begin_inset Formula $p_{1}\overline{w}+(1-p_{1})\underline{w}\geq0$
+\end_inset
+
+ (this is the budget constraint for the employer)
+\begin_inset Formula 
+\begin{align*}
+ & \max p_{1}u(Q+\overline{w})+(1-p_{1})u(\underline{w})-C\\
+\text{s.t. }p_{1}\overline{w}+(1-p_{1})\underline{w} & \geq0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+iii) The budget constraint will be binding, so 
+\begin_inset Formula $p_{1}\overline{w}+(1-p_{1})\underline{w}=0$
+\end_inset
+
+ and the government maximizes
+\begin_inset Formula 
+\[
+\underset{\overline{t}}{\max}p_{1}u(Q+\overline{w})+(1-p_{1})u(\frac{-p_{1}\overline{w}}{1-p_{1}})-C
+\]
+
+\end_inset
+
+ so that at the optimum 
+\begin_inset Formula 
+\begin{align*}
+u^{\prime}(Q+\overline{w}) & =u^{\prime}(\frac{-p_{1}\overline{w}}{1-p_{1}})\\
+ & \text{so}\\
+u^{\prime}(Q+\overline{w}) & =u^{\prime}(\underline{w})
+\end{align*}
+
+\end_inset
+
+so s.t.
+ monotonicity conditions on 
+\begin_inset Formula $u^{\prime}$
+\end_inset
+
+, then 
+\begin_inset Formula $Q+\overline{w}=\underline{w}$
+\end_inset
+
+ (this implies that 
+\begin_inset Formula $\overline{w}<0$
+\end_inset
+
+).
+ This is explained by the wish of the government to minimize the variability
+ of the income of the agent as the agent is risk averse.
+ Note that if effort wasn't verifiable, then the agent would not do effort
+ as income is the same either way.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+b)
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+i) If effort is not verifiable, then the agent must be induced to choose
+ to do effort, so the program of the principal is 
+\begin_inset Formula 
+\begin{align*}
+ & \max p_{1}u(Q+\overline{w})+(1-p_{1})u(\underline{w})-C\\
+\text{s.t. }p_{1}\overline{w}+(1-p_{1})\underline{w} & \geq0\text{ (budget constraint)}\\
+(p_{1}-p_{0})(u(Q+\overline{w})-u(\underline{w})) & \geq C\text{ (incentive constraint)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ii) The Lagrangian of the optimization problem is 
+\begin_inset Formula 
+\[
+\mathcal{L}=p_{1}u(\overline{w})+(1-p_{1})u(\underline{w})-C-\mu(p_{1}\overline{w}+(1-p_{1})\underline{w})-\lambda(C_{1}-(p_{1}-p_{0})(u(Q+\overline{w})-u(\underline{w})))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The first order conditions for maximization are as follows:
+\begin_inset Formula 
+\begin{align*}
+p_{1}u^{\prime}(\overline{w})-\mu p_{1}+\lambda(p_{1}-p_{0})u^{\prime}(Q+\overline{w}) & =0\\
+(1-p_{1})u^{\prime}(\underline{w})-\mu(1-p_{1})-\lambda(p_{1}-p_{0})u^{\prime}(\underline{w}) & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The first condition can be rewritten as:
+\begin_inset Formula 
+\[
+u^{\prime}(\overline{w})+\lambda(1-\frac{p_{0}}{p_{1}})u^{\prime}(Q+\overline{w})=\mu
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From this we can already see that 
+\begin_inset Formula $\mu>0$
+\end_inset
+
+ as long as 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is positive (since 
+\begin_inset Formula $u^{\prime}(\overline{w})\geq0$
+\end_inset
+
+ (increasing utility function)).
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Replacing this expression of 
+\begin_inset Formula $\mu$
+\end_inset
+
+ into the second condition, we find 
+\begin_inset Formula 
+\begin{align*}
+(1-\lambda\frac{p_{1}-p_{0}}{1-p_{1}})u^{\prime}(\underline{w}) & =u^{\prime}(\overline{w})+\lambda(1-\frac{\pi_{0}}{\pi_{1}})u^{\prime}(Q+\overline{w})\\
+u^{\prime}(\underline{w})-u^{\prime}(\overline{w}) & =\lambda\lbrack\frac{p_{1}-p_{0}}{1-p_{1}}u^{\prime}(\underline{w})+(1-\frac{\pi_{0}}{\pi_{1}})u^{\prime}(Q+\overline{w})]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then, 
+\begin_inset Formula $\lambda\geq0$
+\end_inset
+
+ if 
+\begin_inset Formula $u^{\prime}(\underline{w})-u^{\prime}(\overline{w})>0$
+\end_inset
+
+ which is the case as long as 
+\begin_inset Formula $\underline{w}\leq\overline{w}$
+\end_inset
+
+.
+ In that case, both 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu$
+\end_inset
+
+ will be positive at the optimum so the two constraints, budget and incentive,
+ will be binding:
+\begin_inset Formula 
+\begin{align*}
+\pi_{1}\overline{w}+(1-\pi_{1})\underline{w} & =0\\
+C-(p_{1}-p_{0})(u(\overline{w})-u(\underline{w})) & =0
+\end{align*}
+
+\end_inset
+
+This means that in order to induce effort, the government will have to different
+iate payment between the high and the low payoff in order to induce the
+ agent to seek to increase the probability of the high payoff by exerting
+ effort.
+ This comes at the expense of making the payoff to the agent more uncertain.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+
+\series bold
+6.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+a) The principal is the firm as it draws up the contract, while the agent
+ is the employee.
+ The contract will be drawn based on two variables, 
+\begin_inset Formula $w$
+\end_inset
+
+ the wage and 
+\begin_inset Formula $h$
+\end_inset
+
+ the number of hours of work, and the wage and number of hours worked may
+ be made dependent on the result of the shock (positive or negative).
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+b)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+At time 
+\begin_inset Formula $t=1,$
+\end_inset
+
+ the principal offers a contract such that 
+\begin_inset Formula $C_{H}=(w_{H},h_{H})$
+\end_inset
+
+ is to be paid and worked in case of a favourable shock and 
+\begin_inset Formula $C_{L}=(w_{L},h_{L})$
+\end_inset
+
+ is to be paid and worked in case of an adverse shock.
+\end_layout
+
+\begin_layout Itemize
+At time 
+\begin_inset Formula $t=2,$
+\end_inset
+
+ the agent accepts or reject the contract.
+ If the contract is rejected, the game ends.
+\end_layout
+
+\begin_layout Itemize
+At time 
+\begin_inset Formula $t=3,$
+\end_inset
+
+ the outcome is realized.
+\end_layout
+
+\begin_layout Itemize
+At time 
+\begin_inset Formula $t=4,$
+\end_inset
+
+ transfers are made according to the contract and the realization of the
+ outcome.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+c) The principal's objective function is its expected profit 
+\begin_inset Formula $E\pi:$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+E\pi=q(x_{H}h_{H}-w_{H})+(1-q)(x_{L}h_{L}-w_{L})
+\]
+
+\end_inset
+
+ The agent's individual rationality constraint is such that its expected
+ utility 
+\begin_inset Formula $EU$
+\end_inset
+
+ is positive:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+d) The Lagrangian of the optimization problem is 
+\begin_inset Formula 
+\[
+\mathcal{L}=q(x_{H}h_{H}-w_{H})+(1-q)(x_{L}h_{L}-w_{L})+\lambda(q(u(w_{H})-f(h_{H}))+(1-q)(u(w_{L})-f(h_{L})))
+\]
+
+\end_inset
+
+ with 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ the Lagrange multiplier for the rationality constraint.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Maximization in 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ obtains that 
+\begin_inset Formula 
+\[
+q(u(w_{H})-f(h_{H}))+(1-q)(u(w_{H})-f(h_{H}))=0
+\]
+
+\end_inset
+
+ so the rationality constraint is binding.
+\end_layout
+
+\begin_layout Standard
+Maximization in 
+\begin_inset Formula $h_{H},h_{L},w_{H}$
+\end_inset
+
+ and 
+\begin_inset Formula $w_{L}$
+\end_inset
+
+ obtains the following first order conditions:
+\begin_inset Formula 
+\begin{align*}
+x_{H}-\lambda f^{\prime}(h_{H}) & =0\\
+x_{L}-\lambda f^{\prime}(h_{L}) & =0\\
+-1+\lambda u^{\prime}(w_{H}) & =0\\
+-1+\lambda u^{\prime}(w_{L}) & =0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+e) From the above equalities, I obtain that 
+\begin_inset Formula 
+\begin{align*}
+\frac{x_{H}}{f^{\prime}(h_{H})} & =\lambda\\
+\frac{x_{L}}{f^{\prime}(h_{L})} & =\lambda\\
+\lambda u^{\prime}(w_{H}) & =1\\
+\lambda u^{\prime}(w_{L}) & =1
+\end{align*}
+
+\end_inset
+
+ so 
+\begin_inset Formula $u^{\prime}(w_{H})=u^{\prime}(w_{L})$
+\end_inset
+
+ which means that 
+\begin_inset Formula $w_{H}=w_{L}.$
+\end_inset
+
+ The agent is paid the same wage irrespective of the shock because the agent
+ is risk averse.
+ Now, from the two first equalities, I have that 
+\begin_inset Formula $\frac{x_{H}}{f^{\prime}(h_{H})}=\frac{x_{L}}{f^{\prime}(h_{L})}$
+\end_inset
+
+ so 
+\begin_inset Formula 
+\[
+f^{\prime}(h_{L})=\frac{x_{L}}{x_{H}}f^{\prime}(h_{H})
+\]
+
+\end_inset
+
+ Since 
+\begin_inset Formula $x_{L}<x_{H}$
+\end_inset
+
+ this means that 
+\begin_inset Formula 
+\[
+f^{\prime}(h_{L})<f^{\prime}(h_{H})
+\]
+
+\end_inset
+
+ so the agent works less in case of a negative shock (this is because 
+\begin_inset Formula $f^{\prime}$
+\end_inset
+
+ is increasing as 
+\begin_inset Formula $f$
+\end_inset
+
+ is convex).
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+f) Under the contract above, the principal has to pay the same wage whether
+ the agent works 
+\begin_inset Formula $h_{H}$
+\end_inset
+
+ hours or 
+\begin_inset Formula $h_{L}$
+\end_inset
+
+ hours.
+ This means that in case of a negative shock, the principal will want to
+ lie and pretend there was a positive shock so the agent has to work more.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+g) One must include incentive constraints for the principal so it does not
+ lie, so one needs:
+\begin_inset Formula 
+\[
+x_{H}h_{H}-w_{H}\geq x_{H}h_{L}-w_{L}
+\]
+
+\end_inset
+
+ so the principal pays 
+\begin_inset Formula $w_{H}$
+\end_inset
+
+ and asks the worker to work 
+\begin_inset Formula $h_{H}$
+\end_inset
+
+ hours in case of a positive shock, and
+\begin_inset Formula 
+\[
+x_{L}h_{L}-w_{L}\geq x_{L}h_{H}-w_{H}
+\]
+
+\end_inset
+
+ so the principal pays 
+\begin_inset Formula $w_{L}$
+\end_inset
+
+ and asks the worker to work 
+\begin_inset Formula $h_{L}$
+\end_inset
+
+ hours in case of a negative shock.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Adding up those two conditions, one finds that 
+\begin_inset Formula 
+\begin{align*}
+x_{H}h_{H}-w_{H}+x_{L}h_{L}-w_{L} & \geq x_{H}h_{L}-w_{L}+x_{L}h_{H}-w_{H}\\
+(x_{H}-x_{L})h_{H} & \geq(x_{H}-x_{L})h_{L}\\
+h_{H} & \geq h_{L}
+\end{align*}
+
+\end_inset
+
+ so the agent will be asked to work more in case of a positive shock.
+ Then, looking at the second incentive constraint:
+\begin_inset Formula 
+\[
+w_{H}-w_{L}\geq x_{L}(h_{H}-h_{L})
+\]
+
+\end_inset
+
+so the agent will be paid more in case of a positive shock than in case
+ of a negative shock.
+ This means that the first best outcome cannot be achieved if the principal
+ can lie.
+ The possibility of lying works to the detriment of the principal.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

@@ -1,0 +1,2254 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Game theory 2
+\end_layout
+
+\begin_layout Description
+1.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+a) The game in normal form is as follows:
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $L$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $U$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1,3$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1,3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $D$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3,1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+This game has two PSNE, 
+\begin_inset Formula $(U,L)$
+\end_inset
+
+ and 
+\begin_inset Formula $(D,R)$
+\end_inset
+
+.
+ Its MSNEs much be such that 
+\begin_inset Formula $2$
+\end_inset
+
+ is indifferent between 
+\begin_inset Formula $L$
+\end_inset
+
+ and 
+\begin_inset Formula $R,$
+\end_inset
+
+ so 
+\begin_inset Formula 
+\begin{align*}
+3u & =3u+d\\
+u+d & =1
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so that I must have 
+\begin_inset Formula $d=0$
+\end_inset
+
+ and 
+\begin_inset Formula $u=1.$
+\end_inset
+
+ 
+\begin_inset Formula $1$
+\end_inset
+
+ must at least weakly prefer 
+\begin_inset Formula $U$
+\end_inset
+
+ to 
+\begin_inset Formula $D,$
+\end_inset
+
+ so I need
+\begin_inset Formula 
+\begin{align*}
+1 & \geq3r\\
+l+r & =1
+\end{align*}
+
+\end_inset
+
+ so there is a range of MSNE such that 
+\begin_inset Formula $r\leq\frac{1}{3}$
+\end_inset
+
+ and 
+\begin_inset Formula $u=1.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+b) Suppose 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $U,$
+\end_inset
+
+ then its payoff is 
+\begin_inset Formula $1.$
+\end_inset
+
+ Suppose now 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $D,$
+\end_inset
+
+ then 
+\begin_inset Formula $2$
+\end_inset
+
+ will play 
+\begin_inset Formula $R$
+\end_inset
+
+ and the payoff to 
+\begin_inset Formula $1$
+\end_inset
+
+ will be 
+\begin_inset Formula $3.$
+\end_inset
+
+ Therefore, by backward induction, the unique SPNE of the game is 
+\begin_inset Formula $(D,R).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+c) Player 2 can precommit (see end of 
+\begin_inset Quotes eld
+\end_inset
+
+Game Theory 2
+\begin_inset Quotes erd
+\end_inset
+
+ for the case where player 2 cannot pre-commit).
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+i) 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page19.pdf
+	lyxscale 20
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Extensive form game in Exercise 1, Game Theory 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ii) Put the game in normal form (not necessary for the resolution, but helpful).
+ Denote 
+\begin_inset Formula $C$
+\end_inset
+
+ the decision to pre-commit and 
+\begin_inset Formula $NC$
+\end_inset
+
+ the decision not to pre-commit, 
+\begin_inset Formula $x$
+\end_inset
+
+ the probability with which 
+\begin_inset Formula $2$
+\end_inset
+
+ commits, 
+\begin_inset Formula $l$
+\end_inset
+
+ the probability with which she plays 
+\begin_inset Formula $l$
+\end_inset
+
+ and 
+\begin_inset Formula $u$
+\end_inset
+
+ the probability with which 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $U.$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $NC,L$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $NC,R$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C,L$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C,R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $U$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1,3$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1,3$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1,3$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1,3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $D$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3,1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3,1-c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are three PSNE, 
+\begin_inset Formula $\left\{ U,(NC,L)\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ U,(C,L)\right\} ,$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ D,(NC,R)\right\} .$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+MSNEs must be such that 
+\begin_inset Formula $2$
+\end_inset
+
+ is indifferent between 
+\begin_inset Formula $(NC,L),$
+\end_inset
+
+ 
+\begin_inset Formula $(NC,R),$
+\end_inset
+
+ 
+\begin_inset Formula $(C,L)$
+\end_inset
+
+ and 
+\begin_inset Formula $(C,R)$
+\end_inset
+
+ so I must have
+\begin_inset Formula 
+\[
+3u=3u+(1-u)=3u=3u+(1-c)(1-u)
+\]
+
+\end_inset
+
+ for which the unique solution is 
+\begin_inset Formula $u=1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $u$
+\end_inset
+
+ to indeed be equal to 
+\begin_inset Formula $1,$
+\end_inset
+
+ then 
+\begin_inset Formula $1$
+\end_inset
+
+ must at least weakly prefer 
+\begin_inset Formula $U$
+\end_inset
+
+ to 
+\begin_inset Formula $D$
+\end_inset
+
+ so I must have 
+\begin_inset Formula 
+\[
+1\geq3(1-x)(1-l)+3x(1-l)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so I have a range of MSNEs 
+\begin_inset Formula $\left\{ U,l\geq\frac{2}{3}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Suppose 
+\begin_inset Formula $1-c>0.$
+\end_inset
+
+ Then the player 
+\begin_inset Formula $2$
+\end_inset
+
+ strictly prefers playing 
+\begin_inset Formula $R$
+\end_inset
+
+ whenever it comes its turn to play.
+ By backward induction, this means player 
+\begin_inset Formula $1$
+\end_inset
+
+ will play 
+\begin_inset Formula $D$
+\end_inset
+
+ whether 
+\begin_inset Formula $2$
+\end_inset
+
+ pre-commits or not.
+ Knowing this, player 
+\begin_inset Formula $2$
+\end_inset
+
+ does not pre-commit.
+ The SPNE is thus 
+\begin_inset Formula $\left\{ D,(NC,R)\right\} .$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Suppose now 
+\begin_inset Formula $1-c<0$
+\end_inset
+
+ and 
+\begin_inset Formula $2$
+\end_inset
+
+ pre-commits.
+ Then the player 
+\begin_inset Formula $2$
+\end_inset
+
+ strictly prefers playing 
+\begin_inset Formula $L$
+\end_inset
+
+ if player 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $D$
+\end_inset
+
+, in which case 
+\begin_inset Formula $1$
+\end_inset
+
+ gets 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $1$
+\end_inset
+
+ thus prefers playing 
+\begin_inset Formula $U,$
+\end_inset
+
+ and 
+\begin_inset Formula $2$
+\end_inset
+
+ thus gets 
+\begin_inset Formula $3.$
+\end_inset
+
+ Suppose 
+\begin_inset Formula $2$
+\end_inset
+
+ does not pre-commit.
+ Then, as before, 
+\begin_inset Formula $(D,R)$
+\end_inset
+
+ is played, and 
+\begin_inset Formula $2$
+\end_inset
+
+ gets only 
+\begin_inset Formula $1.$
+\end_inset
+
+ Therefore, 
+\begin_inset Formula $2$
+\end_inset
+
+ prefers to pre-commit and 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $U.$
+\end_inset
+
+ The SPNE is thus 
+\begin_inset Formula $\left\{ U,(C,L\text{ if pre-commit},R\text{ if no pre-commit})\right\} $
+\end_inset
+
+, equivalent to 
+\begin_inset Formula $\left\{ U,(C,L)\right\} .$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Description
+Exercise: Consider the case where 
+\begin_inset Formula $1-c=0.$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+iii) 
+\begin_inset Formula $2$
+\end_inset
+
+ will pre-commit s.t 
+\begin_inset Formula $1-c<0.$
+\end_inset
+
+ The only effective pre-commitment is the one that is expensive enough that
+ it changes the expected action of 
+\begin_inset Formula $2$
+\end_inset
+
+ in a credible manner, so it is indeed best for 
+\begin_inset Formula $2$
+\end_inset
+
+ to play 
+\begin_inset Formula $L$
+\end_inset
+
+ when it comes it turn to choose between 
+\begin_inset Formula $L$
+\end_inset
+
+ and 
+\begin_inset Formula $R$
+\end_inset
+
+ and it has pre-commited.
+ Note also that the pre-commitment was all the more effective as it was
+ public (known by all).
+ In the variant in appendix A, one will examine how important it is for
+ the pre-commitment to be observable.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+2.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+a) In the following, I will assume that when the buyer is indifferent between
+ accepting or rejecting the price offer, then it accepts.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $p>60$
+\end_inset
+
+ then the seller does not sell.
+ Profit for the seller is 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $60\geq p>55,$
+\end_inset
+
+ then the seller sells with probability 
+\begin_inset Formula $h$
+\end_inset
+
+ and its expected profit is 
+\begin_inset Formula $h(p-50).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $55\geq p>50$
+\end_inset
+
+ then the seller always sells and its expected profit is 
+\begin_inset Formula $(p-50).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $p\leq50$
+\end_inset
+
+ then the seller always sells and its expected profit is 
+\begin_inset Formula $(p-50)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The seller maximizes its payoff.
+ It will set either 
+\begin_inset Formula $p=60,$
+\end_inset
+
+ in which case profit is 
+\begin_inset Formula $10h,$
+\end_inset
+
+ or 
+\begin_inset Formula $p=55,$
+\end_inset
+
+ in which case profit is 
+\begin_inset Formula $5.$
+\end_inset
+
+ It will choose one over the later s.t.
+ 
+\begin_inset Formula $10h\geq5,$
+\end_inset
+
+ or 
+\begin_inset Formula $h\geq\frac{1}{2}.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+b)
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+i) 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page16.pdf
+	lyxscale 20
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ Extensive form game in Exercise 2, Game Theory 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ii)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If the high type accepts in the first period, then its payoff is 
+\begin_inset Formula $60-p_{1}>0.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If the high type accepts in the second period, then its payoff is 
+\begin_inset Formula $t(60-p_{2})>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The low type does not accept in the first period, as its payoff would be
+ 
+\begin_inset Formula $55-p_{1}<0.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If the low type accepts in the second period, then its payoff is 
+\begin_inset Formula $t(55-p_{2})>0.$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+iii) The conditions for such a pattern of acceptance are such that
+\begin_inset Formula 
+\begin{align*}
+60-p_{1} & \geq t(60-p_{2})\\
+60-p_{1} & \geq0\\
+55-p_{1} & <0\\
+55-p_{2} & \geq0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The expected payoff for the seller is then 
+\begin_inset Formula $hp_{1}+(1-h)p_{2}-50,$
+\end_inset
+
+ which it maximizes in 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ under the conditions above.
+ This leads to setting 
+\begin_inset Formula $p_{2}=55$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{1}=60-5t,$
+\end_inset
+
+ so her expected payoff is 
+\begin_inset Formula $h(60-5t)+(1-h)55-50=5(1+h-ht).$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+iv) It is sustainable, as the buyer of a high type would still be better
+ off buyig first, while the price 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ cannot be raised to more than the buyer of a low type's willingness to
+ pay, 
+\begin_inset Formula $55,$
+\end_inset
+
+ so there is no possibility of exploiting the knowledge that the buyer who
+ does not buy in the first period is of a low type.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+3.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+a) A player of type 
+\begin_inset Formula $\overline{c}$
+\end_inset
+
+ is called inefficient because it costs it more to produce the good than
+ the good is valuable.
+ Similarly, the player of type 
+\begin_inset Formula $\underline{c}$
+\end_inset
+
+ is called efficient because it costs it less to produce the public good
+ than the public good is valuable.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Contributions must be made at the same time else there will be a waiting
+ game whereby the players wait for the other to contribute.
+\end_layout
+
+\begin_layout Standard
+Similarly, it is important they cannot observe what the other player contributes
+ else they could devise strategies such that their contribution is dependent
+ on what the other player contributes.
+ Note this does not require they contribute in succession: each can simply
+ announce their menu of contribution as a function of the contribution of
+ the other and then, having observed each other's menu, choose what to contribut
+e.
+\end_layout
+
+\begin_layout Standard
+Those two assumptions therefore considerably simplify the game to be analyzed.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+b) If both players are of a low type, the normal form of the game is as
+ follows:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\noindent
+\align block
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $NC$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1-\overline{c},1-\overline{c}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1-\overline{c},1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $NC$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1,1-\overline{c}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Not contributing is a dominant strategy for both players, so the unique
+ PSNE of the game is (NC,NC).
+\end_layout
+
+\begin_layout Standard
+If both players are of a high type, the normal form of the game is as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $NC$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1-\underline{c},1-\underline{c}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1-\underline{c},1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $NC$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1,1-\underline{c}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are two PSNE of the game, 
+\begin_inset Formula $(NC,C)$
+\end_inset
+
+ and 
+\begin_inset Formula $(C,NC)$
+\end_inset
+
+ and a MSNE such that, denoting 
+\begin_inset Formula $c_{a}$
+\end_inset
+
+ the probability 
+\begin_inset Formula $a$
+\end_inset
+
+ contributes and 
+\begin_inset Formula $c_{b}$
+\end_inset
+
+ the probability that 
+\begin_inset Formula $b$
+\end_inset
+
+ contributes then 
+\begin_inset Formula 
+\begin{align*}
+1-\underline{c} & =c_{a}\\
+1-\underline{c} & =c_{b}
+\end{align*}
+
+\end_inset
+
+ which means both players contribute with probability 
+\begin_inset Formula $1-\underline{c}.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+c) 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page18.pdf
+	lyxscale 20
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ Extensive form game in Exercise 3, Game Theory 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+d) If both agents are of a low type, then none should contribute.
+ If one is of a low type and the other of a high type, then the high type
+ should contribute.
+ If both are of a high type, only one should contribute.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+e) Suppose 
+\begin_inset Formula $s_{a}(c_{a})$
+\end_inset
+
+ takes the form of a mixed strategy, indicating with what probability player
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ contributes depending on its type 
+\begin_inset Formula $c_{a}.$
+\end_inset
+
+ Similarly for 
+\begin_inset Formula $s_{b}(c_{b}).$
+\end_inset
+
+ Strategies must be at least weakly optimal for each players of each different
+ type.
+ Under those conditions, the expected payoff to player 
+\begin_inset Formula $a$
+\end_inset
+
+ of high type contributing is 
+\begin_inset Formula $1-\underline{c}$
+\end_inset
+
+ while the expected payoff of not contributing is 
+\begin_inset Formula $\lambda s_{b}(\underline{c})+(1-\lambda)s_{b}(\overline{c}),$
+\end_inset
+
+ so for the player 
+\begin_inset Formula $a$
+\end_inset
+
+ of a high type to contribute, I must have 
+\begin_inset Formula 
+\[
+1-\underline{c}\geq\lambda s_{b}(\underline{c})+(1-\lambda)s_{b}(\overline{c})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Similarly, player 
+\begin_inset Formula $a$
+\end_inset
+
+ of a low type will contribute with some probability s.t.
+\begin_inset Formula 
+\[
+1-\overline{c}\geq\lambda s_{b}(\underline{c})+(1-\lambda)s_{b}(\overline{c})
+\]
+
+\end_inset
+
+However, the second equality cannot be verified since 
+\begin_inset Formula $1-\overline{c}<0$
+\end_inset
+
+, so I must have 
+\begin_inset Formula $s_{a}(\overline{c})=0.$
+\end_inset
+
+ By symmetry, 
+\begin_inset Formula $s_{b}(\overline{c})=0.$
+\end_inset
+
+ This means that 
+\begin_inset Formula $s_{a}(\underline{c})=s_{b}(\underline{c})=\min(\frac{1-\underline{c}}{\lambda},1)$
+\end_inset
+
+.
+ Note how this generalizes findings in 
+\begin_inset Formula $b).$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+f) A player of a low type again never contributes as contributing is a dominated
+ strategy for that type of player.
+ Player 
+\begin_inset Formula $b$
+\end_inset
+
+ will interpret a contribution by player 
+\begin_inset Formula $a$
+\end_inset
+
+ in period 
+\begin_inset Formula $1$
+\end_inset
+
+ as a signal that 
+\begin_inset Formula $a$
+\end_inset
+
+ is of a high type, since only high types contribute.
+ Therefore, and because 
+\begin_inset Formula $a$
+\end_inset
+
+ will know 
+\begin_inset Formula $b$
+\end_inset
+
+ knows it is of a high type, 
+\begin_inset Formula $b$
+\end_inset
+
+ will not contribute in the second period if 
+\begin_inset Formula $a$
+\end_inset
+
+ contributes in the first.
+ This means that presumably, in the optimal strategy, 
+\begin_inset Formula $a$
+\end_inset
+
+ contributes with lower probability in the first period than in the game
+ with only one period in order to avoid revealing its own type as often.
+ (Note: It was not necessary and not required to solve the game).
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Variation
+\series medium
+ 
+\series bold
+on 1.c): 
+\end_layout
+
+\begin_layout Description
+Let us consider a variant of exercise 1 section c, when player 2 cannot
+ precommit to spend 
+\begin_inset Formula $c>0$
+\end_inset
+
+ when she has to play 
+\begin_inset Formula $R$
+\end_inset
+
+ : 
+\begin_inset Formula $1$
+\end_inset
+
+ does not know whether 
+\begin_inset Formula $2$
+\end_inset
+
+ precommits or not.
+ This variant will allow us to examine how important it is for the pre-commitmen
+t to be observable.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+i) 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GraphsMScMicro/GraphsMScMicro-page17.pdf
+	lyxscale 20
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ Extensive form game in variant of Exercise 1, Game Theory 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+ii) As before, there are three PSNE, 
+\begin_inset Formula $\left\{ U,(NC,L)\right\} ,$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ U,(C,L)\right\} ,$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ D,(NC,R)\right\} ,$
+\end_inset
+
+ and a range of MSNEs 
+\begin_inset Formula $\left\{ U,l\geq\frac{2}{3}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Suppose 
+\begin_inset Formula $1-c>0,$
+\end_inset
+
+ then the player 
+\begin_inset Formula $2$
+\end_inset
+
+ strictly prefers playing 
+\begin_inset Formula $R$
+\end_inset
+
+ whenever it comes its turn to play.
+ By backward induction, this means player 
+\begin_inset Formula $1$
+\end_inset
+
+ will play 
+\begin_inset Formula $D$
+\end_inset
+
+ whether it believes 
+\begin_inset Formula $2$
+\end_inset
+
+ pre-committed or not.
+ Knowing this, player 
+\begin_inset Formula $2$
+\end_inset
+
+ does not pre-commit.
+ The SPNE is thus 
+\begin_inset Formula $\left\{ D,(NC,R)\right\} .$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Suppose now 
+\begin_inset Formula $1-c<0,$
+\end_inset
+
+ then the player 
+\begin_inset Formula $2$
+\end_inset
+
+ strictly prefers playing 
+\begin_inset Formula $L$
+\end_inset
+
+ if player 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $D$
+\end_inset
+
+ and 
+\begin_inset Formula $2$
+\end_inset
+
+ pre-committed, in which case 
+\begin_inset Formula $2$
+\end_inset
+
+ gets 
+\begin_inset Formula $0$
+\end_inset
+
+, while it strictly prefers playing 
+\begin_inset Formula $R$
+\end_inset
+
+ if player 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $D$
+\end_inset
+
+ and 
+\begin_inset Formula $2$
+\end_inset
+
+ did not pre-commit, in which case 
+\begin_inset Formula $2$
+\end_inset
+
+ gets 
+\begin_inset Formula $1.$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Denote 
+\begin_inset Formula $\mu$
+\end_inset
+
+ the belief of 
+\begin_inset Formula $1$
+\end_inset
+
+ regarding whether 
+\begin_inset Formula $2$
+\end_inset
+
+ did pre-commit.
+ The expected payoff to 
+\begin_inset Formula $1$
+\end_inset
+
+ of playing 
+\begin_inset Formula $D$
+\end_inset
+
+ is then 
+\begin_inset Formula $3(1-\mu)$
+\end_inset
+
+ while its expected payoff of playing 
+\begin_inset Formula $U$
+\end_inset
+
+ is 
+\begin_inset Formula $1.$
+\end_inset
+
+ Therefore, if 
+\begin_inset Formula $\mu<\frac{2}{3},$
+\end_inset
+
+ then 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $D$
+\end_inset
+
+ while if 
+\begin_inset Formula $\mu>\frac{2}{3}$
+\end_inset
+
+ then 
+\begin_inset Formula $1$
+\end_inset
+
+ plays 
+\begin_inset Formula $U,$
+\end_inset
+
+ and if 
+\begin_inset Formula $\mu=\frac{2}{3}$
+\end_inset
+
+ then 
+\begin_inset Formula $1$
+\end_inset
+
+ is indifferent between 
+\begin_inset Formula $U$
+\end_inset
+
+ and 
+\begin_inset Formula $D.$
+\end_inset
+
+ Note that if one denotes 
+\begin_inset Formula $l$
+\end_inset
+
+ the probability 
+\begin_inset Formula $2$
+\end_inset
+
+ plays 
+\begin_inset Formula $l,$
+\end_inset
+
+ 
+\begin_inset Formula $1$
+\end_inset
+
+ indifferent between 
+\begin_inset Formula $U$
+\end_inset
+
+ and 
+\begin_inset Formula $D$
+\end_inset
+
+ translates in 
+\begin_inset Formula $l=\frac{2}{3}.$
+\end_inset
+
+ The SPNEs are then 
+\begin_inset Formula $\left\{ D,(\mu\leq\frac{2}{3},L\text{ if pre-commit, }R\text{ if no pre-commit)}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\{ U,(\mu\geq\frac{2}{3},L\text{ if pre-commit},R\text{ if no pre-commit})\right\} $
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+iii) If 
+\begin_inset Formula $1-c<0,$
+\end_inset
+
+ 
+\begin_inset Formula $2$
+\end_inset
+
+ will precommit s.t.
+ 
+\begin_inset Formula $\mu>\frac{2}{3},$
+\end_inset
+
+ so for any 
+\begin_inset Formula $\mu>\frac{2}{3}$
+\end_inset
+
+ then 
+\begin_inset Formula $2$
+\end_inset
+
+ pre-commits and thus the only reasonable belief by forward induction is
+ 
+\begin_inset Formula $\mu=1.$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Otherwise, if 
+\begin_inset Formula $\mu<\frac{2}{3},$
+\end_inset
+
+ then 
+\begin_inset Formula $2$
+\end_inset
+
+ does not pre-commit and thus the only reasonable belief by forward induction
+ is 
+\begin_inset Formula $\mu=0.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finally, if 
+\begin_inset Formula $\mu=\frac{2}{3},$
+\end_inset
+
+ then 
+\begin_inset Formula $2$
+\end_inset
+
+ commits with probability 
+\begin_inset Formula $\frac{2}{3},$
+\end_inset
+
+ so 
+\begin_inset Formula $\mu=\frac{2}{3}$
+\end_inset
+
+ is a reasonable belief.
+\end_layout
+
+\begin_layout Standard
+There are thus only three reasonable SPNEs obtained by forward induction
+ when 
+\begin_inset Formula $1-c<0$
+\end_inset
+
+, which are:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ D,(\mu=0,L\text{ if pre-commit, }R\text{ if no pre-commit)}\right\} ,$
+\end_inset
+
+ equivalent to 
+\begin_inset Formula $\left\{ D,(NC,R)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ U,(\mu=1,L\text{ if pre-commit},R\text{ if no pre-commit})\right\} ,$
+\end_inset
+
+ equivalent to 
+\begin_inset Formula $\left\{ U,(C,L)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ U,(\mu=\frac{2}{3},L\text{ if pre-commit},R\text{ if no pre-commit})\right\} ,$
+\end_inset
+
+ equivalent to 
+\begin_inset Formula $\left\{ U,l=\frac{2}{3}\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Whether one or the other obtains is not known, or more precisely, depends
+ on the players' beliefs, while in the original exercise where precommitment
+ was observed, 
+\begin_inset Formula $2$
+\end_inset
+
+ was able to force the belief of player 
+\begin_inset Formula $1$
+\end_inset
+
+ according to her own interest.
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $1-c>0,$
+\end_inset
+
+ as said above, the SPNE is 
+\begin_inset Formula $\left\{ D,(\mu=0,L\text{ if pre-commit, }R\text{ if no pre-commit)}\right\} ,$
+\end_inset
+
+ equivalent to 
+\begin_inset Formula $\left\{ D,(NC,R)\right\} .$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The possibility to pre-commit thus adds the possibility of a reasonable
+ SPNE that obtains 
+\begin_inset Formula $2$
+\end_inset
+
+ a higher payoff than without pre-commitment.
+ However, whether it obtains or not depends on what 
+\begin_inset Formula $1$
+\end_inset
+
+ believes 
+\begin_inset Formula $2$
+\end_inset
+
+ believes 
+\begin_inset Formula $1$
+\end_inset
+
+ believes 
+\begin_inset Formula $2$
+\end_inset
+
+ will do.
+\end_layout
+
+\begin_layout Standard
+Note how the process of forward induction allowed one to restrict the set
+ of NEs and SPNEs.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

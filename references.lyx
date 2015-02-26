@@ -1,0 +1,556 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part
+References
+\end_layout
+
+\begin_layout Enumerate
+\align block
+Akerlof G.A., 1970, The market for “lemons”: Quality uncertainty and the market
+ mechanism, Quarterly Journal of Economics 84(3), 488-500.
+\end_layout
+
+\begin_layout Enumerate
+Allais M., 1953, Le comportement de l’homme rationel devant le risque, critique
+ des postulats et axiomes de l’école américaine, Econometrica 21(4), 503-546.
+\end_layout
+
+\begin_layout Enumerate
+Arrow K.J., 1950, A Difficulty in the Concept of Social Welfare, Journal of
+ Political Economy 58(4), 328-346.
+\end_layout
+
+\begin_layout Enumerate
+Arrow K.J., 1963, Uncertainty and the welfare economics of medical care, American
+ Economic Review 53(5), 941-973.
+\end_layout
+
+\begin_layout Enumerate
+Bateman I.J., A.
+ Munro, B.
+ Rhodes, C.
+ Starmer and R.
+ Sugden, 1997, A Test of the Theory of Reference Dependent Preferences,
+ Quarterly Journal of Economics 112(2), 479-505.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Camerer C., 1995, Individual Decision-Making, in J.H.
+ Kagel and A.
+ Roth, Handbook of Experimental Economics, Princeton University Press.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Carmichael F., 2005, A Guide to Game Theory, FT Prentice Hall
+\end_layout
+
+\begin_layout Enumerate
+Chakrabortty A., Why we buy what we buy, The Guardian, May 20th 2008.
+\end_layout
+
+\begin_layout Enumerate
+Cho I.-K.
+ and D.
+ Kreps, 1987, Signalling Games and Stable Equilibria, Quarterly Journal
+ of Economics 102, 179-222.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Cho I.-K.
+ and J.
+ Sobel, 1990, Strategic Stability and Uniqueness in Signalling Games, Journal
+ of Economic Theory 50, 381-413.
+ 
+\end_layout
+
+\begin_layout Enumerate
+de Borda J-C., 1781, Mémoires sur les élections au scrutin, Histoire de l’Académi
+e Royale des Sciences, Paris.
+\end_layout
+
+\begin_layout Enumerate
+The Economist, Do economists need brains?, July 24th 2008.
+\end_layout
+
+\begin_layout Enumerate
+Fama E.F., 1980, Agency problems and the theory of the firm, Journal of Political
+ Economy 88(2), 288-307.
+\end_layout
+
+\begin_layout Enumerate
+Freixas X.
+ and J-C.
+ Rochet, 1997, Microeconomics of Banking, The MIT Press.
+\end_layout
+
+\begin_layout Enumerate
+Fudenberg D.
+ and J.
+ Tirole, 1991, Game Theory, MIT Press
+\end_layout
+
+\begin_layout Enumerate
+Geanakoplos J., 1992, Common Knowledge, Journal of Economic Perspectives
+ 6, 53-82.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Gibbard A., 1973, Manipulation of Voting Schemes: A General Result, Econometrica
+ 41, 587-601.
+\end_layout
+
+\begin_layout Enumerate
+Gibbons R., 1992, A Primer in Game Theory, FT Prentice Hall
+\end_layout
+
+\begin_layout Enumerate
+Goeree J.K.
+ and C.A.
+ Holt, 2001, Ten Little Treasures of Game Theory and Ten Intuitive Contradiction
+s, American Economic Review 91(5), 1402-1422.
+\end_layout
+
+\begin_layout Enumerate
+Green J.
+ and N.A.
+ Stokey, 1983, Comparison of Tournaments and Contests, Journal of Political
+ Economy 91, 349-364.
+\end_layout
+
+\begin_layout Enumerate
+Grossman S.J.
+ and O.D.
+ Hart, 1983, An analysis of the Principal-Agent problem, Econometrica 51(1),
+ 7-45.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Hart O.D., 1983, Optimal Labour Contracts under Asymmetric Information: An
+ Introduction, Review of Economic Studies 50(1), 3-35.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Hey J.
+ and C.
+ Orme, 1994, Investigating Generalizations Of Expected Utility-Theory Using
+ Experimental-Data, Econometrica 62(6), 1291-1326.
+\end_layout
+
+\begin_layout Enumerate
+Holmstrom B., 1982, Moral Hazard in Teams, Bell Journal of Economics 13(2),
+ 324-340.
+\end_layout
+
+\begin_layout Enumerate
+Holmstrom B.R.
+ and S.N.
+ Kaplan, 2001, Corporate Governance and Merger Activity in the U.S.: Making
+ Sense of the 1980s and 1990s, MIT Dept.
+ of Economics Working Paper No.
+ 01-11.
+\end_layout
+
+\begin_layout Enumerate
+Humphrey S.J.
+ and A.
+ Verschoor, 2004, Decision-making Under Risk among Small Farmers in East
+ Uganda, Journal of African Economies 13(1), 44-101.
+\end_layout
+
+\begin_layout Enumerate
+Jensen M.C.
+ and W.H.
+ Meckling, 1976, Theory of the Firm: Managerial Behavior, Agency Costs and
+ Ownership Structure, Journal of Financial Economics 3(4), 305-360.
+\end_layout
+
+\begin_layout Enumerate
+Kahneman D.
+ and A.
+ Tversky, 1979, Prospect theory: an analysis of decision under risk, Econometric
+a 47(2), 263-291.
+\end_layout
+
+\begin_layout Enumerate
+Kahneman D.
+ and A.
+ Tversky, 1992, Advances in prospect theory: cumulative representations
+ of uncertainty, Journal of Risk and Uncertainty 5(4), 297-323.
+\end_layout
+
+\begin_layout Enumerate
+Kahneman D.
+ and A.
+ Tversky, 1999, Choices, values and Frames, Cambridge University Press.
+\end_layout
+
+\begin_layout Enumerate
+Klemperer P., 2000, Why Every Economist Should Learn Some Auction Theory,
+ Microeconomics 0004009, Economics Working Paper Archive at WUSTL.
+\end_layout
+
+\begin_layout Enumerate
+Kreps D.M., 1990, A course in Microeconomic Theory, FT/Prentice Hall.
+\end_layout
+
+\begin_layout Enumerate
+Laffont J-J.
+ and J.
+ Tirole, 1993, A Theory Of Incentives In Procurement And Regulation, The
+ MIT Press.
+\end_layout
+
+\begin_layout Enumerate
+Laffont J-J.
+ and M.S.
+ Matoussi, 1995, Moral Hazard, Financial Constraints and Sharecropping in
+ El Oulja, Review of Economic Studies 62, 381-399.
+\end_layout
+
+\begin_layout Enumerate
+Laffont J-J.
+ and D.
+ Martimort, 2002, The Theory of Incentives; the Principal-Agent Model, Princeton
+ University Press.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Loomes G.
+ and R.
+ Sugden, 1982, Regret Theory: An Alternative Theory of Rational Choice Under
+ Uncertainty, Economic Journal 92(368), 805-824.
+\end_layout
+
+\begin_layout Enumerate
+Loomes G.
+ and R.
+ Sugden, 1986, Disappointment and Dynamic Consistency in Choice under Uncertaint
+y, Review of Economic Studies 53(2), 271-282.
+\end_layout
+
+\begin_layout Enumerate
+Loomes G., C.
+ Starmer and R.
+ Sugden, 1991, Observing Violations of Transitivity by Experimental Methods,
+ Econometrica 59(2), 425-439.
+\end_layout
+
+\begin_layout Enumerate
+Loomes G.
+ and C.
+ Taylor, 1992, Non-transitive preferences over gains and losses, Economic
+ Journal 102(411), 357-365.
+\end_layout
+
+\begin_layout Enumerate
+Machina M.J., 1982, Expected Utility analysis without the independence axiom,
+ Econometrica 50, 277-323.
+\end_layout
+
+\begin_layout Enumerate
+Machina M.J., 1987, Choice under uncertainty: problems solved and unsolved,
+ Journal of Economic Perspectives 1(1), 121-154.
+\end_layout
+
+\begin_layout Enumerate
+Machina M.J., 1987, Decision Making in the Presence of Risk, Science 236,
+ 537-543.
+\end_layout
+
+\begin_layout Enumerate
+Mailath G.J., L.
+ Samuelson and M.
+ Swinkels, 1993, Extensive form reasoning in normal form games, Econometrica
+ 61, 273-302.
+\end_layout
+
+\begin_layout Enumerate
+Marschak J., 1950, Rational behavior, uncertain prospects, and measurable
+ utility, Econometrica 18, 111-141.
+\end_layout
+
+\begin_layout Enumerate
+Mas-Colell A., M.D.
+ Whinston and J.R.
+ Green, 1995, Microeconomic Theory, Oxford University Press.
+\end_layout
+
+\begin_layout Enumerate
+Maskin E.
+ and J.
+ Tirole, 1990, The Principal-Agent Relationship with an Informed Principal,
+ I: The Case of Private Values, Econometrica 58(2), 379-409.
+\end_layout
+
+\begin_layout Enumerate
+Maskin E.
+ and J.
+ Tirole, 1992, The Principal-Agent Relationship with an Informed Principal,
+ II: Common Values, Econometrica 60(1), 1-42.
+\end_layout
+
+\begin_layout Enumerate
+Milgrom P.
+ and J.
+ Roberts, 1992, Economics, Organization and Management, Prentice Hall.
+\end_layout
+
+\begin_layout Enumerate
+Myerson R.B., 1983, Mechanism Design by an Informed Principal, Econometrica
+ 51(6), 1767-1797.
+\end_layout
+
+\begin_layout Enumerate
+Myerson R.B., 2008, Perspectives on Mechanism Design in Economic Theory, American
+ Economic Review 98(3), 586-603.
+\end_layout
+
+\begin_layout Enumerate
+Palacios-Huerta I., 2003, Professionals play minimax, Review Of Economic
+ Studies 70(2), 395-415.
+\end_layout
+
+\begin_layout Enumerate
+Puertz R.
+ and A.
+ Snow, 1994, Evidence on Adverse Selection, Equilibrium Signalling and Cross-Sub
+sidization in the Insurance Market, Journal of Political Economy 102(2),
+ 236-257.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Quiggin J.C., 1982, A theory of anticipated utility, Journal of Economic Behavior
+ and Uncertainty 3(4), 323-343.
+\end_layout
+
+\begin_layout Enumerate
+Rabin M., 2000, Risk Aversion and Expected-Utility Theory: A Calibration
+ Theorem, Econometrica 68(5), 1281-1292.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Rees R., 1985, The Theory of Principal and Agent, Parts I and II in Hey,
+ J.
+ & Lambert P.
+ eds, Surveys in the Economics of Uncertainty, Blackwell; also in Bulletin
+ of Economic Research.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Reny P.J., 2000, Arrow’s Theorem and the Gibbard-Satterthwaite Theorem: A
+ Unified Approach, University of Chicago Working Paper.
+\end_layout
+
+\begin_layout Enumerate
+Rothschild M.
+ and J.E.
+ Stiglitz, 1976, Equilibrium in competitive insurance markets: An essay
+ on the economics of imperfect information, Quarterly Journal of Economics
+ 90(4), 629-649.
+\end_layout
+
+\begin_layout Enumerate
+Rubinstein A., 1991, Comments on the Interpretation of Game Theory, Econometrica
+ 59, 909-924.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Salanié B., 2005, The Economics of Contracts, MIT Press.
+\end_layout
+
+\begin_layout Enumerate
+Satterthwaite M.A., 1975, Strategy-Proofness and Arrow’s Conditions: Existence
+ and Correspondence Theorems for Voting Procedures and Social Welfare Functions,
+ Journal of Economic Theory 10, 187-217.
+\end_layout
+
+\begin_layout Enumerate
+Shaked A., 1982, Existence and Computation of Mixed Strategy Nash Equilibrium
+ for 3-Firms Location Problem, Journal of Industrial Economics 31, 93-96.
+\end_layout
+
+\begin_layout Enumerate
+Shefrin H.
+ and M.
+ Statman, 1985, The Disposition to Sell Winners Too Early and Ride Losers
+ Too Long - Theory and Evidence, Journal of Finance 40(3), 777-790.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Shogren J.F., S.Y.
+ Shin, D.J.
+ Hayes and J.B.
+ Kliebenstein, 1994, Resolving differences in willingness to pay and willingness
+ to accept, American Economic Review 84(1), 255-270.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Spence A.M., 1973, Job Market Signalling, Quarterly Journal of Economics 87(3),
+ 355-374.
+\end_layout
+
+\begin_layout Enumerate
+Starmer C., 2000, Developments in Non-Expected Utility Theory: The Hunt for
+ a Descriptive Theory of Choice Under Risk, Journal of Economic Literature
+ 38(2), 332-382.
+\end_layout
+
+\begin_layout Enumerate
+Stiglitz J.E.
+ and A.
+ Weiss, 1981, Credit Rationing in Markets with imperfect information, American
+ Economic Review 71, 393-410.
+\end_layout
+
+\begin_layout Enumerate
+Sugden R., 1985, New developments in the theory of choice under uncertainty,
+ Bulletin of Economic Research 38(1), 1-24.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Sugden R., 1985, Regret, recrimination and rationality, Theory and Decision
+ 19(1), 77-99.
+\end_layout
+
+\begin_layout Enumerate
+Sugden R., 2002, Alternatives to Expected Utility: Foundations, in P.J.
+ Hammond, S.
+ Barberá and C.
+ Seidl (eds.), Handbook of Utility Theory Vol.
+ II, Kluwer: Boston.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Taylor C.R., 1999, Time-on-the-Market as a Signal of Quality, Review of Economic
+ Studies 66, 555-578.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Tirole J., 2009, Cognition and Incomplete Contracts, American Economic Review
+ 99(1), 265-294.
+\end_layout
+
+\begin_layout Enumerate
+Tversky A.
+ and D.
+ Kahneman, 1991, Loss aversion and riskless choice: a reference dependent
+ model, Quarterly Journal of Economics 106(4), 1039-1061.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Van Damme E., 1989, Stable equilibria and forward induction, Journal of Economic
+ Theory 48(2), 476-496.
+\end_layout
+
+\begin_layout Enumerate
+Varian H.R., 1992, Microeconomic Analysis, Norton, 3d edition.
+\end_layout
+
+\begin_layout Enumerate
+Viswanathan M., J.A.
+ Rosa and J.E.
+ Harris, 2005, Decision Making and Coping of Functionally Illiterate Consumers
+ and Some Implications for Marketing, Journal of Marketing 69(1), 15-31.
+ 
+\end_layout
+
+\begin_layout Enumerate
+von Neumann J.
+ and O.
+ Morgenstern, 1944, Theory of Games and Economic Behavior, Princeton University
+ Press.
+\end_layout
+
+\begin_layout Enumerate
+Zechauser R., 1970, Medical Insurance: A case study of the trade off between
+ risk spreading and appropriate incentives, Journal of Economic Theory 2,
+ 10-12.
+\end_layout
+
+\end_body
+\end_document

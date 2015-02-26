@@ -1,0 +1,740 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\jurabibsetup{%
+titleformat=italic,%
+titleformat=commasep,%
+commabeforerest,%
+ibidem=strict,%
+citefull=all,%
+lookat,%
+oxford,%
+pages=format,%
+idem%
+}
+
+\makeatletter
+\renewcommand*{\backreflastsep}{, }
+\renewcommand*{\backreftwosep}{, }
+\renewcommand*{\backref}[1]{}
+\renewcommand*{\backrefalt}[4]{%
+  \ifcase #1 %
+No citations.% use \relax if you do not want the "No citations" message
+  \or
+(ref. p. #2).%
+  \else
+(ref. p. #2).%
+  \fi%
+}
+
+\renewcommand*{\appendixname}{}
+\makeatother
+
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage[tableposition=top]{caption}
+
+%\let\mySection\section\renewcommand{\section}{\suppressfloats[t]\mySection}
+
+%\usepackage{endfloat}
+
+\usepackage{float}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-ams-extended
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding ascii
+\fontencoding global
+\font_roman md-charter
+\font_sans avant
+\font_typewriter beramono
+\font_math default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 92
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command makeindex
+\paperfontsize 10
+\spacing single
+\use_hyperref true
+\pdf_title "A (Micro) Course in Microeconomic Theory for MSc Students"
+\pdf_author "Alexia Gaudeul"
+\pdf_keywords "Economics, Microeconomics; Utility Theory; Game Theory; Incentive Theory; Online Textbook; Lecture Notes, Study Guide, MSc"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref page
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=NavyBlue,citecolor=NavyBlue,urlcolor=NavyBlue"
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine jurabib
+\cite_engine_type authoryear
+\biblio_style 
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle headings
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+A (Micro) Course in Microeconomic Theory for MSc Students
+\end_layout
+
+\begin_layout Date
+Version 1.01 // May 25, 2009
+\end_layout
+
+\begin_layout Author
+Alexia Gaudeul
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Please direct comments and report mistakes to me at 
+\begin_inset CommandInset href
+LatexCommand href
+target "a.gaudeul@gmail.com"
+type "mailto:"
+
+\end_inset
+
+.
+ My website is at 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://agaudeul.free.fr"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+Those lecture notes cover the basics of a course in microeconomic theory
+ for MSc students in Economics.
+ They were developed over five years of teaching MSc Economic Theory I in
+ the School of Economics at the University of East Anglia in Norwich, UK.
+ 
+\end_layout
+
+\begin_layout Abstract
+The programme of this course is divided in three parts; choice under uncertainty
+, game theory and incentive theory.
+ The whole of the course can be covered in sixteen hours of teaching, along
+ with eight hours of workshops, over eight weeks.
+ The lectures differ from the standard fare in their emphasis on utility
+ theory and its alternatives.
+\end_layout
+
+\begin_layout Abstract
+This is an intensive program that is designed both to cover the basics in
+ each area and progress quickly to more advanced topics.
+ The course is thus accessible to students with little background in economics,
+ but should also challenge more advanced students who can focus on the later
+ sections in each parts and concentrate on the suggested readings.
+ 
+\end_layout
+
+\begin_layout Abstract
+A wide variety of exercises for every sections of the course are provided
+ in increasing levels of difficulty in part IV, along with detailed answers
+ in Part V.
+ 
+\end_layout
+
+\begin_layout Abstract
+Credit is due to my students for 
+\begin_inset Quotes els
+\end_inset
+
+debugging
+\begin_inset Quotes ers
+\end_inset
+
+ this material over the years.
+ Specific credit for some of the material is given where appropriate.
+\end_layout
+
+\begin_layout Abstract
+
+\emph on
+JEL codes:
+\emph default
+ A1, A23, D0.
+\end_layout
+
+\begin_layout Abstract
+
+\emph on
+Keywords:
+\emph default
+ Economics, Microeconomics; Utility Theory; Game Theory; Incentive Theory;
+ Online Textbook; Lecture Notes, Study Guide, MSc.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Programme
+\end_layout
+
+\begin_layout Standard
+The programme of this course is divided in three parts; choice under uncertainty
+, game theory and incentive theory.
+ The whole of the course can be covered in sixteen hours of teaching, along
+ with eight hours of workshops, over eight weeks.
+ This is an intensive program that is designed both to cover the basics
+ in each area and progress quickly to more advanced topics.
+ The course is thus accessible to students with little background in economics,
+ but should also challenge more advanced students who can focus on the later
+ sections in each parts and concentrate on the suggested readings.
+ Exercises covering each part increase gradually in difficulty and are often
+ of theoretical interest on their own.
+ Detailed answers are provided.
+\end_layout
+
+\begin_layout Standard
+This course may be complemented with lectures on consumer and firm theory,
+ and on general equilibrium concepts.
+ Those are not covered in those notes.
+\end_layout
+
+\begin_layout Standard
+The main concepts that are covered in each part are listed below:
+\end_layout
+
+\begin_layout Description
+Choice
+\series medium
+ 
+\series bold
+under uncertainty (2
+\begin_inset Formula $\times$
+\end_inset
+
+2 hours lectures, 1
+\begin_inset Formula $\times$
+\end_inset
+
+2 hours workshop):
+\series default
+ Rationality and axiomatic theories of choice.
+ Expected utility theory: its foundations and applications.
+ Experimental tests of expected utility theory.
+ Alternatives to EUT: prospect theory, rank dependent expected utility theory,
+ cumulative prospect theory, regret theory.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+A large part of this topic is not covered in standard text books and this
+ topic thus requires independent reading.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Game
+\series medium
+ 
+\series bold
+Theory (4
+\begin_inset Formula $\times$
+\end_inset
+
+2 hours lectures, 2
+\begin_inset Formula $\times$
+\end_inset
+
+2 hours workshops):
+\series default
+ Normal (or strategic)-Form Games.
+ Dominance, Nash equilibrium, and mixed-strategy extensions.
+ Extensive-Form Games.
+ Information sets, subgame-perfect equilibria, and backward induction.
+ Incomplete-information games, Bayesian Games, Bayesian-Nash equilibria,
+ forward induction.
+ Purification of mixed strategy equilibria.
+ Auctions.
+ Repeated games and the Folk theorem.
+\end_layout
+
+\begin_layout Description
+Incentive
+\series medium
+ 
+\series bold
+Theory (2
+\begin_inset Formula $\times$
+\end_inset
+
+2 hours lecture, 1
+\begin_inset Formula $\times$
+\end_inset
+
+2 hours workshop):
+\series default
+ Principal-agent models.
+ Adverse selection (hidden information).
+ Moral hazard (hidden action).
+ Second best and efficiency.
+ Liability constraints.
+ Risk aversion.
+ Commitment.
+ Repeated adverse selection.
+ Hold up problem.
+ Informed principal.
+ Revelation principle.
+ Direct Revelation Mechanism.
+\end_layout
+
+\begin_layout Section
+
+\series bold
+Textbooks:
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+The main texts for the course are:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kreps1990"
+
+\end_inset
+
+ (hereafter 
+\begin_inset Quotes els
+\end_inset
+
+Kreps
+\begin_inset Quotes ers
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Varian1992"
+
+\end_inset
+
+ (hereafter 
+\begin_inset Quotes els
+\end_inset
+
+Varian
+\begin_inset Quotes ers
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mas-Colell1995"
+
+\end_inset
+
+ (hereafter 
+\begin_inset Quotes els
+\end_inset
+
+Mas-Colell
+\begin_inset Quotes ers
+\end_inset
+
+).
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+All of these cover, more or less, the entire module, except for choice under
+ uncertainty.
+ Each has its strengths, though these are different.
+ Mas-Colell is the most up-to-date and comprehensive, but also the most
+ advanced.
+ It is advised for those with a good background in microeconomics and with
+ good mathematical skills, and for those who wish to pursue further studies
+ in economics.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Choice under uncertainty
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "ET1lectureschoiceandrisk2008.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Game theory
+\end_layout
+
+\begin_layout Standard
+The structure of this lecture as well as the notations used are drawn from
+ Professor Christopher Wallace
+\begin_inset Quotes ers
+\end_inset
+
+s lectures on game theory.
+ Additional material on auctions and repeated games can be found in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gibbons1992"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "ET1lecturesgametheory2008.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Incentive theory
+\end_layout
+
+\begin_layout Standard
+Notations used in this lecture are drawn from 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Laffont2002"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "ET1lectureincentivetheory2008.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Exercises
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "ExercisesMScMicro.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Correction of exercises
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "ET1workshopchoiceandrisk2008.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "ET1workshopgametheoryI2008.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "ET1workshopgametheoryII2008.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "ET1workshopincentivetheory2008.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "ET1"
+options "jurabib"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
