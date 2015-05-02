@@ -3721,48 +3721,39 @@ utility function' but rather, a gain/loss function that evaluates by how
  account the opportunity cost of making a decision.
  Decisions are not taken in a vacuum; making one decision precludes making
  another one.
- The theory is exposed in 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Loomes1982,Loomes1986"
-
-\end_inset
-
-
+ The theory is exposed in Loomes and Sugden (82, 86)
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Loomes1982,Loomes1986"
-
-\end_inset
-
-
+Loomes G.
+ and R.
+ Sugden, 1982, Regret Theory: An Alternative Theory of Rational Choice Under
+ Uncertainty, The Economic Journal 92(368), 805-824.
 \end_layout
 
 \end_inset
 
- and 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Sugden1985"
 
-\end_inset
-
-.
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Sugden1985"
+Loomes G.
+ and R.
+ Sugden, 1986, Disappointment and Dynamic Consistency in Choice under Uncertaint
+y, The Review of Economic Studies 53(2), 271-282.
+\end_layout
 
 \end_inset
 
+ and Sugden (85).
+\begin_inset Foot
+status open
 
+\begin_layout Plain Layout
+Sugden R., 1985, Regret, recrimination and rationality, Theory and Decision
+ 19(1), 77-99.
 \end_layout
 
 \end_inset
