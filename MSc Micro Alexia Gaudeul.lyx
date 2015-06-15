@@ -50,8 +50,8 @@ theorems-ams-extended
 \end_modules
 \maintain_unincluded_children false
 \language english
-\language_package none
-\inputencoding ascii
+\language_package auto
+\inputencoding cp1252
 \fontencoding global
 \font_roman md-charter
 \font_sans avant
@@ -132,10 +132,29 @@ theorems-ams-extended
 
 \begin_layout Title
 A (Micro) Course in Microeconomic Theory for MSc Students
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Credit is due to my students for 
+\begin_inset Quotes els
+\end_inset
+
+debugging
+\begin_inset Quotes ers
+\end_inset
+
+ this material over the years.
+ Specific credit for some of the material is given where appropriate.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Date
-Version 1.01 // May 25, 2009
+May 25, 2009
 \end_layout
 
 \begin_layout Author
@@ -199,19 +218,6 @@ A wide variety of exercises for every sections of the course are provided
  in increasing levels of difficulty in part IV, along with detailed answers
  in Part V.
  
-\end_layout
-
-\begin_layout Abstract
-Credit is due to my students for 
-\begin_inset Quotes els
-\end_inset
-
-debugging
-\begin_inset Quotes ers
-\end_inset
-
- this material over the years.
- Specific credit for some of the material is given where appropriate.
 \end_layout
 
 \begin_layout Abstract

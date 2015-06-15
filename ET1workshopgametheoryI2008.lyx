@@ -1,42 +1,83 @@
-#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 345
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
+\begin_preamble
+\jurabibsetup{%
+titleformat=italic,%
+titleformat=commasep,%
+commabeforerest,%
+ibidem=strict,%
+citefull=first,%
+lookat,%
+oxford,%
+pages=format,%
+idem%
+}
+\end_preamble
 \use_default_options true
+\maintain_unincluded_children false
 \language english
+\language_package default
 \inputencoding auto
+\fontencoding global
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
+\use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
-\use_amsmath 1
-\use_esint 1
-\cite_engine basic
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine jurabib
+\cite_engine_type authoryear
+\biblio_style plain
 \use_bibtopic false
+\use_indices false
 \paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
-\defskip medskip
+\paragraph_indentation default
 \quotes_language english
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
-\author "" 
-\author "" 
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
 \end_header
 
 \begin_body
@@ -67,7 +108,7 @@ There are no pure strategy equilibria of this game.
 2.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) 
 \begin_inset Formula $D$
@@ -97,7 +138,7 @@ a)
 .
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) 
 \begin_inset Formula $C$
@@ -147,7 +188,7 @@ b)
 .
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) NE do not involve any strictly dominated strategies, but may involve
  weakly dominated ones, so the game to consider involves only 
@@ -248,9 +289,11 @@ Denoting
 \end_inset
 
  I must thus have
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 u_{1}(A) & =4w+8y=u_{1}(B)=4w+2x+6y=u_{1}(C)=4w+2x+4y\\
-w+x+y & =1\end{align*}
+w+x+y & =1
+\end{align*}
 
 \end_inset
 
@@ -287,20 +330,24 @@ That equilibrium can hold only if player
 \end_inset
 
  so one must have:
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 u_{2}(W) & =6a+2b+2c\geq u_{2}(X)=4a+6b+8c\\
 u_{2}(W) & =6a+2b+2c\geq u_{2}(Y)=4a+4b+9c\\
 a+b+c & =1\\
-a & \geq0,b\geq0,c\geq0\end{align*}
+a & \geq0,b\geq0,c\geq0
+\end{align*}
 
 \end_inset
 
  This can be rewritten:
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 (6-2b)/8 & \leq a\\
 (7-5b)/9 & \leq a\\
 a+b+c & =1\\
-a & \geq0,b\geq0,c\geq0\end{align*}
+a & \geq0,b\geq0,c\geq0
+\end{align*}
 
 \end_inset
 
@@ -433,10 +480,9 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\align center
  Range of possible MSNEs in Exercise 2, Game Theory 1
 \end_layout
 
@@ -476,7 +522,7 @@ s represented above.
 3.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) The game in normal form is as follows:
 \end_layout
@@ -516,7 +562,7 @@ end{tabular}
 \end_layout
 
 \end_deeper
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) There are two PSNE in this game, 
 \begin_inset Formula $(U,R)$
@@ -528,11 +574,13 @@ b) There are two PSNE in this game,
 
 , and a MSNE s.t.
  
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 u_{1}(U) & =4r=u_{1}(D)=2l-r\\
 l+r & =1\\
 u_{2}(L) & =2d=u_{2}(R)=u-d\\
-u+d & =1\end{align*}
+u+d & =1
+\end{align*}
 
 \end_inset
 
@@ -628,7 +676,7 @@ The only SPNE, obtained by backward induction, is
 4.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) The game in normal form is as follows:
 \end_layout
@@ -638,10 +686,10 @@ a) The game in normal form is as follows:
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="3">
-<features>
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
@@ -784,7 +832,7 @@ R
 \end_layout
 
 \end_deeper
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b)
 \end_layout
@@ -834,16 +882,20 @@ MSNEs must be such that
 \end_inset
 
  so it must be that
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 p(L)+2p(R) & =2p(R)\\
-p(L)+p(R) & =1\end{align*}
+p(L)+p(R) & =1
+\end{align*}
 
 \end_inset
 
  so 
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 p(L) & =0\\
-p(R) & =1\end{align*}
+p(R) & =1
+\end{align*}
 
 \end_inset
 
@@ -855,9 +907,11 @@ p(R) & =1\end{align*}
 \end_inset
 
  must at least prefer R to L so 
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 3p(l) & \leq2p(l)+2p(r)\\
-p(l)+p(r) & =1\end{align*}
+p(l)+p(r) & =1
+\end{align*}
 
 \end_inset
 
@@ -1180,7 +1234,7 @@ There are thus two pure SPNE, one such that
 \end_layout
 
 \end_deeper
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) In the first SPNE, the payoff to 
 \begin_inset Formula $1$
@@ -1245,7 +1299,7 @@ c) In the first SPNE, the payoff to
 5.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) The game in normal form is as follows:
 \end_layout
@@ -1254,11 +1308,11 @@ a) The game in normal form is as follows:
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="4">
-<features>
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
@@ -1457,7 +1511,7 @@ R
 
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b)
 \end_layout
@@ -1521,10 +1575,12 @@ MSNEs must be such that player
 \end_inset
 
 
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 3L+4R & =2L+2M+4R\\
 3L+4R & =3M+4R\\
-L+M+R & =1\end{align*}
+L+M+R & =1
+\end{align*}
 
 \end_inset
 
@@ -1557,11 +1613,13 @@ In that equilibrium, player
 \end_inset
 
  so I must have 
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 2l+2m+2r & \geq l+m+4r\\
 2l+2m+2r & \geq4l+3r\\
 l+m+r & =1\\
-l & \geq0,m\geq0,r\geq0\end{align*}
+l & \geq0,m\geq0,r\geq0
+\end{align*}
 
 \end_inset
 
@@ -1570,11 +1628,13 @@ l & \geq0,m\geq0,r\geq0\end{align*}
 
 \begin_layout Standard
 which can be rewritten as 
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 3m & \geq2-3l\\
 3m & \geq l+1\\
 l+m+r & =1\\
-l & \geq0,m\geq0,r\geq0\end{align*}
+l & \geq0,m\geq0,r\geq0
+\end{align*}
 
 \end_inset
 
@@ -1687,10 +1747,9 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\align center
  Range of possible MSNEs in Exercise 5, Game Theory 1
 \end_layout
 
@@ -1959,17 +2018,21 @@ Suppose now
 \end_inset
 
  I must have
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 \mu(l)+\mu(m) & =4\mu(l)\\
 \mu(r)+\mu(l)+\mu(m) & =1\\
-\mu(r) & =0\end{align*}
+\mu(r) & =0
+\end{align*}
 
 \end_inset
 
  so I must have
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 \mu(l) & =\frac{1}{4}\\
-\mu(m) & =\frac{3}{4}\end{align*}
+\mu(m) & =\frac{3}{4}
+\end{align*}
 
 \end_inset
 
@@ -2050,10 +2113,12 @@ Suppose now
 \end_inset
 
  I must have
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 \mu(m)+4\mu(r) & =3\mu(r)\\
 \mu(r)+\mu(l)+\mu(m) & =1\\
-\mu(l) & =0\end{align*}
+\mu(l) & =0
+\end{align*}
 
 \end_inset
 
@@ -2086,7 +2151,7 @@ There are thus two SPNE:
 \end_layout
 
 \end_deeper
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) The expected payoff to 
 \begin_inset Formula $1$
@@ -2134,7 +2199,7 @@ c) The expected payoff to
 6.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) Players would either agree on (Up, Stop) or (Down,Right), however, it
  would be very hard for them to reach an agreement on which one to play,
@@ -2146,7 +2211,7 @@ a) Players would either agree on (Up, Stop) or (Down,Right), however, it
  A coin toss would do the trick.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) It would seem reasonable for 
 \begin_inset Formula $2$
@@ -2176,7 +2241,7 @@ b) It would seem reasonable for
  playing Right).
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) There are two PSNE, (Up, Stop) and (Down, Right).
  The 'reasonable' play by 
@@ -2186,7 +2251,7 @@ c) There are two PSNE, (Up, Stop) and (Down, Right).
  evoked above is thus not a PSNE.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 d) Denote 
 \begin_inset Formula $p(\mbox{Up})=q$
@@ -2195,7 +2260,7 @@ d) Denote
 .
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 i) The expected payoff for 
 \begin_inset Formula $2$
@@ -2268,7 +2333,7 @@ Note:
 \end_layout
 
 \end_deeper
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 ii) The payoff for 
 \begin_inset Formula $2$
@@ -2343,7 +2408,7 @@ ii) The payoff for
  might be played, it must be that the other action is not preferred.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 iii) 
 \begin_inset Formula $2$
@@ -2354,15 +2419,17 @@ iii)
 \end_inset
 
  or
-\begin_inset Formula \[
-\frac{5}{6}\geq q\geq\frac{1}{6}\]
+\begin_inset Formula 
+\[
+\frac{5}{6}\geq q\geq\frac{1}{6}
+\]
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 e) The range where Middle is optimal is large, so that if one assigns equal
  probability to 

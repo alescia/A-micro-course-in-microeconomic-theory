@@ -1,47 +1,85 @@
-#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 345
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
 \begin_preamble
 
+\jurabibsetup{%
+titleformat=italic,%
+titleformat=commasep,%
+commabeforerest,%
+ibidem=strict,%
+citefull=first,%
+lookat,%
+oxford,%
+pages=format,%
+idem%
+}
 \end_preamble
 \options notitlepage,fleqn,leqno
 \use_default_options false
+\maintain_unincluded_children false
 \language english
+\language_package default
 \inputencoding auto
+\fontencoding global
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
+\use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
 \paperfontsize 11
 \spacing single
 \use_hyperref false
 \papersize a4paper
 \use_geometry false
-\use_amsmath 1
-\use_esint 0
-\cite_engine natbib_authoryear
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine jurabib
+\cite_engine_type authoryear
+\biblio_style plainnat
 \use_bibtopic false
+\use_indices false
 \paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
-\defskip medskip
+\paragraph_indentation default
 \quotes_language english
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
-\author "" 
-\author "" 
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
 \end_header
 
 \begin_body
@@ -54,16 +92,28 @@ Choice under uncertainty
 1.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) The steeper the indifference line, the more risk averse the agent is.
- See page 126, note 6 of Machina (1987).
+ See page 126, note 6 of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Machina1987"
+
+\end_inset
+
+.
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
-Machina M., 1987, Choice under Uncertainty: problems solved and unsolved,
- Journal of Economic Perspective 1(1), 121-154.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Machina1987"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -71,15 +121,15 @@ Machina M., 1987, Choice under Uncertainty: problems solved and unsolved,
  Intuitively, suppose for example that the vertices of the triangle are
  
 \emph on
-£0
+€0
 \emph default
 , 
 \emph on
-£50
+€50
 \emph default
  and 
 \emph on
-£100
+€100
 \emph default
 .
  If the agent is risk neutral, then she values a lottery 
@@ -97,7 +147,7 @@ es of a risk neutral agent.
  The opposite holds for an agent that is risk loving.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) The independence axiom requires that indifference lines be parallel,
  but here they are not parallel, so the independence axiom is not respected.
@@ -117,7 +167,7 @@ b) The independence axiom requires that indifference lines be parallel,
 2.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) According to EUT, A preferred to B translates in 
 \begin_inset Formula $u(10)\geq\frac{1}{2}u(24)+\frac{1}{2}u(0).$
@@ -145,14 +195,16 @@ Therefore, the combination A preferred to B and D preferred to C is not
 \end_layout
 
 \end_deeper
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) For A preferred to B and D preferred to C to be consistent with prospect
  theory we must have both:
-\begin_inset Formula \begin{align}
+\begin_inset Formula 
+\begin{align}
 \pi(1)u(10) & \geq\pi(\frac{1}{2})u(24)+\pi(\frac{1}{2})u(0)\\
  & \text{and}\\
-\pi(\frac{2}{3})u(10)+\pi(\frac{1}{3})u(0) & \leq\pi(\frac{1}{3})u(24)+\pi(\frac{2}{3})u(0)\end{align}
+\pi(\frac{2}{3})u(10)+\pi(\frac{1}{3})u(0) & \leq\pi(\frac{1}{3})u(24)+\pi(\frac{2}{3})u(0)
+\end{align}
 
 \end_inset
 
@@ -162,8 +214,10 @@ b) For A preferred to B and D preferred to C to be consistent with prospect
 
  (this is allowed as the utility function is unique up to a linear transformatio
 n) this can be rewritten into the following condition:
-\begin_inset Formula \begin{equation}
-\frac{\pi(1)}{\pi(\frac{1}{2})}\geq\frac{u(24)}{u(10)}\geq\frac{\pi(\frac{2}{3})}{\pi(\frac{1}{3})}\end{equation}
+\begin_inset Formula 
+\begin{equation}
+\frac{\pi(1)}{\pi(\frac{1}{2})}\geq\frac{u(24)}{u(10)}\geq\frac{\pi(\frac{2}{3})}{\pi(\frac{1}{3})}
+\end{equation}
 
 \end_inset
 
@@ -214,8 +268,10 @@ I will show that this can occur under some specification of the function
 \end_inset
 
  The condition above can then be rewritten as
-\begin_inset Formula \begin{equation}
-\frac{1}{\pi(\frac{1}{2})}\geq\frac{24}{10}\geq3\pi(\frac{2}{3})\end{equation}
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{\pi(\frac{1}{2})}\geq\frac{24}{10}\geq3\pi(\frac{2}{3})
+\end{equation}
 
 \end_inset
 
@@ -238,17 +294,21 @@ I will show that this can occur under some specification of the function
 , while more stringent than what we assumed, does not contradict PT.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) Under regret theory, A preferred to B translates in
-\begin_inset Formula \begin{equation}
-\frac{1}{2}r(10,0)+\frac{1}{2}r(10,24)\geq0\end{equation}
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{2}r(10,0)+\frac{1}{2}r(10,24)\geq0
+\end{equation}
 
 \end_inset
 
  while D preferred to C translates in 
-\begin_inset Formula \begin{equation}
-\frac{1}{3}r(24,0)+\frac{2}{3}r(0,10)\geq0\end{equation}
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{3}r(24,0)+\frac{2}{3}r(0,10)\geq0
+\end{equation}
 
 \end_inset
 
@@ -281,14 +341,18 @@ One will also expect that
 
  (symmetry between rejoice and regret) and allows one to rewrite the two
  equations as
-\begin_inset Formula \[
-r(10,0)\geq r(24,10)\]
+\begin_inset Formula 
+\[
+r(10,0)\geq r(24,10)
+\]
 
 \end_inset
 
 
-\begin_inset Formula \[
-r(24,0)\geq2r(10,0)\]
+\begin_inset Formula 
+\[
+r(24,0)\geq2r(10,0)
+\]
 
 \end_inset
 
@@ -320,24 +384,24 @@ I can accept that the first equation is verified (the feeling of rejoicing
  substitutions and using dominance arguments.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) E is preferred to C because it gives more weight to a higher outcome
  (First Order Stochastic Dominance)
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) Since E is preferred to C which is preferred to D, then E is preferred
  to D (Transitivity)
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) F preferred to E, again by First Order Stochastic Dominance.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 d) C is preferred to D so A is preferred to B (EUT, as in 2.b).
 \end_layout
@@ -353,23 +417,23 @@ d) C is preferred to D so A is preferred to B (EUT, as in 2.b).
 4.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) The utility of rejecting the lottery is 
 \begin_inset Formula $\ln(w)$
 \end_inset
 
  (the individual is left with the same wealth as before), while if the individua
-l plays the lottery, then she either loses 
-\begin_inset Formula $\pounds10$
+l plays the lottery, then she either loses €
+\begin_inset Formula $10$
 \end_inset
 
 , in which case wealth is reduced to 
 \begin_inset Formula $w-10,$
 \end_inset
 
- or she gains 
-\begin_inset Formula $\pounds10,$
+ or she gains €
+\begin_inset Formula $10,$
 \end_inset
 
  in which case her wealth is 
@@ -387,50 +451,56 @@ l plays the lottery, then she either loses
  A straightforward transformation obtains the result.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) Transforming the inequality in 
 \begin_inset Formula $a),$
 \end_inset
 
  
-\begin_inset Formula \begin{align}
+\begin_inset Formula 
+\begin{align}
 \ln(w-10)+\ln(w+11) & \leq2\ln(w)\\
 (w-10)(w+11) & \leq w^{2}\\
-w & \leq110\end{align}
+w & \leq110
+\end{align}
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) The individual accepts subject to 
-\begin_inset Formula \begin{align}
+\begin_inset Formula 
+\begin{align}
 \ln(109-100)+\ln(109+Y) & \geq2\ln(109)\\
 Y & \geq\frac{109^{2}}{9}-109\\
-Y & \geq1211.111...\end{align}
+Y & \geq1211.111...
+\end{align}
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 d) The individual accepts subject to 
-\begin_inset Formula \begin{align}
+\begin_inset Formula 
+\begin{align}
 \ln(200-100)+\ln(200+Z) & \geq2\ln(200)\\
 Z & \geq\frac{200^{2}}{100}-200\\
-Z & \geq200\end{align}
+Z & \geq200
+\end{align}
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 e) Whether an individual accepts or rejects a lottery depends on his wealth
  as much as on the shape of his utility function.
@@ -447,8 +517,8 @@ e) Whether an individual accepts or rejects a lottery depends on his wealth
 \begin_inset Formula $100.$
 \end_inset
 
- The expected value of the lottery is then required to be at least 
-\begin_inset Formula $\pounds555.$
+ The expected value of the lottery is then required to be at least €
+\begin_inset Formula $555.$
 \end_inset
 
  It would seem irrational to reject it, but then, one must put oneself in
@@ -468,7 +538,7 @@ e) Whether an individual accepts or rejects a lottery depends on his wealth
 5.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) Suppose the agent owns the lottery and prices the ticket for the lottery
  at 
@@ -487,7 +557,7 @@ a) Suppose the agent owns the lottery and prices the ticket for the lottery
 
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) Suppose the agent does not own the lottery.
  The maximum price 
@@ -502,7 +572,7 @@ b) Suppose the agent does not own the lottery.
 
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) I will have 
 \begin_inset Formula $p_{S}$
@@ -513,10 +583,12 @@ c) I will have
 \end_inset
 
 such that 
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 0.5\ln(10+10)+(1-0.5)\ln(10+2) & =\ln(10+p_{S})\\
 p_{S} & =\sqrt{(10+10)(10+2)}-10\\
-p_{S} & =5.4919\end{align*}
+p_{S} & =5.4919
+\end{align*}
 
 \end_inset
 
@@ -534,10 +606,12 @@ and I will have
 \end_inset
 
 such that 
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 0.5\ln(10-p_{B}+10)+0.5\ln(10-p_{B}+2) & =\ln10\\
 (10-p_{B}+10)(10-p_{B}+2) & =10^{2}\\
-p_{B}^{2}-32p_{B}+140 & =0\end{align*}
+p_{B}^{2}-32p_{B}+140 & =0
+\end{align*}
 
 \end_inset
 
@@ -569,7 +643,7 @@ is not reasonable, so
 \end_layout
 
 \end_deeper
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 d) 
 \begin_inset Formula $p_{B}$
@@ -605,23 +679,23 @@ is lower than the selling price
 6.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) A table that summarizes the situation is as follows:
 \end_layout
 
 \begin_deeper
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 \noindent
 \align block
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="4">
-<features>
-<column alignment="left" valignment="top" width="0">
-<column alignment="left" valignment="top" width="0">
-<column alignment="left" valignment="top" width="0">
-<column alignment="left" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
 <row>
 <cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
@@ -857,13 +931,13 @@ The expected utility of
 \end_layout
 
 \end_deeper
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) Such a pattern of preference is not possible under EUT since it is intransiti
 ve.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) 
 \begin_inset Formula $r(x,y)$
@@ -901,34 +975,34 @@ c)
  (condition A) means that the rejoicing increases more than proportionately
  with the difference in outcome.
  I rejoice more if I gain 
-\begin_inset Formula $\pounds100$
+\begin_inset Formula $\text{€}100$
 \end_inset
 
- rather than 
-\begin_inset Formula $\pounds0$
+ rather than €
+\begin_inset Formula $0$
 \end_inset
 
- than if I gain 
-\begin_inset Formula $\pounds50$
+ than if I gain €
+\begin_inset Formula $50$
 \end_inset
 
- rather than 
-\begin_inset Formula $\pounds0$
+ rather than €
+\begin_inset Formula $0$
 \end_inset
 
- and then 
-\begin_inset Formula $\pounds100$
+ and then €
+\begin_inset Formula $100$
 \end_inset
 
- rather than 
-\begin_inset Formula $\pounds50$
+ rather than €
+\begin_inset Formula $50$
 \end_inset
 
 , even though the result is the same.
 \end_layout
 
 \end_deeper
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 d) The agent chooses 
 \begin_inset Formula $B$
@@ -983,8 +1057,10 @@ The agent chooses
 
 \begin_layout Standard
 Summing up the three equations, one obtains: 
-\begin_inset Formula \[
-p_{1}(r(b,a)+r(c,b)+r(a,c))+p_{2}(r(b,d)+r(c,b)+r(d,c))+p_{3}(r(e,d)+r(c,e)+r(d,c))\geq0\]
+\begin_inset Formula 
+\[
+p_{1}(r(b,a)+r(c,b)+r(a,c))+p_{2}(r(b,d)+r(c,b)+r(d,c))+p_{3}(r(e,d)+r(c,e)+r(d,c))\geq0
+\]
 
 \end_inset
 
@@ -998,7 +1074,7 @@ Each of the terms are positive by inequality
 \end_layout
 
 \end_deeper
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 e) In the same way as in 
 \begin_inset Formula $(d),$

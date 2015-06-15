@@ -1,42 +1,83 @@
-#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 345
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
+\begin_preamble
+\jurabibsetup{%
+titleformat=italic,%
+titleformat=commasep,%
+commabeforerest,%
+ibidem=strict,%
+citefull=first,%
+lookat,%
+oxford,%
+pages=format,%
+idem%
+}
+\end_preamble
 \use_default_options true
+\maintain_unincluded_children false
 \language english
+\language_package default
 \inputencoding auto
+\fontencoding global
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
+\use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
-\use_amsmath 1
-\use_esint 1
-\cite_engine basic
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine jurabib
+\cite_engine_type authoryear
+\biblio_style plain
 \use_bibtopic false
+\use_indices false
 \paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
-\defskip medskip
+\paragraph_indentation default
 \quotes_language english
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
-\author "" 
-\author "" 
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
 \end_header
 
 \begin_body
@@ -87,17 +128,35 @@ Textbook reading:
 \end_layout
 
 \begin_layout Itemize
-Kreps, Chs.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kreps1990"
+
+\end_inset
+
+, Chs.
  11-14 
 \end_layout
 
 \begin_layout Itemize
-Varian, Ch.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Varian1992"
+
+\end_inset
+
+, Ch.
  15 
 \end_layout
 
 \begin_layout Itemize
-Mas-Colell, Chs.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mas-Colell1995"
+
+\end_inset
+
+, Chs.
  7-9
 \end_layout
 
@@ -107,19 +166,33 @@ Among the many specialist text books which are currently available, by degree
 \end_layout
 
 \begin_layout Itemize
-Carmichael F., 2005, A Guide to Game Theory, FT Prentice Hall (less advanced)
- 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Carmichael2005"
+
+\end_inset
+
+ (less advanced) 
 \end_layout
 
 \begin_layout Itemize
-Gibbons R., 1992, A Primer in Game Theory, FT Prentice Hall (more advanced)
- 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gibbons1992"
+
+\end_inset
+
+ (more advanced) 
 \end_layout
 
 \begin_layout Itemize
-Fudenberg D.
- and J.
- Tirole, 1991, Game Theory, MIT Press (very advanced)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Fudenberg1991"
+
+\end_inset
+
+ (very advanced)
 \end_layout
 
 \begin_layout Subsection
@@ -138,32 +211,43 @@ Some articles in this list were contributed by previous teachers in MSc
 \end_layout
 
 \begin_layout Itemize
-Cho I.-K.
- and D.
- Kreps, 1987, Signalling Games and Stable Equilibria, Quarterly Journal
- of Economics 102, 179-222.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cho1987"
+
+\end_inset
+
  
 \end_layout
 
 \begin_layout Itemize
-Cho I.-K.
- and J.
- Sobel, 1990, Strategic Stability and Uniqueness in Signalling Games, Journal
- of Economic Theory 50, 381-413.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cho1990"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Geanakoplos1992"
+
+\end_inset
+
  
 \end_layout
 
 \begin_layout Itemize
-Geanakoplos J., 1992, Common Knowledge, The Journal of Economic Perspectives
- 6, 53-82.
- 
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Goeree2001"
 
-\begin_layout Itemize
-Goeree J.K.
- and C.A.
- Holt, 2001, Ten Little Treasures of Game Theory and Ten Intuitive Contradiction
-s, American Economic Review 91(5), 1402-1422.
+\end_inset
+
+
 \begin_inset Foot
 status open
 
@@ -178,34 +262,53 @@ This is an article that is entertaining and easy to read about how what
 \end_layout
 
 \begin_layout Itemize
-Mailath G.J., L.
- Samuelson and M.
- Swinkels, 1993, Extensive form reasoning in normal form games, Econometrica
- 61, 273-302.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mailath1993"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Palacios-Huerta2003"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rubinstein1991"
+
+\end_inset
+
  
 \end_layout
 
 \begin_layout Itemize
-Palacios-Huerta I., 2003, Professionals play minimax, Review Of Economic
- Studies 70(2), 395-415.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Shaked1982"
+
+\end_inset
+
  
 \end_layout
 
 \begin_layout Itemize
-Rubinstein A., 1991, Comments on the Interpretation of Game Theory, Econometrica
- 59, 909-924.
- 
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "VanDamme1989"
 
-\begin_layout Itemize
-Shaked A., 1982, Existence and Computation of Mixed Strategy Nash Equilibrium
- for 3-Firms Location Problem, Journal of Industrial Economics 31, 93-96.
- 
-\end_layout
+\end_inset
 
-\begin_layout Itemize
-Van Damme E., 1989, Stable equilibria and forward induction, Journal of Economic
- Theory 48(2), 476-496.
+
 \end_layout
 
 \begin_layout Section
@@ -291,8 +394,8 @@ To each strategy profile
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="1">
-<features>
-<column alignment="left" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
 <row topspace="default" bottomspace="default">
 <cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
@@ -401,10 +504,10 @@ The game can be represented in normal form as follows:
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="3">
-<features>
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
@@ -747,11 +850,11 @@ Example:
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="4">
-<features>
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
@@ -890,9 +993,9 @@ One obtains the following remaining game:
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="2">
-<features>
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
@@ -1159,11 +1262,11 @@ The game can be represented in normal form as follows:
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="4">
-<features>
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
@@ -1730,10 +1833,9 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\align center
 Best response functions in the Coordination Game 
 \end_layout
 
@@ -1823,14 +1925,24 @@ You can check that all Nash equilibria are at crossing points of the best
 \end_layout
 
 \begin_layout Standard
-Palacios-Huerta (2003)
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Palacios-Huerta2003"
+
+\end_inset
+
+
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-Palacios-Huerta I., 2003, Professionals play minimax, Review Of Economic
- Studies 70(2), 395-415.
- 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Palacios-Huerta2003"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1841,9 +1953,16 @@ Palacios-Huerta I., 2003, Professionals play minimax, Review Of Economic
  as in the game under study in the article (penalty strikes).
  Most of the evidence in experimental settings is not encouraging (agents
  find it difficult to choose actions randomly).
- However, Palacios-Huerta (2003) shows that professional footballers, who
- have sufficient experience and incentives, appear to be able to use mixed
- strategies in their choice of which side of the goal to strike a ball.
+ However, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Palacios-Huerta2003"
+
+\end_inset
+
+ shows that professional footballers, who have sufficient experience and
+ incentives, appear to be able to use mixed strategies in their choice of
+ which side of the goal to strike a ball.
 \end_layout
 
 \begin_layout Section
@@ -1966,8 +2085,8 @@ Payoffs: vNM payoffs for each
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="1">
-<features>
-<column alignment="left" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
 <row topspace="default" bottomspace="default">
 <cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
@@ -2189,10 +2308,9 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\align center
 Extensive form representation of the game of entry deterrence.
 \end_layout
 
@@ -2268,10 +2386,10 @@ One thus obtains the following strategic form representation of the game:
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="3">
-<features>
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
@@ -2627,7 +2745,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Centipede game 
@@ -2856,7 +2974,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Coordination game with an outside option
@@ -3056,15 +3174,25 @@ Forward induction:
 \emph on
 Remark:
 \emph default
- The `Intuitive Criterion' of Cho and Kreps (1987)
+ The `Intuitive Criterion' of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Cho1987"
+
+\end_inset
+
+
 \begin_inset Foot
 status open
 
-\begin_layout Plain Layout
-Cho I-K.
- and D.M.
- Kreps, 1987, Signaling games and stable equilibria, Quarterly Journal of
- Economics 102(2), 179-221
+\begin_layout Description
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cho1987"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3145,11 +3273,11 @@ If
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="4">
-<features>
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
@@ -3349,11 +3477,11 @@ If
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="4">
-<features>
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
@@ -3593,13 +3721,13 @@ Payoffs can be shown as follows, with the first payoff the payoff of the
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="6">
-<features>
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
@@ -4486,8 +4614,8 @@ Payoffs, for each player
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="1">
-<features>
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
 <row topspace="default" bottomspace="default">
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
@@ -4601,11 +4729,11 @@ In this part, we consider how MSNEs may arise when there is some uncertainty
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="4">
-<features>
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
@@ -5016,9 +5144,11 @@ Both players are indifferent between playing
 \end_inset
 
  which leads to the following system of equations:
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 f^{\ast} & =2-6\frac{b^{\ast}}{a}\\
-b^{\ast} & =2-6\frac{f^{\ast}}{a}\end{align*}
+b^{\ast} & =2-6\frac{f^{\ast}}{a}
+\end{align*}
 
 \end_inset
 
@@ -5039,8 +5169,10 @@ From the point of view of
 \end_inset
 
  goes to the pub is then 
-\begin_inset Formula \[
-\Pr(b\geq\frac{2a}{6+a})=1-\frac{2}{6+a}\]
+\begin_inset Formula 
+\[
+\Pr(b\geq\frac{2a}{6+a})=1-\frac{2}{6+a}
+\]
 
 \end_inset
 
@@ -5057,8 +5189,10 @@ From the point of view of
 \end_inset
 
  goes to the café is 
-\begin_inset Formula \[
-\Pr(f\geq\frac{2a}{6+a})=1-\frac{2}{6+a}\]
+\begin_inset Formula 
+\[
+\Pr(f\geq\frac{2a}{6+a})=1-\frac{2}{6+a}
+\]
 
 \end_inset
 
@@ -5238,9 +5372,10 @@ Payoffs can be represented as follows:
 \align center
 \begin_inset Formula $u_{i}(b_{i};v_{i})=\begin{cases}
 \begin{tabular}{c}
- $0\text{ if }b_{i}<b_{j}$\\
-$\frac{v_{i}-b_{i}}{2}\text{ if }b_{i}=b_{j}$\\
-$v_{i}-b_{i}\text{ if }b_{i}>b_{j}$\end{tabular}\end{cases}$
+ \ensuremath{0\text{ if }b_{i}<b_{j}}\\
+\ensuremath{\frac{v_{i}-b_{i}}{2}\text{ if }b_{i}=b_{j}}\\
+\ensuremath{v_{i}-b_{i}\text{ if }b_{i}>b_{j}}
+\end{tabular}\end{cases}$
 \end_inset
 
 
@@ -5273,10 +5408,12 @@ We are going to looks for a linear bidding strategy, s.t.
 \end_inset
 
  is then 
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 E(u_{j}(b_{j};v_{j})) & =\Pr(b_{j}\geq\alpha+\beta v_{i})(v_{j}-b_{j})\\
  & =\Pr(\frac{b_{j}-\alpha}{\beta}\geq v_{i})(v_{j}-b_{j})\\
- & =\frac{b_{j}-\alpha}{\beta}(v_{j}-b_{j})\end{align*}
+ & =\frac{b_{j}-\alpha}{\beta}(v_{j}-b_{j})
+\end{align*}
 
 \end_inset
 
@@ -5297,10 +5434,12 @@ Suppose
 \end_inset
 
  Then 
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 E(u_{i}(b_{i};v_{i})) & =\Pr(b_{i}\geq\frac{v_{j}+\alpha}{2})(v_{i}-b_{i})\\
  & =\Pr(2b_{i}-\alpha\geq v_{j})(v_{i}-b_{i})\\
- & =(2b_{i}-\alpha)(v_{i}-b_{i})\end{align*}
+ & =(2b_{i}-\alpha)(v_{i}-b_{i})
+\end{align*}
 
 \end_inset
 
@@ -5416,8 +5555,9 @@ Payoffs are thus as follows:
 \align center
 \begin_inset Formula $u_{b}(p_{b};v_{b})=\begin{cases}
 \begin{tabular}{c}
- $0\text{ if }p_{b}<p_{s}$\\
-$v_{b}-\frac{p_{s}+p_{b}}{2}\text{ if }p_{b}\geq p_{s}$\end{tabular}\end{cases}$
+ \ensuremath{0\text{ if }p_{b}<p_{s}}\\
+\ensuremath{v_{b}-\frac{p_{s}+p_{b}}{2}\text{ if }p_{b}\geq p_{s}}
+\end{tabular}\end{cases}$
 \end_inset
 
 
@@ -5427,8 +5567,9 @@ $v_{b}-\frac{p_{s}+p_{b}}{2}\text{ if }p_{b}\geq p_{s}$\end{tabular}\end{cases}$
 \align center
 \begin_inset Formula $u_{s}(p_{s};v_{s})=\begin{cases}
 \begin{tabular}{c}
- $0\text{ if }p_{b}<p_{s}$\\
-$\frac{p_{s}+p_{b}}{2}-v_{s}\text{ if }p_{b}\geq p_{s}$\end{tabular}\end{cases}$
+ \ensuremath{0\text{ if }p_{b}<p_{s}}\\
+\ensuremath{\frac{p_{s}+p_{b}}{2}-v_{s}\text{ if }p_{b}\geq p_{s}}
+\end{tabular}\end{cases}$
 \end_inset
 
 
@@ -5454,8 +5595,10 @@ Consider the strategy of the buyer.
 \end_inset
 
  is 
-\begin_inset Formula \[
-E(u_{b}(p_{b};v_{b}))=\Pr(p_{b}\geq p_{s})(v_{b}-\frac{E(p_{s}\mid p_{b}\geq p_{s})+p_{b}}{2})\]
+\begin_inset Formula 
+\[
+E(u_{b}(p_{b};v_{b}))=\Pr(p_{b}\geq p_{s})(v_{b}-\frac{E(p_{s}\mid p_{b}\geq p_{s})+p_{b}}{2})
+\]
 
 \end_inset
 
@@ -5464,18 +5607,22 @@ E(u_{b}(p_{b};v_{b}))=\Pr(p_{b}\geq p_{s})(v_{b}-\frac{E(p_{s}\mid p_{b}\geq p_{
 
 \begin_layout Standard
 with
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 E(p_{s}\text{ }|\text{ }p_{b} & \geq p_{s})=E(\gamma+\delta v_{s}\mid p_{b}\geq\gamma+\delta v_{s})\\
  & =\gamma+\delta E(v_{s}\mid\frac{p_{b}-\gamma}{\delta}\geq v_{s})\\
  & =\gamma+\delta\frac{p_{b}-\gamma}{2\delta}\\
- & =\frac{1}{2}\gamma+\frac{1}{2}p_{b}\end{align*}
+ & =\frac{1}{2}\gamma+\frac{1}{2}p_{b}
+\end{align*}
 
 \end_inset
 
  so
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 E(u_{b}(p_{b};v_{b})) & =\Pr(\frac{p_{s}-\gamma}{\delta}\geq v_{s})(v_{b}-\frac{\frac{1}{2}\gamma+\frac{1}{2}p_{b}+p_{b}}{2})\\
- & =\frac{p_{b}-\gamma}{\delta}(v_{b}-\frac{\gamma+3p_{b}}{4})\end{align*}
+ & =\frac{p_{b}-\gamma}{\delta}(v_{b}-\frac{\gamma+3p_{b}}{4})
+\end{align*}
 
 \end_inset
 
@@ -5580,12 +5727,12 @@ Consider the following game:
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="5">
-<features>
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
@@ -5928,10 +6075,12 @@ Suppose player
 \end_inset
 
  can written as follows:
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 u_{1}(T) & =3l+5(1-c-l)\\
 u_{1}(M) & =2l+c+3(1-c-l)\\
-u_{1}(B) & =l+4(1-c-l)\end{align*}
+u_{1}(B) & =l+4(1-c-l)
+\end{align*}
 
 \end_inset
 
@@ -5977,10 +6126,12 @@ Consider now player
 \end_inset
 
  can be written as follows:
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 u_{2}(L) & =t+m\\
 u_{1}(C) & =2m\\
-u_{1}(R) & =m\end{align*}
+u_{1}(R) & =m
+\end{align*}
 
 \end_inset
 
@@ -6017,11 +6168,11 @@ u_{1}(R) & =m\end{align*}
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="4">
-<features>
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
@@ -6195,9 +6346,11 @@ M
 
 \begin_layout Standard
 A MSNE of this game must be such that 
-\begin_inset Formula \begin{align*}
+\begin_inset Formula 
+\begin{align*}
 3l & =2l+(1-l)\\
-1 & =2(1-t)\end{align*}
+1 & =2(1-t)
+\end{align*}
 
 \end_inset
 
@@ -6593,8 +6746,8 @@ Strategic form game
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="1">
-<features>
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
 <row topspace="default" bottomspace="default">
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
@@ -6732,12 +6885,12 @@ Consider the following game:
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="5">
-<features>
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
@@ -7065,7 +7218,7 @@ a) Assume that the game is played only once.
  Find all its pure strategy Nash equilibria.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
@@ -7354,10 +7507,10 @@ Consider the following prisoners' dilemma game in normal form:
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="3">
-<features>
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
@@ -7542,10 +7695,9 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\align center
 Convex hull for the prisoners' dilemma
 \end_layout
 
@@ -7681,10 +7833,9 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\align center
 Set of attainable payoffs in the prisoners' dilemma 
 \end_layout
 
@@ -7808,14 +7959,18 @@ Let us see therefore what is the payoff to playing
 
  this period is optimal s.t.
  
-\begin_inset Formula \[
-5+5\delta+5\delta^{2}+5\delta^{3}+....=\frac{5}{1-\delta}\geq7+\frac{\delta}{1-\delta}\]
+\begin_inset Formula 
+\[
+5+5\delta+5\delta^{2}+5\delta^{3}+....=\frac{5}{1-\delta}\geq7+\frac{\delta}{1-\delta}
+\]
 
 \end_inset
 
  which translates in 
-\begin_inset Formula \[
-\delta\geq\frac{1}{3}\]
+\begin_inset Formula 
+\[
+\delta\geq\frac{1}{3}
+\]
 
 \end_inset
 

@@ -1,42 +1,83 @@
-#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 345
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
+\begin_preamble
+\jurabibsetup{%
+titleformat=italic,%
+titleformat=commasep,%
+commabeforerest,%
+ibidem=strict,%
+citefull=first,%
+lookat,%
+oxford,%
+pages=format,%
+idem%
+}
+\end_preamble
 \use_default_options true
+\maintain_unincluded_children false
 \language english
+\language_package default
 \inputencoding auto
+\fontencoding global
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
+\use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
-\use_amsmath 1
-\use_esint 1
-\cite_engine basic
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine jurabib
+\cite_engine_type authoryear
+\biblio_style plain
 \use_bibtopic false
+\use_indices false
 \paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
-\defskip medskip
+\paragraph_indentation default
 \quotes_language english
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
-\author "" 
-\author "" 
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
 \end_header
 
 \begin_body
@@ -109,10 +150,9 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\align center
 
 \size normal
 Two lotteries and indifference curves in the Marschak-Machina triangle
@@ -133,13 +173,13 @@ Justifying your answer, explain:
 \end_layout
 
 \end_deeper
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) how their attitudes towards risk differs between point A and point B
  in the figure and 
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) which of the axioms of expected utility theory are broken by these indifferen
 ce curves.
@@ -159,19 +199,19 @@ ce curves.
 \end_layout
 
 \begin_layout Itemize
-Lottery A pays £10 on all numbers.
+Lottery A pays €10 on all numbers.
 \end_layout
 
 \begin_layout Itemize
-Lottery B pays £24 on number 1-3, and nothing on 4-6.
+Lottery B pays €24 on number 1-3, and nothing on 4-6.
 \end_layout
 
 \begin_layout Itemize
-Lottery C pays £10 on numbers 1-4, and nothing on 5-6.
+Lottery C pays €10 on numbers 1-4, and nothing on 5-6.
 \end_layout
 
 \begin_layout Itemize
-Lottery D pays £24 on numbers 5-6, and nothing on 1-4.
+Lottery D pays €24 on numbers 5-6, and nothing on 1-4.
 \end_layout
 
 \begin_layout Description
@@ -179,17 +219,17 @@ Alexia prefers A to B.
  She also prefers D to C.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) Are these preferences consistent with expected utility theory?
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) Are they consistent with prospect theory?
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) Are they consistent with regret theory?
 \end_layout
@@ -211,27 +251,27 @@ In each case justify your answer.
 \end_layout
 
 \begin_layout Itemize
-Lottery A pays £10 with probability 1.
+Lottery A pays €10 with probability 1.
 \end_layout
 
 \begin_layout Itemize
-Lottery B pays £30 with probability 0.4, otherwise nothing.
+Lottery B pays €30 with probability 0.4, otherwise nothing.
 \end_layout
 
 \begin_layout Itemize
-Lottery C pays £10 with probability 0.25 otherwise nothing.
+Lottery C pays €10 with probability 0.25 otherwise nothing.
 \end_layout
 
 \begin_layout Itemize
-Lottery D pays £30 with probability 0.1, otherwise nothing.
+Lottery D pays €30 with probability 0.1, otherwise nothing.
 \end_layout
 
 \begin_layout Itemize
-Lottery E pays £12 with probability 0.5, otherwise nothing.
+Lottery E pays €12 with probability 0.5, otherwise nothing.
 \end_layout
 
 \begin_layout Itemize
-Lottery F pays £30 with probability 0.2, £12 with probability 0.6, otherwise
+Lottery F pays €30 with probability 0.2, €12 with probability 0.6, otherwise
  nothing.
 \end_layout
 
@@ -242,22 +282,22 @@ Adelina's preferences over lotteries satisfy the axioms of expected utility
  What are her preferences over the following pairs of lotteries?
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) C versus E
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) D versus E
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) E versus F
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 d) A versus B
 \end_layout
@@ -284,15 +324,15 @@ In each case provide careful justification for your answer.
 \end_inset
 
  is income.
- Suppose the individual rejects a 50-50 chance of losing £10 and winning
- £11 at an initial wealth level 
+ Suppose the individual rejects a 50-50 chance of losing €10 and winning
+ €11 at an initial wealth level 
 \begin_inset Formula $w$
 \end_inset
 
 .
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) Show that this implies that 
 \begin_inset Formula $ln(w-10)+ln(w+11)\leq2ln(w)$
@@ -301,7 +341,7 @@ a) Show that this implies that
 .
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) Deduce from a) that 
 \begin_inset Formula $w\leq110$
@@ -318,14 +358,14 @@ b) Deduce from a) that
 )
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) Suppose the individual's wealth is 
 \begin_inset Formula $w=110$
 \end_inset
 
- and the individual is offered a 50-50 chance of losing £100 and winning
- £
+ and the individual is offered a 50-50 chance of losing €100 and winning
+ €
 \begin_inset Formula $Y$
 \end_inset
 
@@ -337,14 +377,14 @@ c) Suppose the individual's wealth is
  such that the individual accepts?
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 d) Suppose now the individual's wealth is 
 \begin_inset Formula $w=200$
 \end_inset
 
- and the individual is offered a 50-50 chance of losing £100 and winning
- £
+ and the individual is offered a 50-50 chance of losing €100 and winning
+ €
 \begin_inset Formula $Z$
 \end_inset
 
@@ -356,7 +396,7 @@ d) Suppose now the individual's wealth is
  such that the individual accepts?
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 e) Comment on the above results.
  Do you find the predictions from c) and b) reasonable? Justify your answer.
@@ -387,7 +427,7 @@ e) Comment on the above results.
  and the agent is an expected utility maximizer.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) Suppose the agent offers others to play the lottery and prices the ticket
  for the lottery at 
@@ -407,7 +447,7 @@ a) Suppose the agent offers others to play the lottery and prices the ticket
 .
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) Suppose now the agent wishes to buy a ticket for the lottery.
  What is the maximum price 
@@ -417,7 +457,7 @@ b) Suppose now the agent wishes to buy a ticket for the lottery.
  that the agent would be ready to pay for that ticket?
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) Suppose that 
 \begin_inset Formula $G=10$
@@ -452,7 +492,7 @@ c) Suppose that
 .
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 d) Do you find that 
 \begin_inset Formula $p_{S}=p_{B}$
@@ -470,20 +510,30 @@ d) Do you find that
 
 \begin_layout Description
 6.
- [From Loomes and Taylor (1992)]
+ [From 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Loomes1992"
+
+\end_inset
+
+
 \begin_inset Foot
 status open
 
-\begin_layout Plain Layout
-Loomes G.
- and C.
- Taylor, 1992, Non-transitive preferences over gains and losses, The Economic
- Journal 102(411), 357-365.
+\begin_layout Description
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Loomes1992"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
- 
+] 
 \end_layout
 
 \begin_deeper
@@ -537,13 +587,13 @@ Suppose the agent’s behaviour fit the axioms of Expected Utility Theory.
 \end_layout
 
 \end_deeper
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) Represent A, B and C as lotteries over outcomes a, b, c, d and e.
  What are the expected utilities of A, B and C?
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) Is it possible for an agent to prefer A to B, B to C, and C to A? Explain
  your answer.
@@ -597,12 +647,12 @@ Suppose now the agent exhibits regret aversion.
 .
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) Interpret the above assumptions concerning the regret function.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 d) Write down the conditions under which the agent chooses: B over A; C
  over B; A over C.
@@ -611,7 +661,7 @@ d) Write down the conditions under which the agent chooses: B over A; C
  properties of the regret function).
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 e) Write down the conditions under which the agent chooses: A over B; B
  over C; C over A.
@@ -642,10 +692,10 @@ Exercises 1 to 5 were contributed by previous teachers in MSc Economic Theory
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="3">
-<features>
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -756,12 +806,12 @@ R
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="5">
-<features>
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -1004,18 +1054,18 @@ D
 
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) Apply the procedure of iteratively deleting strictly dominated strategies.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) Apply iterative deletion of weakly dominated strategies to the game that
  remains after completion of (i).
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) Identify all pure and mixed strategy Nash equilibria of the game.
 \end_layout
@@ -1053,10 +1103,9 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\align center
 
 \size normal
 Extensive form game for exercise 3
@@ -1074,12 +1123,12 @@ Extensive form game for exercise 3
 
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) Convert the game into a game in normal form.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) Find all Nash and subgame perfect Nash equilibria.
 \end_layout
@@ -1117,10 +1166,9 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\align center
 
 \size normal
 Extensive form game for exercise 4
@@ -1138,18 +1186,18 @@ Extensive form game for exercise 4
 
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) Convert the game into a game in normal form.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) Find all Nash and subgame perfect Nash equilibria.
  
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) Comment on the plausibility of these.
 \end_layout
@@ -1187,10 +1235,9 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\align center
 
 \size normal
 Extensive form game for exercise 5
@@ -1208,18 +1255,18 @@ Extensive form game for exercise 5
 
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) Convert the game into a game in normal form.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) Find all Nash and subgame perfect Nash equilibria.
  
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) Comment on the plausibility of these.
 \end_layout
@@ -1240,12 +1287,12 @@ c) Comment on the plausibility of these.
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="5">
-<features>
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -1394,13 +1441,13 @@ Down
 
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) Suppose that players are able to agree on their move before playing.
  What would they choose?
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) From now on, suppose players 1 and 2 are not able to communicate and
  must choose their moves independently.
@@ -1409,12 +1456,12 @@ b) From now on, suppose players 1 and 2 are not able to communicate and
  sure what player 1 will choose? Explain.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) What are the pure strategy Nash equilibria of this game?
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 d) Consider mixed strategy equilibria such that player 1 mixes between Up
  and Down with probability 
@@ -1455,7 +1502,7 @@ iii) Show that player 2 will play Middle whenever
 \end_layout
 
 \end_deeper
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 e) Rationalize your choice of action in (a) taking into account (d)(iii).
 \end_layout
@@ -1497,10 +1544,9 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\align center
 
 \size normal
 Extensive form game for exercise 1, Game Theory 2
@@ -1516,18 +1562,18 @@ Extensive form game for exercise 1, Game Theory 2
 
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) Write the game in normal form and find all of its Nash equilibria.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) Find the Subgame Perfect Nash Equilibrium of this game.
  Explain the intuition for this equilibrium.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) Suppose player two can pre-commit to spend 
 \begin_inset Formula $c>0$
@@ -1568,8 +1614,8 @@ iii) When does player 2 pre-commit? Explain.
 \begin_layout Description
 2.
  Consider a buyer and a seller.
- The seller has only one unit to sell and values the good at £50 while the
- buyer values it at £60 if it is of a high type and £55 if it is a low type.
+ The seller has only one unit to sell and values the good at €50 while the
+ buyer values it at €60 if it is of a high type and €55 if it is a low type.
  The seller does not know the type of the buyer, but knows there is proportion
  
 \begin_inset Formula $h$
@@ -1579,7 +1625,7 @@ iii) When does player 2 pre-commit? Explain.
  The buyer knows its own type.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) Suppose the seller asks for a price 
 \begin_inset Formula $p$
@@ -1636,13 +1682,13 @@ Suppose now the game is played over two periods, and the buyer’s discount
 .
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) Draw the extensive form of the game, with N a play by nature determining
  the type of the buyer.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) Suppose 
 \begin_inset Formula $60>p_{1}>55>p_{2}>50$
@@ -1653,7 +1699,7 @@ c) Suppose
  first period? From waiting? What about the low type?
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 d) Show there exist 
 \begin_inset Formula $p_{1}$
@@ -1677,7 +1723,7 @@ d) Show there exist
 um?
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 e) Suppose the seller cannot commit on 
 \begin_inset Formula $p_{2}$
@@ -1688,7 +1734,7 @@ e) Suppose the seller cannot commit on
  why not?
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 \begin_inset VSpace defskip
 \end_inset
@@ -1751,7 +1797,7 @@ e) Suppose the seller cannot commit on
  whether the other player contributes.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) Explain why a player of type 
 \begin_inset Formula $C$
@@ -1765,14 +1811,14 @@ a) Explain why a player of type
  
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) Explain why it is important that contributions be made at the same time
  and players cannot observe whether the other player contributes.
  
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) Suppose 
 \begin_inset Formula $\lambda=0$
@@ -1787,7 +1833,7 @@ c) Suppose
 ? 
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 d) Suppose now 
 \begin_inset Formula $1>\lambda>0$
@@ -1799,13 +1845,13 @@ d) Suppose now
  
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 e) Depending on the type of the agents, what is the Pareto optimal outcome
  of this game? 
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 f) Show that in a Bayesian equilibrium of this game, inefficient player
  A never contributes, while efficient player A contributes with some probability
@@ -1826,7 +1872,7 @@ f) Show that in a Bayesian equilibrium of this game, inefficient player
  Be careful to explain the notations you use and the reasoning you are following.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 g) Suppose now the game is repeated twice, and players observe each other's
  action after the first period and before playing the game again.
@@ -1884,10 +1930,10 @@ CASE A
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="3">
-<features>
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -1989,10 +2035,10 @@ CASE B
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="3">
-<features>
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -2094,10 +2140,10 @@ CASE C
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="3">
-<features>
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -2212,18 +2258,30 @@ Each matrix represents a different situation but in only one of them is
 
 \begin_layout Description
 2.
- [Simplified from Myerson (2008)]
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Myerson R.B., 2008, Perspectives on Mechanism Design in Economic Theory, American
- Economic Review 98(3), 586-603.
-\end_layout
+ [Simplified from 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Myerson2008"
 
 \end_inset
 
 
+\begin_inset Foot
+status open
+
+\begin_layout Description
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Myerson2008"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+]
 \end_layout
 
 \begin_deeper
@@ -2269,14 +2327,14 @@ The manager owns no personal assets and does not invest anything in the
 \end_layout
 
 \end_deeper
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) Show that the expected returns from the project (including possible private
  benefits) are greater than the cost of its capital inputs only if the manager
  chooses to be good.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) Suppose the manager is paid wage 
 \begin_inset Formula $w>0$
@@ -2290,7 +2348,7 @@ b) Suppose the manager is paid wage
  does the manager undertake to be good?
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) Suppose the investor chooses 
 \begin_inset Formula $w$
@@ -2301,7 +2359,7 @@ c) Suppose the investor chooses
  Does the investor invest? Comment.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 \begin_inset VSpace defskip
 \end_inset
@@ -2391,7 +2449,7 @@ Your task is to determine the monopolist’s optimal quantity-payment schedule
 \end_layout
 
 \end_deeper
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) Derive the optimal quantity-payment schedule when the monopolist can
  distinguish between the types of the consumers.
@@ -2399,13 +2457,13 @@ a) Derive the optimal quantity-payment schedule when the monopolist can
  your findings.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) Introduce asymmetric information and show how the first best scheme becomes
  sub-optimal using a graph.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) Set the monopolist’s profit maximization problem formally with appropriate
  self-selection and participation constraints.
@@ -2413,13 +2471,13 @@ c) Set the monopolist’s profit maximization problem formally with appropriate
  
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 d) What is the meaning of “no distortion at the top” and “no rent at the
  bottom” in this context?
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 e) Finally, solve for the optimal quantity-payment schedule and show it
  on the graph.
@@ -2484,7 +2542,7 @@ The payment that is made to the chosen contractor is P, which may be made
 \end_layout
 
 \end_deeper
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) Which firm is the 
 \begin_inset Quotes eld
@@ -2505,7 +2563,7 @@ bottom
  (inefficient) type?
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) Assume that the hospital can observe the type of the firm.
  Write the maximisation problem for the hospital if it contracts with the
@@ -2514,7 +2572,7 @@ b) Assume that the hospital can observe the type of the firm.
  the solution.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) Assume that the hospital cannot observe the type of the firm.
  Write the maximisation problem for the hospital if it wants the two types
@@ -2523,7 +2581,7 @@ c) Assume that the hospital cannot observe the type of the firm.
  
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 d) Identify the constraints that will bind in the solution, and solve for
  the optimal 
@@ -2533,7 +2591,7 @@ d) Identify the constraints that will bind in the solution, and solve for
  schedule.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 e) Present your answer to d) graphically.
 \end_layout
@@ -2624,7 +2682,7 @@ Consider a paternalistic employer that seeks to maximize the welfare
 \end_layout
 
 \end_deeper
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) Consider the first best scenario in which effort is verifiable.
  
@@ -2658,7 +2716,7 @@ iii) Write down the employer’s necessary and sufficient Kuhn and Tucker
 \end_layout
 
 \end_deeper
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) Consider now the second best scenario in which effort is non-verifiable.
  
@@ -2771,24 +2829,24 @@ h
 \end_layout
 
 \end_deeper
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 a) Who is the principal? Who is the agent? What variables are the firm and
  the worker going to contract upon?
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 b) Draw the timeline of contracting.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 c) Write the principal’s objective function.
  Write the agent’s individual rationality (IR) constraint.
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 d) Find the first order condition for the maximization of the principal’s
  objective function subject to the agent’s IR constraint.
@@ -2834,14 +2892,14 @@ w.r.t.
  the Lagrange multiplier).
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 e) Prove that the agent will receive the same wage regardless of the realization
  of the shock.
  When does the agent work more?
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 f) Suppose the shock is not publicly observable, is known only to the firm
  and the firm can lie about the realization of the shock.
@@ -2853,7 +2911,7 @@ e)
  Will the principal lie about the realization of the shock? When? Why?
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 g) Write down the conditions under which the principal has no incentive
  to lie.

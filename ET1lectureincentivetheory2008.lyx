@@ -3,6 +3,19 @@
 \begin_document
 \begin_header
 \textclass article
+\begin_preamble
+\jurabibsetup{%
+titleformat=italic,%
+titleformat=commasep,%
+commabeforerest,%
+ibidem=strict,%
+citefull=first,%
+lookat,%
+oxford,%
+pages=format,%
+idem%
+}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -25,6 +38,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -38,8 +52,8 @@
 \use_package stackrel 1
 \use_package stmaryrd 1
 \use_package undertilde 1
-\cite_engine basic
-\cite_engine_type default
+\cite_engine jurabib
+\cite_engine_type authoryear
 \biblio_style plain
 \use_bibtopic false
 \use_indices false
@@ -258,17 +272,35 @@ Textbook Readings.
 \end_layout
 
 \begin_layout Itemize
-Kreps, Chs.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kreps1990"
+
+\end_inset
+
+, Chs.
  16-17
 \end_layout
 
 \begin_layout Itemize
-Varian, Ch.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Varian1992"
+
+\end_inset
+
+, Ch.
  25
 \end_layout
 
 \begin_layout Itemize
-Mas-Colell, Chs.13-14
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mas-Colell1995"
+
+\end_inset
+
+, Chs.13-14
 \end_layout
 
 \begin_layout Standard
@@ -276,15 +308,23 @@ The following textbooks might also prove useful to you:
 \end_layout
 
 \begin_layout Itemize
-Laffont J-J.
- and D.
- Martimort, 2002, The Theory of Incentives; the Principal-Agent Model, Princeton
- University Press.
- 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Laffont2002"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Salanié B., 2005, The Economics of Contracts, MIT Press.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Salanie2005"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -303,52 +343,63 @@ Some articles in this list were contributed by previous teachers in MSc
 \end_layout
 
 \begin_layout Itemize
-Akerlof G.A., 1970, The market for 
-\begin_inset Quotes eld
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Akerlof1970"
+
 \end_inset
 
-lemons
-\begin_inset Quotes erd
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Grossman1983"
+
 \end_inset
 
-: Quality uncertainty and the market mechanism, The Quarterly Journal of
- Economics 84(3), 488-500.
- 
+
 \end_layout
 
 \begin_layout Itemize
-Grossman S.J.
- and O.D.
- Hart, 1983, An analysis of the Principal-Agent problem, Econometrica 51(1),
- 7-45.
- 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Puelz1994"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Puertz R.
- and A.
- Snow, 1994, Evidence on Adverse Selection, Equilibrium Signalling and Cross-Sub
-sidization in the Insurance Market, Journal of Political Economy 102(2),
- 236-257.
- 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rees1985"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Rees R., 1985, The Theory of Principal and Agent, Parts I and II in Hey,
- J.
- & Lambert P.
- eds, Surveys in the Economics of Uncertainty, Blackwell; also in Bulletin
- of Economic Research.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Spence1973"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Spence A.M., 1973, Job Market Signalling, The Quarterly Journal of Economics
- 87(3), 355-374.
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Taylor1999"
 
-\begin_layout Itemize
-Taylor C.R., 1999, Time-on-the-Market as a Signal of Quality, Review of Economic
- Studies 66, 555-578.
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -362,11 +413,12 @@ a) Regulation
 \end_layout
 
 \begin_layout Itemize
-Laffont J.
- J.
- and J.
- Tirole, 1993, A Theory Of Incentives In Procurement And Regulation, The
- MIT Press.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Laffont1993"
+
+\end_inset
+
  (This is a comprehensive book on the theory of regulation.).
 \end_layout
 
@@ -376,9 +428,13 @@ b) Auctions
 \end_layout
 
 \begin_layout Itemize
-Klemperer P., 2000, Why Every Economist Should Learn Some Auction Theory,
- Microeconomics 0004009, Economics Working Paper Archive at WUSTL, available
- on the web.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Klemperer2000"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Labeling
@@ -387,34 +443,44 @@ c) Theory of the firm
 \end_layout
 
 \begin_layout Itemize
-Fama E.F., 1980, Agency problems and the theory of the firm, Journal of Political
- Economy 88(2), 288-307.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Fama1980"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Holmstrom B.R.
- and S.N.
- Kaplan, 2001, Corporate Governance and Merger Activity in the U.S.: Making
- Sense of the 1980s and 1990s, MIT Dept.
- of Economics Working Paper No.
- 01-11.
- 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Holmstrom2001"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Jensen M.C.
- and W.H.
- Meckling, 1976, Theory of the Firm: Managerial Behavior, Agency Costs and
- Ownership Structure, Journal of Financial Economics 3(4), 305-360.
- 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jensen1976"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Milgrom P.
- and J.
- Roberts, 1992, Economics, Organization and Management, Prentice Hall (This
- book is well written, accessible and motivating and of great help to future
- managers).
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Milgrom1992"
+
+\end_inset
+
+ (This book is well written, accessible and motivating and of great help
+ to future managers).
 \end_layout
 
 \begin_layout Labeling
@@ -423,29 +489,43 @@ d) Labour Economics
 \end_layout
 
 \begin_layout Itemize
-Green J.
- and N.A.
- Stokey, 1983, Comparison of Tournaments and Contests, Journal of Political
- Economy 91, 349-364.
- 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Green1983"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Hart O.D., 1983, Optimal Labour Contracts under Asymmetric Information: An
- Introduction, Review of Economic Studies 50(1), 3-35.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hart1983"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Holmstrom B., 1982, Moral Hazard in Teams, Bell Journal of Economics 13(2),
- 324-340.
- 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Holmstrom1982"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Laffont J-J.
- and M.S.
- Matoussi, 1995, Moral Hazard, Financial Constraints and Sharecropping in
- El Oulja, Review of Economic Studies 62, 381-399.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Laffont1995"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Labeling
@@ -454,26 +534,33 @@ e) Banking and Insurance
 \end_layout
 
 \begin_layout Itemize
-Freixas X.
- and J-C.
- Rochet, 1997, Microeconomics of Banking, The MIT Press, second print 1998
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Freixas1997"
+
+\end_inset
+
  (An excellent review for those interested).
 \end_layout
 
 \begin_layout Itemize
-Rothschild M.
- and J.E.
- Stiglitz, 1976, Equilibrium in competitive insurance markets: An essay
- on the economics of imperfect information, Quarterly Journal of Economics
- 90(4), 629-649.
- 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rothschild1976"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Stiglitz J.E.
- and A.
- Weiss, 1981, Credit Rationing in Markets with imperfect information, American
- Economic Review 71, 393-410.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Stiglitz1981"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Labeling
@@ -482,14 +569,23 @@ f) Health Economics
 \end_layout
 
 \begin_layout Itemize
-Arrow K.J., 1963, Uncertainty and the welfare economics of medical care, American
- Economic Review 53(5), 941-973.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Arrow1963"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Zechauser R., 1970, Medical Insurance: A case study of the trade off between
- risk spreading and appropriate incentives, Journal of Economic Theory 2,
- 10-12.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zeckhauser1970"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -2681,8 +2777,14 @@ Repeated adverse selection.
 \begin_layout Standard
 The following model with repeated adverse selection illustrates what happens
  if the principal cannot commit not to renegotiate after a contract is accepted
- or after an action is taken by the agent (chapter 9, section 3, Laffont
- and Martimort, 2002).
+ or after an action is taken by the agent (chapter 9, section 3, 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Laffont2002"
+
+\end_inset
+
+).
  Consider thus the standard adverse selection model, and assume it is repeated
  twice with the same agent and the same principal both period.
 \begin_inset Formula 
@@ -2867,7 +2969,14 @@ In the following, we explore what happens in the more serious problem where
  This may be for example because there is no court of law that can force
  him not to do so.
  In a moral hazard setting, this leads to a hold up problem (chapter 9,
- section 4, Laffont and Martimort, 2002).
+ section 4, 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Laffont2002"
+
+\end_inset
+
+).
  Take indeed the standard moral hazard problem.
  The principal would like to commit to pay more when the result is good.
  However, after the effort is made and a high result is achieved, the principal'
@@ -3216,8 +3325,14 @@ Note that to the difference of the standard incentive problem, the principal
  The situation is reversed compared to the standard, informed agent setting:
  if the principal is of a bad type, then the first best level of production
  will be asked, while if the principal is of a good type, then there will
- be more production than first best optimal (chapter 9, subsection 1, Laffont
- and Martimort, 2002).
+ be more production than first best optimal (chapter 9, subsection 1, 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Laffont2002"
+
+\end_inset
+
+).
  Note however that if the agent is risk neutral, then the first best levels
  of production can be achieved, while in the standard case, even if the
  agent was risk neutral, there was still a distortion.
@@ -3226,13 +3341,25 @@ Note that to the difference of the standard incentive problem, the principal
 \begin_layout Standard
 In the above, we focused on a case where, at the time of offering the contract,
  the principal did not know his own type.
- Myerson (1983)
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Myerson1983"
+
+\end_inset
+
+
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-Myerson R.B., 1983, Mechanism Design by an Informed Principal, Econometrica
- 51(6), 1767-1797.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Myerson1983"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3266,10 +3393,13 @@ s choice of contract may reveal his own type to the agent.
 status open
 
 \begin_layout Plain Layout
-Maskin E.
- and J.
- Tirole, 1990, The Principal-Agent Relationship with an Informed Principal:
- The Case of Private Values, Econometrica 58(2), 379-409.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Maskin1990"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3280,11 +3410,13 @@ Maskin E.
 status open
 
 \begin_layout Plain Layout
-Maskin E.
- and J.
- Tirole, 1992, The Principal-Agent Relationship with an Informed Principal,
- II: Common Values, Econometrica 60(1), 1-42.
- 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Maskin1992"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3299,8 +3431,14 @@ Mixed models
 \begin_layout Standard
 Seldom does one have pure adverse selection or pure moral hazard.
  In most situations, there is either adverse selection followed by moral
- hazard or moral hazard followed by adverse selection (chapter 7, Laffont
- and Martimort, 2002).
+ hazard or moral hazard followed by adverse selection (chapter 7, 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Laffont2002"
+
+\end_inset
+
+).
  Insurance is a typical example: the effort by the agent in avoiding accidents
  may depends on its type, her tendency for recklessness for example.
  In this case, adverse selection (type) precedes moral hazard (effort).
@@ -3329,15 +3467,25 @@ Limits to contractual complexity
 
 \begin_layout Standard
 Contracts are generally simpler than what theory would call for.
- Laffont and Matoussi (1995)
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Laffont1995"
+
+\end_inset
+
+
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-Laffont J-J.
- and M.S.
- Matoussi, 1995, Moral Hazard, Financial Constraints and Sharecropping in
- El Oulja, Review of Economic Studies 62, 381-399.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Laffont1995"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3345,13 +3493,25 @@ Laffont J-J.
  examine real world sharecropping contracts and assess the loss of efficiency
  due to their relative simplicity.
  Are simple contracts signed because there is too much of a cost to write
- complicated contracts? What then does that cost consist in? Tirole (2009)
+ complicated contracts? What then does that cost consist in? 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Tirole2009"
+
+\end_inset
+
+
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-Tirole J., 2009, Cognition and Incomplete Contracts, American Economic Review
- 99(1), 265-294.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Tirole2009"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3623,7 +3783,7 @@ s thus consider a set of messages
  Those messages can be the choice of contract, the type of the agent, or
  any other information.
  The mechanism is then of the form 
-\begin_inset Formula $C:\: M\rightarrow A$
+\begin_inset Formula $C:\:M\rightarrow A$
 \end_inset
 
 , with 
@@ -3631,7 +3791,7 @@ s thus consider a set of messages
 \end_inset
 
  the set of allocations 
-\begin_inset Formula $(q,\: t)$
+\begin_inset Formula $(q,\:t)$
 \end_inset
 
 .
@@ -3653,7 +3813,7 @@ s.t.
 
 \emph default
  
-\begin_inset Formula $C(m)=(q(m),\: t(m))$
+\begin_inset Formula $C(m)=(q(m),\:t(m))$
 \end_inset
 
 .
@@ -4207,11 +4367,16 @@ knows the agents' preferences
 , named for Jean-Charles de Borda, who devised the system in 1770 for elections
  to the French Academy of Sciences.
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
-de Borda J-C., 1781, Mémoires sur les élections au scrutin, Histoire de l’Académi
-e Royale des Sciences, Paris.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Borda1781"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4550,14 +4715,24 @@ This is the subject of the Gibbard-Satterthwaite theorem (Chapter
 status open
 
 \begin_layout Plain Layout
-Gibbard A., 1973, Manipulation of Voting Schemes: A General Result, Econometrica
- 41, 587-601.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gibbard1973"
+
+\end_inset
+
+
 \begin_inset Newline newline
 \end_inset
 
-Satterthwaite M.A., 1975, Strategy-Proofness and Arrow’s Conditions: Existence
- and Correspondence Theorems for Voting Procedures and Social Welfare Functions,
- Journal of Economic Theory 10, 187-217.
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Satterthwaite1975"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4567,8 +4742,13 @@ Satterthwaite M.A., 1975, Strategy-Proofness and Arrow’s Conditions: Existence
 status open
 
 \begin_layout Plain Layout
-Reny P.J., 2000, Arrow’s Theorem and the Gibbard-Satterthwaite Theorem: A
- Unified Approach, University of Chicago Working Paper.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Reny2001"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4582,8 +4762,13 @@ Reny P.J., 2000, Arrow’s Theorem and the Gibbard-Satterthwaite Theorem: A
 status open
 
 \begin_layout Plain Layout
-Arrow K.J., 1950, A Difficulty in the Concept of Social Welfare, Journal of
- Political Economy 58(4), 328-346.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Arrow1950"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
