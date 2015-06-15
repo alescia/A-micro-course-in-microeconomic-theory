@@ -2845,7 +2845,7 @@ If on the other hand the subject indeed choose the $-bet over the $4 and
 \begin_layout Standard
 \begin_inset CommandInset citation
 LatexCommand citet
-key "Loomes1991"
+key "rubinstein_similarity_1988"
 
 \end_inset
 
@@ -2856,7 +2856,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Loomes1991"
+key "rubinstein_similarity_1988"
 
 \end_inset
 
@@ -2867,7 +2867,7 @@ key "Loomes1991"
 
  contend that violations of transitivity may occur because agents use rather
  less sophisticated techniques than EUT to evaluate lotteries.
- They posit that agents tend to choose lotteries with the larger probability
+ He posits that agents tend to choose lotteries with the larger probability
  as long as the payoffs are close, and choose lotteries with the larger
  payoff is the payoffs are far away.
  This can lead to intransivities.
