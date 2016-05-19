@@ -1,3 +1,4 @@
+This repository provides all files necessary to generate "A (Micro) Course in Microeconomic Theory for MSc Students" by Alexia Gaudeul
 
 - The document to open and compile is MSc Micro Alexia Gaudeul.lyx. This can be exported to .tex using LyX.
 
